@@ -1,0 +1,6 @@
+site-siteName,site-timezoneID,site-lumicastConfigTag,site-address1,site-address2,site-city,site-stateProvince,site-postalCode,site-country,site-serviceStatus,building-name,floor-name,floor-level,floor-verticalOrder,floor-mapServiceURL,floor-mapServiceType,floorspace-floorSpaceName,floorspace-codeBook_ID,floorspace-idMode,floorspace-fixtureType,floorspace-operatingPoint,floorspace-maxMountingHeight,floorspace-GTHeadingOffset,floorspace-GTHeight,floorspace-GTWidth,floorspace-GTX,floorspace-GTXRotation,floorspace-GTY,floorspace-GTYRotation,floorspace-mapAngleOffsetRadians,floorspace-mapOffsetX,floorspace-mapOffsetY
+Test Site 1,1,New Tag,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+Test Site 1,1,New Tag,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L2,0,http://test,1,Another floorspace,1,VLC only,0,0,,,,,,,,,,,
+Test Site 1,1,New Tag,123 Test Lane,,Montgomery,AL,36117,USA,,First Floor,Second Floor,L2,0,http://test,1,Test Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+Another Site,2,Another Tag,555 Wire Rd,,Wetumpka,AL,36092,USA,,Offiste Building,Bottom Floor,L0,0,http://test2,2,Level Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+Another Site,2,Another Tag,555 Wire Rd,,Wetumpka,AL,36092,USA,,Main Building,Main Floor,L1,0,http://test3,1,Main Floorspace,1,BLE Only,1,3,,,,,,,,,,,

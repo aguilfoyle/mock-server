@@ -1,0 +1,8 @@
+site-siteName,site-timezoneID,site-lumicastConfigTag,site-address1,site-address2,site-city,site-stateProvince,site-postalCode,site-country,site-serviceStatus,building-name,floor-name,floor-level,floor-verticalOrder,floor-mapServiceURL,floor-mapServiceType,floorspace-floorSpaceName,floorspace-codeBook_ID,floorspace-idMode,floorspace-fixtureType,floorspace-operatingPoint,floorspace-maxMountingHeight,floorspace-GTHeadingOffset,floorspace-GTHeight,floorspace-GTWidth,floorspace-GTX,floorspace-GTXRotation,floorspace-GTY,floorspace-GTYRotation,floorspace-mapAngleOffsetRadians,floorspace-mapOffsetX,floorspace-mapOffsetY
+tooltest006,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+tooltest007,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+tooltest008,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+tooltest009,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+tooltest010,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+tooltest011,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
+tooltest012,700,New Tag 178,123 Test Lane,,Montgomery,AL,36117,USA,,New Buidling,First Floor,L1,0,http://test,1,New Floorspace,1,VLC Only,0,1,,,,,,,,,,,
