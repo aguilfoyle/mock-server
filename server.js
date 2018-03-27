@@ -140,5 +140,5 @@ switch (myRole) {
 console.log('\x1b[32m', `Your current role is ${displayRole}` ,'\x1b[0m');
 
 //Listen via http & https
-httpServer.listen(3000);
-httpsServer.listen(3443);
+httpServer.listen(process.env.PORT || 3000);
+httpsServer.listen(process.env.PORT || 3443);
