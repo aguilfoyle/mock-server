@@ -11,6 +11,9 @@
   },
   "author": "Scott Davis <scott@davisplanet.com> (https://github.com/bobum)",
   "license": "ISC",
+  "engines": {
+    "node": "8.2.1"
+  },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.4",
