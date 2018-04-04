@@ -311,4 +311,28 @@ var GetAllSites = {
 };
 mocks.push(GetAllSites);
 
+var GetSite = {
+  name: 'GetSite',
+  mockRoute: '\/api\/v1\/navigator-configurations\/device-id/your_device_id/site-name/BLS%20-%20PMD?lumicast-version=2.3.0',
+  testScope: 'success',
+  testScenario: 'singleResult',
+  jsonTemplate: [{
+
+    singleResult: function () {
+      var result = [];
+      result.push(schemas.blsPMDSite);
+      return JSON.stringify({
+        result: result,
+        count: 1
+      });
+    },
+
+    noResults: function(){
+      return JSON.stringify(schemas.noResults);
+    }
+  }]
+
+};
+mocks.push(GetSite);
+
 exports.mocks = mocks;

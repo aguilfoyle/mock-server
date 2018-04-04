@@ -1446,6 +1446,698 @@ module.exports.blsPMDSiteList = {
   ]
 };
 
+module.exports.blsPMDSite = {
+  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/your_device_id/messages",
+  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fyour_device_id&sig=sSIykB%2f%2bNVrv4EEPaCaAqU86j5dKMWONcFdvhIY9P2Y%3d&se=1522932556&skn=Sender",
+  "writeToEventHub": "TRUE",
+  "siteId": 42,
+  "siteName": "BLS - PMD",
+  "lumicastEID": "2.2.0rc1",
+  "lumicastCID": "XfPcERh4",
+  "lumicastConfigTag": "",
+  "networkAnalystURL": "https://navigator-mapserver-103.acuitynext.io/arcgis/rest/services/acuity/acuity_demo_routes/NAServer/Route",
+  "lumicastConfigProxyURL": "https://17ybakvgrg.execute-api.us-west-1.amazonaws.com/prod/init",
+  "bleFloorSpaceChangeEnabled": true,
+  "lastUpdateUTCTimestamp": "2018-04-04 12:49:15.7342810",
+  "beaconProximityUUID": "5993a94c-7d97-4df7-9abf-e493bfd5d000",
+  "mobileSiteOptions": {
+    "demoAppConfig": {
+      "search": {
+        "type": "static",
+        "popularSearches": {
+          "type": "static",
+          "items": [
+            "Coffee",
+            "Candy",
+            "Chips",
+            "Coke",
+            "Trains",
+            "Product",
+            "Table",
+            "Developer"
+          ]
+        },
+        "items": [
+          {
+            "name": "Coffee",
+            "x": -84.0370963,
+            "y": 33.6835547,
+            "floorId": 8
+          },
+          {
+            "name": "Candy",
+            "x": -84.0371058,
+            "y": 33.6835144,
+            "floorId": 8
+          },
+          {
+            "name": "Coke",
+            "x": -84.0371079,
+            "y": 33.6835046,
+            "floorId": 8
+          },
+          {
+            "name": "Trains",
+            "x": -84.0370289,
+            "y": 33.6835121,
+            "floorId": 8
+          },
+          {
+            "name": "Developer",
+            "x": -84.0370572,
+            "y": 33.6835168,
+            "floorId": 9
+          }
+        ]
+      },
+      "destinations": {
+        "type": "static",
+        "items": [
+          {
+            "name": "Multi-item Shopping List",
+            "items": [
+              {
+                "name": "Coffee",
+                "x": -84.0370963,
+                "y": 33.6835547,
+                "floorId": 8
+              },
+              {
+                "name": "Candy",
+                "x": -84.0371058,
+                "y": 33.6835144,
+                "floorId": 8
+              },
+              {
+                "name": "Coke",
+                "x": -84.0371079,
+                "y": 33.6835046,
+                "floorId": 8
+              },
+              {
+                "name": "Trains",
+                "x": -84.0370289,
+                "y": 33.6835121,
+                "floorId": 8
+              }
+            ]
+          },
+          {
+            "name": "Just Coffee",
+            "items": [
+              {
+                "name": "Coffee",
+                "x": -84.0370963,
+                "y": 33.6835547,
+                "floorId": 8
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "swCornerLatitude": 33.683032373528,
+  "swCornerLongitude": -84.037686735391,
+  "neCornerLatitude": 33.683730960231,
+  "neCornerLongitude": -84.036098867654,
+  "floorSpaces": [
+    {
+      "floorSpaceId": 47,
+      "floorSpaceName": "IPS Mobile Area",
+      "mapOffsetX": 0,
+      "mapOffsetY": 0,
+      "coordinateConversionRule": 0,
+      "mapAngleOffsetRadians": 0,
+      "hasBLEBeacons": true,
+      "floor_ID": 8,
+      "gtXRotation": 1e-7,
+      "gtYRotation": 1e-7,
+      "gtWidth": null,
+      "gtHeight": null,
+      "gtX": null,
+      "gtY": null,
+      "gtHeadingOffset": null,
+      "mobileFloorSpaceOptions": null,
+      "lights": {
+        "max_mounting_height": "3.5",
+        "fixtureType": "RUBIK",
+        "operatingPoint": "0%",
+        "lights": [
+          {
+            "luminairePositionId": 68,
+            "floorSpace_ID": 47,
+            "id": 7,
+            "tag": "0",
+            "x1": -7.31,
+            "x2": -7.31,
+            "x3": -7.92,
+            "y1": -3.65,
+            "y2": -4.26,
+            "y3": -4.26,
+            "z": 0,
+            "BLEBeaconId": 10529405,
+            "floorSpaceCatalog_ID": 173,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 203,
+            "floorSpace_ID": 47,
+            "id": 4,
+            "tag": null,
+            "x1": -5.65,
+            "x2": -5.65,
+            "x3": -7.65,
+            "y1": -0.56,
+            "y2": -2.6,
+            "y3": -2.6,
+            "z": 0,
+            "BLEBeaconId": 10222718,
+            "floorSpaceCatalog_ID": 481,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 6.54,
+            "externalLength": 6.54,
+            "VLCEnabled": false
+          },
+          {
+            "luminairePositionId": 197,
+            "floorSpace_ID": 47,
+            "id": 22,
+            "tag": null,
+            "x1": -4.87,
+            "x2": -4.87,
+            "x3": -5.16,
+            "y1": -7.91,
+            "y2": -8.22,
+            "y3": -8.22,
+            "z": 0,
+            "BLEBeaconId": 11775601,
+            "floorSpaceCatalog_ID": 485,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 1,
+            "externalLength": 1,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 199,
+            "floorSpace_ID": 47,
+            "id": 20,
+            "tag": null,
+            "x1": -4.25,
+            "x2": -4.25,
+            "x3": -4.54,
+            "y1": -7.91,
+            "y2": -8.22,
+            "y3": -8.22,
+            "z": 0,
+            "BLEBeaconId": 4252614,
+            "floorSpaceCatalog_ID": 484,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 1,
+            "externalLength": 1,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 198,
+            "floorSpace_ID": 47,
+            "id": 13,
+            "tag": null,
+            "x1": -3.64,
+            "x2": -3.64,
+            "x3": -3.96,
+            "y1": -7.91,
+            "y2": -8.22,
+            "y3": -8.22,
+            "z": 0,
+            "BLEBeaconId": 8146165,
+            "floorSpaceCatalog_ID": 483,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 1,
+            "externalLength": 1,
+            "VLCEnabled": false
+          },
+          {
+            "luminairePositionId": 196,
+            "floorSpace_ID": 47,
+            "id": 5,
+            "tag": null,
+            "x1": -3.04,
+            "x2": -3.04,
+            "x3": -3.35,
+            "y1": -7.91,
+            "y2": -8.22,
+            "y3": -8.22,
+            "z": 0,
+            "BLEBeaconId": 3567150,
+            "floorSpaceCatalog_ID": 482,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 1,
+            "externalLength": 1,
+            "VLCEnabled": false
+          },
+          {
+            "luminairePositionId": 67,
+            "floorSpace_ID": 47,
+            "id": 9,
+            "tag": "0",
+            "x1": -0.6,
+            "x2": -0.6,
+            "x3": -1.21,
+            "y1": -3.65,
+            "y2": -4.26,
+            "y3": -4.26,
+            "z": 0,
+            "BLEBeaconId": 12312345,
+            "floorSpaceCatalog_ID": 172,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 202,
+            "floorSpace_ID": 47,
+            "id": 1,
+            "tag": null,
+            "x1": -0.56,
+            "x2": -0.56,
+            "x3": -2.6,
+            "y1": -0.56,
+            "y2": -2.6,
+            "y3": -2.6,
+            "z": 0,
+            "BLEBeaconId": 15916154,
+            "floorSpaceCatalog_ID": 563,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 6.54,
+            "externalLength": 6.54,
+            "VLCEnabled": false
+          }
+        ]
+      }
+    },
+    {
+      "floorSpaceId": 48,
+      "floorSpaceName": "Breakroom",
+      "mapOffsetX": 0,
+      "mapOffsetY": 0,
+      "coordinateConversionRule": 0,
+      "mapAngleOffsetRadians": 0,
+      "hasBLEBeacons": true,
+      "floor_ID": 8,
+      "gtXRotation": 0.00000194934715216,
+      "gtYRotation": -0.00000162207826755,
+      "gtWidth": 0.00000876872222281,
+      "gtHeight": 0.00000729657298302,
+      "gtX": -84.0371165727,
+      "gtY": 33.6834991615,
+      "gtHeadingOffset": 3.31,
+      "mobileFloorSpaceOptions": null,
+      "lights": {
+        "max_mounting_height": "3.65",
+        "fixtureType": "ESL",
+        "operatingPoint": "100%",
+        "lights": [
+          {
+            "luminairePositionId": 48,
+            "floorSpace_ID": 48,
+            "id": 32,
+            "tag": null,
+            "x1": -8.07,
+            "x2": -8.07,
+            "x3": -8.66,
+            "y1": -4.87,
+            "y2": -5.48,
+            "y3": -5.48,
+            "z": 0,
+            "BLEBeaconId": 11955837,
+            "floorSpaceCatalog_ID": 648,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 49,
+            "floorSpace_ID": 48,
+            "id": 33,
+            "tag": null,
+            "x1": -8.07,
+            "x2": -8.07,
+            "x3": -8.66,
+            "y1": -1.81,
+            "y2": -2.41,
+            "y3": -2.41,
+            "z": 0,
+            "BLEBeaconId": 3610456,
+            "floorSpaceCatalog_ID": 655,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 50,
+            "floorSpace_ID": 48,
+            "id": 16,
+            "tag": null,
+            "x1": -8.07,
+            "x2": -8.07,
+            "x3": -8.66,
+            "y1": -7.91,
+            "y2": -8.5,
+            "y3": -8.5,
+            "z": 0,
+            "BLEBeaconId": 15024039,
+            "floorSpaceCatalog_ID": 656,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 1.96,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 51,
+            "floorSpace_ID": 48,
+            "id": 15,
+            "tag": null,
+            "x1": -5.62,
+            "x2": -5.62,
+            "x3": -6.24,
+            "y1": -7.91,
+            "y2": -8.5,
+            "y3": -8.5,
+            "z": 0,
+            "BLEBeaconId": 4568967,
+            "floorSpaceCatalog_ID": 652,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2.02,
+            "externalLength": 1.96,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 52,
+            "floorSpace_ID": 48,
+            "id": 10,
+            "tag": null,
+            "x1": -5.62,
+            "x2": -5.62,
+            "x3": -6.24,
+            "y1": -4.87,
+            "y2": -5.48,
+            "y3": -5.48,
+            "z": 0,
+            "BLEBeaconId": 10399289,
+            "floorSpaceCatalog_ID": 653,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 53,
+            "floorSpace_ID": 48,
+            "id": 38,
+            "tag": null,
+            "x1": -5.62,
+            "x2": -5.62,
+            "x3": -6.24,
+            "y1": -1.82,
+            "y2": -2.43,
+            "y3": -2.43,
+            "z": 0,
+            "BLEBeaconId": 339351,
+            "floorSpaceCatalog_ID": 654,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 55,
+            "floorSpace_ID": 48,
+            "id": 11,
+            "tag": null,
+            "x1": -3.2,
+            "x2": -3.2,
+            "x3": -3.81,
+            "y1": -4.87,
+            "y2": -5.48,
+            "y3": -5.48,
+            "z": 0,
+            "BLEBeaconId": 7227098,
+            "floorSpaceCatalog_ID": 650,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 56,
+            "floorSpace_ID": 48,
+            "id": 37,
+            "tag": null,
+            "x1": -3.2,
+            "x2": -3.2,
+            "x3": -3.81,
+            "y1": -1.82,
+            "y2": -2.43,
+            "y3": -2.43,
+            "z": 0,
+            "BLEBeaconId": 1798856,
+            "floorSpaceCatalog_ID": 649,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": true
+          },
+          {
+            "luminairePositionId": 54,
+            "floorSpace_ID": 48,
+            "id": 31,
+            "tag": null,
+            "x1": -3.18,
+            "x2": -3.18,
+            "x3": -3.79,
+            "y1": -7.87,
+            "y2": -8.48,
+            "y3": -8.48,
+            "z": 0,
+            "BLEBeaconId": 13715993,
+            "floorSpaceCatalog_ID": 651,
+            "flagNotes": null,
+            "controlGroupId": null,
+            "externalWidth": 2,
+            "externalLength": 2,
+            "VLCEnabled": false
+          }
+        ]
+      }
+    }
+  ],
+  "buildings": [
+    {
+      "buildingID": 73,
+      "site_ID": 42,
+      "name": "BLS - PMD",
+      "active": true,
+      "image": null,
+      "hoursOfOperation": null
+    }
+  ],
+  "floors": [
+    {
+      "token": null,
+      "token_Expire_Date": null,
+      "authType": null,
+      "floorID": 8,
+      "building_ID": 73,
+      "name": "Breakroom",
+      "level": "L0",
+      "verticalOrder": 0,
+      "mapToken_ID": null,
+      "mapServiceType": "AGOL",
+      "mapServiceURL": "//tiles.arcgis.com/tiles/9zxxfC5qwWS4d1n9/arcgis/rest/services/OnlyPMD/MapServer",
+      "active": true,
+      "routeZ": 3
+    },
+    {
+      "token": null,
+      "token_Expire_Date": null,
+      "authType": null,
+      "floorID": 9,
+      "building_ID": 73,
+      "name": "IPS Mobile Area",
+      "level": "L1",
+      "verticalOrder": 1,
+      "mapToken_ID": null,
+      "mapServiceType": null,
+      "mapServiceURL": "",
+      "active": true,
+      "routeZ": 6
+    }
+  ],
+  "zones": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "zoneID": 16,
+          "site_ID": 42,
+          "floor_ID": 8,
+          "name": "DEMO_ENTER_ACTION_ZONE",
+          "zoneType": "ActionZone",
+          "enterTrigger": true,
+          "exitTrigger": true,
+          "dwellTriggerMS": 5000,
+          "messageContent": {
+            "messageType": 2,
+            "messageText": "Free XBOX!"
+          },
+          "hoursOfOperation": null
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.0370624512434,
+                33.6835016324744
+              ],
+              [
+                -84.0370550751686,
+                33.6835306472123
+              ],
+              [
+                -84.0370195358992,
+                33.6835250674557
+              ],
+              [
+                -84.0370255708694,
+                33.6834954947402
+              ],
+              [
+                -84.0370624512434,
+                33.6835016324744
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "zoneID": 17,
+          "site_ID": 42,
+          "floor_ID": 8,
+          "name": "DEMO_DWELL_ACTION_ZONE",
+          "zoneType": "ActionZone",
+          "enterTrigger": true,
+          "exitTrigger": true,
+          "dwellTriggerMS": 5000,
+          "messageContent": {
+            "messageType": "2",
+            "messageText": "Free PS4s!"
+          },
+          "hoursOfOperation": null
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.0370564162731,
+                33.6835606383973
+              ],
+              [
+                -84.0370574221015,
+                33.6835369244379
+              ],
+              [
+                -84.0370359644294,
+                33.6835419462181
+              ],
+              [
+                -84.037040323019,
+                33.6835556166182
+              ],
+              [
+                -84.0370564162731,
+                33.6835606383973
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "zoneID": 47,
+          "site_ID": 42,
+          "floor_ID": 9,
+          "name": "TEST_ACTION_ZONE",
+          "zoneType": "ActionZone",
+          "enterTrigger": true,
+          "exitTrigger": true,
+          "dwellTriggerMS": 5000,
+          "messageContent": {
+            "name": "hello",
+            "description": "description",
+            "youtube": "sIRHs6Di1pk"
+          },
+          "hoursOfOperation": null
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.0370906144381,
+                33.6835016324744
+              ],
+              [
+                -84.0370812267065,
+                33.6835390168463
+              ],
+              [
+                -84.0370222181082,
+                33.683527857334
+              ],
+              [
+                -84.0370342880487,
+                33.6834910309332
+              ],
+              [
+                -84.0370906144381,
+                33.6835016324744
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+};
+
 module.exports.floorMapToken = {
     "floorID": "{{int 100 1000}}",
     "building_ID": "{{int 100 1000}}",
