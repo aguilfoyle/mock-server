@@ -282,7 +282,7 @@ var GetAllSites = {
 
     singleResult: function () {
       var result = [];
-      result.push(schemas.trueSite);
+      result.push(schemas.blsPMDSite);
       return JSON.stringify({
         result: result,
         count: 1
@@ -292,7 +292,8 @@ var GetAllSites = {
     multipleResults: function () {
       var result = [];
       var count = 10;
-      for (var i = 0; i < count; i++) {
+        result.push(schemas.blsPMDSite);
+      result[0].id = schemas.wellKnown.blsPMD.id;
         result.push(schemas.trueSite);
       }
       return JSON.stringify({
