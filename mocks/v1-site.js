@@ -313,7 +313,7 @@ mocks.push(GetAllSites);
 
 var GetSite = {
   name: 'GetSite',
-  mockRoute: '\/api\/v1\/navigator-configurations\/device-id/your_device_id/site-name/BLS%20-%20PMD?lumicast-version=2.3.0',
+  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/your_device_id\/site-name\/BLS%20-%20PMD?lumicast-version=2.3.0',
   testScope: 'success',
   testScenario: 'singleResult',
   jsonTemplate: [{
