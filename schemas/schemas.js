@@ -1428,7 +1428,7 @@ module.exports.trueSite = {
   ]
 };
 
-module.exports.blsPMDSite = {
+module.exports.blsPMDSiteList = {
   "siteId": 42,
   "siteName": "BLS - PMD",
   "serviceStatus": "ACTIVE",
