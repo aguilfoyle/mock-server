@@ -38,6 +38,9 @@ module.exports.floorSpaceMap = {
 };
 
 module.exports.wellKnown = {
+    blsPMD:{
+        id: 42
+    },
     application:{
         id: 47,
         name: "IPS_AdminTool"
@@ -1421,6 +1424,24 @@ module.exports.trueSite = {
       "floorSpaceId": 123,
       "floorSpaceName": "Default FloorSpace-vlctest1",
       "hasBLEBeacons": false
+    }
+  ]
+};
+
+module.exports.blsPMDSite = {
+  "siteId": 42,
+  "siteName": "BLS - PMD",
+  "serviceStatus": "ACTIVE",
+  "floorSpaceSummaryDTO": [
+    {
+      "floorSpaceId": 47,
+      "floorSpaceName": "IPS Mobile Area",
+      "hasBLEBeacons": true
+    },
+    {
+      "floorSpaceId": 48,
+      "floorSpaceName": "Breakroom",
+      "hasBLEBeacons": true
     }
   ]
 };
