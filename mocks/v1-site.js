@@ -336,9 +336,8 @@ var GetSite = {
 mocks.push(GetSite);
 
 var GetSiteByBeacon = {
-
   name: 'GetSiteByBeacon',
-  mackRoute: '\/api\/v1\/navigator-configurations\/device-id\/mghtest01\/beacon-ids',
+  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/mghtest01\/beacon-ids',
   testScope: 'success',
   testScenario: 'singleResult',
   jsonTemplate: [{
