@@ -358,6 +358,6 @@ var GetSiteByBeacon = {
   }]
 
 };
-mocks.push(GetSite);
+mocks.push(GetSiteByBeacon);
 
 exports.mocks = mocks;
