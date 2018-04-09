@@ -313,7 +313,7 @@ mocks.push(GetAllSites);
 
 var GetSite = {
   name: 'GetSite',
-  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/A081539B-F1D7-4932-A9BF-667EEC1283B9\/site-name\/BLS%20-%20PMD',
+  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/.*\/site-name\/BLS%20-%20PMD',
   testScope: 'success',
   testScenario: 'singleResult',
   jsonTemplate: [{
@@ -337,7 +337,7 @@ mocks.push(GetSite);
 
 var GetSiteByBeacon = {
   name: 'GetSiteByBeacon',
-  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/mghtest01\/beacon-ids',
+  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/.*\/beacon-ids',
   testScope: 'success',
   testScenario: 'singleResult',
   jsonTemplate: [{
