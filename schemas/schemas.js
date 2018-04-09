@@ -1447,8 +1447,8 @@ module.exports.blsPMDSiteList = {
 };
 
 module.exports.blsPMDSite = {
-  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/your_device_id/messages",
-  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fyour_device_id&sig=sSIykB%2f%2bNVrv4EEPaCaAqU86j5dKMWONcFdvhIY9P2Y%3d&se=1522932556&skn=Sender",
+  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/U3Rhbmk2cDE2MDJ8MTUyMzMwNDE4MTEzNA==/messages",
+  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fU3Rhbmk2cDE2MDJ8MTUyMzMwNDE4MTEzNA%3d%3d&sig=XFwTcy14rlYnsWuPKTueDKYiYzlzvPcniPQrs1OGHYc%3d&se=1523394885&skn=Sender",
   "writeToEventHub": "TRUE",
   "siteId": 42,
   "siteName": "BLS - PMD",
@@ -1458,7 +1458,7 @@ module.exports.blsPMDSite = {
   "networkAnalystURL": "https://navigator-mapserver-103.acuitynext.io/arcgis/rest/services/acuity/acuity_demo_routes/NAServer/Route",
   "lumicastConfigProxyURL": "https://17ybakvgrg.execute-api.us-west-1.amazonaws.com/prod/init",
   "bleFloorSpaceChangeEnabled": true,
-  "lastUpdateUTCTimestamp": "2018-04-04 12:49:15.7342810",
+  "lastUpdateUTCTimestamp": "2018-04-09 21:14:45.1274309",
   "beaconProximityUUID": "5993a94c-7d97-4df7-9abf-e493bfd5d000",
   "mobileSiteOptions": {
     "demoAppConfig": {
@@ -1570,9 +1570,9 @@ module.exports.blsPMDSite = {
       "coordinateConversionRule": 0,
       "mapAngleOffsetRadians": 0,
       "hasBLEBeacons": true,
-      "floor_ID": 8,
-      "gtXRotation": 1e-7,
-      "gtYRotation": 1e-7,
+      "floor_ID": 9,
+      "gtXRotation": null,
+      "gtYRotation": null,
       "gtWidth": null,
       "gtHeight": null,
       "gtX": null,
@@ -1772,7 +1772,7 @@ module.exports.blsPMDSite = {
           {
             "luminairePositionId": 48,
             "floorSpace_ID": 48,
-            "id": 32,
+            "id": 19,
             "tag": null,
             "x1": -8.07,
             "x2": -8.07,
@@ -1781,7 +1781,7 @@ module.exports.blsPMDSite = {
             "y2": -5.48,
             "y3": -5.48,
             "z": 0,
-            "BLEBeaconId": 11955837,
+            "BLEBeaconId": 9853169,
             "floorSpaceCatalog_ID": 648,
             "flagNotes": null,
             "controlGroupId": null,
@@ -1812,7 +1812,7 @@ module.exports.blsPMDSite = {
           {
             "luminairePositionId": 50,
             "floorSpace_ID": 48,
-            "id": 16,
+            "id": 12,
             "tag": null,
             "x1": -8.07,
             "x2": -8.07,
@@ -1821,8 +1821,8 @@ module.exports.blsPMDSite = {
             "y2": -8.5,
             "y3": -8.5,
             "z": 0,
-            "BLEBeaconId": 15024039,
-            "floorSpaceCatalog_ID": 656,
+            "BLEBeaconId": 4586618,
+            "floorSpaceCatalog_ID": 661,
             "flagNotes": null,
             "controlGroupId": null,
             "externalWidth": 2,
@@ -1841,8 +1841,8 @@ module.exports.blsPMDSite = {
             "y2": -8.5,
             "y3": -8.5,
             "z": 0,
-            "BLEBeaconId": 4568967,
-            "floorSpaceCatalog_ID": 652,
+            "BLEBeaconId": 9751903,
+            "floorSpaceCatalog_ID": 662,
             "flagNotes": null,
             "controlGroupId": null,
             "externalWidth": 2.02,
@@ -2144,11 +2144,11 @@ module.exports.blsPMDSiteByBeacon = {
       "siteID": 42,
       "siteName": "BLS - PMD",
       "serviceStatus": "ACTIVE",
-      "beaconIDCount": 6
+      "beaconIDCount": 1
     }
   ],
-  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/mghtest01/messages",
-  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fmghtest01&sig=LsOEGFbCNWjMa4Nl3TEDgRumlJrEoiF%2b%2fEF0usUEM84%3d&se=1523374076&skn=Sender",
+  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/U3Rhbmk2cDE2MDJ8MTUyMzMwNDE4MTEzNA==/messages",
+  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fU3Rhbmk2cDE2MDJ8MTUyMzMwNDE4MTEzNA%3d%3d&sig=uNFDExG5k0zYd%2fE5Z6A1bwoEtCj6q63mfyy4A%2fdp9n8%3d&se=1523391526&skn=Sender",
   "writeToEventHub": "TRUE",
   "siteId": 42,
   "siteName": "BLS - PMD",
@@ -2158,7 +2158,7 @@ module.exports.blsPMDSiteByBeacon = {
   "networkAnalystURL": "https://navigator-mapserver-103.acuitynext.io/arcgis/rest/services/acuity/acuity_demo_routes/NAServer/Route",
   "lumicastConfigProxyURL": "https://17ybakvgrg.execute-api.us-west-1.amazonaws.com/prod/init",
   "bleFloorSpaceChangeEnabled": true,
-  "lastUpdateUTCTimestamp": "2018-04-09 15:27:55.8190357",
+  "lastUpdateUTCTimestamp": "2018-04-09 20:18:45.7600035",
   "beaconProximityUUID": "5993a94c-7d97-4df7-9abf-e493bfd5d000",
   "mobileSiteOptions": {
     "demoAppConfig": {
