@@ -335,4 +335,29 @@ var GetSite = {
 };
 mocks.push(GetSite);
 
+var GetSiteByBeacon = {
+
+  name: 'GetSiteByBeacon',
+  mackRoute: '\/api\/v1\/navigator-configurations\/device-id\/mghtest01\/beacon-ids',
+  testScope: 'success',
+  testScenario: 'singleResult',
+  jsonTemplate: [{
+
+    singleResult: function () {
+      var result = [];
+      result.push(schemas.blsPMDSiteByBeacon);
+      return JSON.stringify({
+        result: result,
+        count: 1
+      });
+    },
+
+    noResults: function(){
+      return JSON.stringify(schemas.noResults);
+    }
+  }]
+
+};
+mocks.push(GetSite);
+
 exports.mocks = mocks;
