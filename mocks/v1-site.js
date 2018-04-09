@@ -313,7 +313,7 @@ mocks.push(GetAllSites);
 
 var GetSite = {
   name: 'GetSite',
-  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/your_device_id\/site-name\/BLS%20-%20PMD',
+  mockRoute: '\/api\/v1\/navigator-configurations\/device-id\/A081539B-F1D7-4932-A9BF-667EEC1283B9\/site-name\/BLS%20-%20PMD',
   testScope: 'success',
   testScenario: 'singleResult',
   jsonTemplate: [{
