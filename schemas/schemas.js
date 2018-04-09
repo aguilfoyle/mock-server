@@ -2144,11 +2144,11 @@ module.exports.blsPMDSiteByBeacon = {
       "siteID": 42,
       "siteName": "BLS - PMD",
       "serviceStatus": "ACTIVE",
-      "beaconIDCount": 6
+      "beaconIDCount": 1
     }
   ],
-  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/mghtest01/messages",
-  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fmghtest01&sig=LsOEGFbCNWjMa4Nl3TEDgRumlJrEoiF%2b%2fEF0usUEM84%3d&se=1523374076&skn=Sender",
+  "eventHubSendUrl": "https://posing01ehns2ps7mvh2ku.servicebus.windows.net/posing01eh2ps7mvh2ku/publishers/U3Rhbmk2cDE2MDJ8MTUyMzMwNDE4MTEzNA==/messages",
+  "sasToken": "SharedAccessSignature sr=sb%3a%2f%2fposing01ehns2ps7mvh2ku.servicebus.windows.net%2fposing01eh2ps7mvh2ku%2fPublishers%2fU3Rhbmk2cDE2MDJ8MTUyMzMwNDE4MTEzNA%3d%3d&sig=uNFDExG5k0zYd%2fE5Z6A1bwoEtCj6q63mfyy4A%2fdp9n8%3d&se=1523391526&skn=Sender",
   "writeToEventHub": "TRUE",
   "siteId": 42,
   "siteName": "BLS - PMD",
@@ -2158,7 +2158,7 @@ module.exports.blsPMDSiteByBeacon = {
   "networkAnalystURL": "https://navigator-mapserver-103.acuitynext.io/arcgis/rest/services/acuity/acuity_demo_routes/NAServer/Route",
   "lumicastConfigProxyURL": "https://17ybakvgrg.execute-api.us-west-1.amazonaws.com/prod/init",
   "bleFloorSpaceChangeEnabled": true,
-  "lastUpdateUTCTimestamp": "2018-04-09 15:27:55.8190357",
+  "lastUpdateUTCTimestamp": "2018-04-09 20:18:45.7600035",
   "beaconProximityUUID": "5993a94c-7d97-4df7-9abf-e493bfd5d000",
   "mobileSiteOptions": {
     "demoAppConfig": {
