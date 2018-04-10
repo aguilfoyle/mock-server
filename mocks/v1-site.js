@@ -319,12 +319,7 @@ var GetSite = {
   jsonTemplate: [{
 
     singleResult: function () {
-      var result = [];
-      result.push(schemas.blsPMDSite);
-      return JSON.stringify({
-        result: result,
-        count: 1
-      });
+      return JSON.stringify(schemas.blsPMDSite);
     },
 
     noResults: function(){
@@ -343,9 +338,7 @@ var GetSiteByBeacon = {
   jsonTemplate: [{
 
     singleResult: function () {
-      var result = [];
-      result.push(schemas.blsPMDSiteByBeacon);
-      return JSON.stringify(result);
+      return JSON.stringify(schemas.blsPMDSiteByBeacon);
     },
 
     noResults: function(){
