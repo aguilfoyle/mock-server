@@ -345,10 +345,7 @@ var GetSiteByBeacon = {
     singleResult: function () {
       var result = [];
       result.push(schemas.blsPMDSiteByBeacon);
-      return JSON.stringify({
-        result: result,
-        count: 1
-      });
+      return JSON.stringify(result);
     },
 
     noResults: function(){
