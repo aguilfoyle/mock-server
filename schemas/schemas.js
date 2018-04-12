@@ -3330,7 +3330,7 @@ module.exports.blsPMDSiteByBeacon = {
       "mapServiceType": "AGOL",
       "mapServiceURL": "//tiles.arcgis.com/tiles/9zxxfC5qwWS4d1n9/arcgis/rest/services/OnlyPMD/MapServer",
       "active": true,
-      "routeZ": 0
+      "routeZ": 1
     },
     {
       "token": null,
@@ -3345,7 +3345,7 @@ module.exports.blsPMDSiteByBeacon = {
       "mapServiceType": null,
       "mapServiceURL": "",
       "active": true,
-      "routeZ": 0
+      "routeZ": 2
     },
     {
       "token": null,
@@ -3360,7 +3360,7 @@ module.exports.blsPMDSiteByBeacon = {
       "mapServiceType": null,
       "mapServiceURL": null,
       "active": true,
-      "routeZ": 0
+      "routeZ": 4
     }
   ],
   "zones": {
