@@ -3345,7 +3345,7 @@ module.exports.blsPMDSiteByBeacon = {
       "mapServiceType": null,
       "mapServiceURL": "",
       "active": true,
-      "routeZ": 0
+      "routeZ": 3
     },
     {
       "token": null,
@@ -3360,7 +3360,7 @@ module.exports.blsPMDSiteByBeacon = {
       "mapServiceType": null,
       "mapServiceURL": null,
       "active": true,
-      "routeZ": 0
+      "routeZ": 4
     }
   ],
   "zones": {
