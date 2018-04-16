@@ -357,7 +357,12 @@ var GetLiveMapBySite = {
   jsonTemplate: [{
 
     singleResult: function () {
-      return JSON.stringify(schemas.blsPMDSiteLiveMap);
+      var result = [];
+//      result.push(schemas.blsPMDSiteLiveMap);
+      return JSON.stringify({
+        result: result,
+        count: 0
+      });
     },
 
     noResults: function(){
