@@ -352,7 +352,7 @@ mocks.push(GetSiteByBeacon);
 //
 // Route for live map by site
 //
-// Force update again, and again
+// Force update again, and again, and again
 
 var GetLiveMapBySite = {
   name: 'GetLiveMapBySite',
@@ -373,9 +373,9 @@ var GetLiveMapBySite = {
     multipleResults: function () {
       var result = [];
       var count = 3;
-      result.push(schemas.blsPMDSiteLiveMap1);
-      result.push(schemas.blsPMDSiteLiveMap2);
       result.push(schemas.blsPMDSiteLiveMap3);
+      result.push(schemas.blsPMDSiteLiveMap2);
+      result.push(schemas.blsPMDSiteLiveMap1);
       return JSON.stringify({
         result:result,
         count: count
