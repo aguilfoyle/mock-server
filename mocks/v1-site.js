@@ -352,7 +352,7 @@ mocks.push(GetSiteByBeacon);
 //
 // Route for live map by site
 //
-// Force update again
+// Force update again, and again
 
 var GetLiveMapBySite = {
   name: 'GetLiveMapBySite',
