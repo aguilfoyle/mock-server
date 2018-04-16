@@ -372,23 +372,9 @@ var GetLiveMapBySite = {
     multipleResults: function () {
       var result = [];
       var count = 3;
-      for (var i = 0; i < count; i++) {
-        if (i == 1) {
-          result[i].deviceID = '9EB54DD3-3D46-47C0-B53C-4F2EF7215D98';
-          result[i].longitude = -84.0370222233284;
-          result[i].latitude = 33.6835395007525;
-          result[i].captureType = 'v';
-          result[i].zone_IDs = "25,27"
-        }
-        if (i == 2) {
-          result[i].deviceID = 'U2Ftc3VuZyBTOHwxNTIzNTU1NTk0NzM0';
-          result[i].longitude = -84.0370222233264;
-          result[i].latitude = 33.6835395007515;
-          result[i].captureType = 'b';
-          result[i].zone_IDs = "27"
-        }
-        result.push(schemas.blsPMDSiteLiveMap);
-      }
+      result.push(schemas.blsPMDSiteLiveMap1);
+      result.push(schemas.blsPMDSiteLiveMap2);
+      result.push(schemas.blsPMDSiteLiveMap3);
       return JSON.stringify({
         result:result,
         count: count
