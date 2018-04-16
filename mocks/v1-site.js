@@ -358,7 +358,7 @@ var GetLiveMapBySite = {
 
     singleResult: function () {
       var result = [];
-      result.push(schemas.blsPMDSiteLiveMap);
+//      result.push(schemas.blsPMDSiteLiveMap);
       return JSON.stringify({
         result: result,
         count: 0
