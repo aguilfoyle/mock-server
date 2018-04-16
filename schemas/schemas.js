@@ -2458,8 +2458,8 @@ module.exports.blsPMDSite = {
 
 module.exports.blsPMDSiteLiveMap1 = {
       "deviceID": "TW9ja3Rlc3REZXZpY2UwMXwxNTIzOTEyNzAwMzI0",
-      "longitude": -84.0370669393243,
-      "latitude": 33.6835452324736,
+      "longitude": -84.0370122233284,
+      "latitude": 33.6835395009525,
       "timeStamp": "2018-04-16T15:00:43.794Z",
       "floorID": 22,
       "floorSpaceID": 30,
