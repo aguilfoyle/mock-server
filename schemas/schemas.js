@@ -2521,6 +2521,10 @@ module.exports.blsPMDSite = {
   }
 };
 
+module.exports.blsPMDSiteLiveMap = {
+
+};
+
 module.exports.blsPMDSiteByBeacon = {
   "siteIDsWithCountForBeaconIDs": [
     {
