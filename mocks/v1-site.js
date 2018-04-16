@@ -353,7 +353,7 @@ var GetLiveMapBySite = {
   name: 'GetLiveMapBySite',
   mockRoute: '\/api\/v1\/insights\/positions\/site-id\/.*\/live-map',
   testScope: 'success',
-  testScenario: 'singleResult',
+  testScenario: 'multipleResults',
   jsonTemplate: [{
 
     singleResult: function () {
@@ -362,6 +362,18 @@ var GetLiveMapBySite = {
       return JSON.stringify({
         result: result,
         count: 0
+      });
+    },
+
+    multipleResults: function () {
+      var result = [];
+      var count = 3;
+      for (var i = 0; i < count; i++) {
+        result.push(schemas.blsPMDSiteLiveMap);
+      }
+      return JSON.stringify({
+        result:result,
+        count: count
       });
     },
 
