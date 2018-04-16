@@ -2483,7 +2483,7 @@ module.exports.blsPMDSiteLiveMap2 = {
 module.exports.blsPMDSiteLiveMap3 = {
        "deviceID": "TW9ja3Rlc3REZXZpY2UwM3wxNTIzOTExOTE0MDQz",
        "longitude": -84.0370222213284,
-       "latitude": 33.6835395005525,
+       "latitude": 33.6835395015525,
        "timeStamp": "2018-04-16T15:00:47.27Z",
        "floorID": 22,
        "floorSpaceID": 164,
