@@ -2521,8 +2521,7 @@ module.exports.blsPMDSite = {
   }
 };
 
-module.exports.blsPMDSiteLiveMap = {
-//    {
+module.exports.blsPMDSiteLiveMap1 = {
       "deviceID": "U3RhbmlwaG9uZTZwbHVzIHwxNTIzODg1OTE2NjI2",
       "longitude": -84.0370669493243,
       "latitude": 33.6835452324736,
@@ -2532,29 +2531,30 @@ module.exports.blsPMDSiteLiveMap = {
       "captureType": "b",
       "site_ID": 22,
       "zone_IDs": "25,27"
-//    },
-//     {
-//       "deviceID": "9EB54DD3-3D46-47C0-B53C-4F2EF7215D98",
-//       "longitude": -84.0370222233284,
-//       "latitude": 33.6835395007525,
-//       "timeStamp": "2018-04-16T15:00:45.627Z",
-//       "floorID": 22,
-//       "floorSpaceID": 30,
-//       "captureType": "v",
-//       "site_ID": 22,
-//       "zone_IDs": "25"
-//     },
-//     {
-//       "deviceID": "U2Ftc3VuZyBTOHwxNTIzNTU1NTk0NzM0",
-//       "longitude": 0,
-//       "latitude": 0,
-//       "timeStamp": "2018-04-16T15:00:47.27Z",
-//       "floorID": 22,
-//       "floorSpaceID": 164,
-//       "captureType": "b",
-//       "site_ID": 22,
-//       "zone_IDs": ""
-//     }
+};
+
+module.exports.blsPMDSiteLiveMap2 = {
+       "deviceID": "9EB54DD3-3D46-47C0-B53C-4F2EF7215D98",
+       "longitude": -84.0370222233284,
+       "latitude": 33.6835395007525,
+       "timeStamp": "2018-04-16T15:00:45.627Z",
+       "floorID": 22,
+       "floorSpaceID": 30,
+       "captureType": "v",
+       "site_ID": 22,
+       "zone_IDs": "25"
+};
+
+module.exports.blsPMDSiteLiveMap3 = {
+       "deviceID": "U2Ftc3VuZyBTOHwxNTIzNTU1NTk0NzM0",
+       "longitude": -84.0370222233284,
+       "latitude": 33.6835395007525,
+       "timeStamp": "2018-04-16T15:00:47.27Z",
+       "floorID": 22,
+       "floorSpaceID": 164,
+       "captureType": "b",
+       "site_ID": 22,
+       "zone_IDs": "25"
 };
 
 module.exports.blsPMDSiteByBeacon = {
