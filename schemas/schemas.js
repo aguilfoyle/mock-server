@@ -2166,71 +2166,6 @@ module.exports.blsPMDSite = {
           }
         ]
       }
-    },
-    {
-      "floorSpaceId": 164,
-      "floorSpaceName": "Rapid7 Testing",
-      "mapOffsetX": 0,
-      "mapOffsetY": 0,
-      "coordinateConversionRule": 0,
-      "mapAngleOffsetRadians": 0,
-      "hasBLEBeacons": true,
-      "floor_ID": 22,
-      "gtXRotation": null,
-      "gtYRotation": null,
-      "gtWidth": null,
-      "gtHeight": null,
-      "gtX": null,
-      "gtY": null,
-      "gtHeadingOffset": null,
-      "mobileFloorSpaceOptions": null,
-      "lights": {
-        "max_mounting_height": "5",
-        "fixtureType": "ESL",
-        "operatingPoint": "100%",
-        "lights": [
-          {
-            "luminairePositionId": 116401,
-            "floorSpace_ID": 164,
-            "id": 16,
-            "tag": "0",
-            "x1": -2.43,
-            "x2": -2.43,
-            "x3": -3.03,
-            "y1": -4.87,
-            "y2": -5.47,
-            "y3": -5.47,
-            "z": 0,
-            "BLEBeaconId": 15010525,
-            "floorSpaceCatalog_ID": 32892,
-            "flagNotes": null,
-            "controlGroupId": null,
-            "externalWidth": 1.96,
-            "externalLength": 1.96,
-            "VLCEnabled": false
-          },
-          {
-            "luminairePositionId": 116402,
-            "floorSpace_ID": 164,
-            "id": 25,
-            "tag": "0",
-            "x1": -3.64,
-            "x2": -3.64,
-            "x3": -4.24,
-            "y1": -4.87,
-            "y2": -5.47,
-            "y3": -5.47,
-            "z": 0,
-            "BLEBeaconId": 13779203,
-            "floorSpaceCatalog_ID": 32893,
-            "flagNotes": null,
-            "controlGroupId": null,
-            "externalWidth": 1.96,
-            "externalLength": 1.96,
-            "VLCEnabled": false
-          }
-        ]
-      }
     }
   ],
   "buildings": [
@@ -2534,7 +2469,7 @@ module.exports.blsPMDSiteLiveMap1 = {
 };
 
 module.exports.blsPMDSiteLiveMap2 = {
-       "deviceID": "9EB54DD3-3D46-47C0-B53C-4F2EF7215D98",
+       "deviceID": "TW9ja3Rlc3REZXZpY2UwMnwxNTIzOTA0MDg3ODk5",
        "longitude": -84.0370222233284,
        "latitude": 33.6835395007525,
        "timeStamp": "2018-04-16T15:00:45.627Z",
