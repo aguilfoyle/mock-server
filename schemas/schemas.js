@@ -2457,7 +2457,7 @@ module.exports.blsPMDSite = {
 };
 
 module.exports.blsPMDSiteLiveMap1 = {
-      "deviceID": "U3RhbmlwaG9uZTZwbHVzIHwxNTIzODg1OTE2NjI2",
+      "deviceID": "TW9ja3Rlc3REZXZpY2UwMXwxNTIzOTEyNzAwMzI0",
       "longitude": -84.0370669493243,
       "latitude": 33.6835452324736,
       "timeStamp": "2018-04-16T15:00:43.794Z",
@@ -2481,7 +2481,7 @@ module.exports.blsPMDSiteLiveMap2 = {
 };
 
 module.exports.blsPMDSiteLiveMap3 = {
-       "deviceID": "U2Ftc3VuZyBTOHwxNTIzNTU1NTk0NzM0",
+       "deviceID": "TW9ja3Rlc3REZXZpY2UwM3wxNTIzOTExOTE0MDQz",
        "longitude": -84.0370222233284,
        "latitude": 33.6835395007525,
        "timeStamp": "2018-04-16T15:00:47.27Z",
