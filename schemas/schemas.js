@@ -2534,7 +2534,7 @@ module.exports.blsPMDSiteLiveMap1 = {
 };
 
 module.exports.blsPMDSiteLiveMap2 = {
-       "deviceID": "9EB54DD3-3D46-47C0-B53C-4F2EF7215D98",
+       "deviceID": "c375a28d96f29c98",
        "longitude": -84.0370222233284,
        "latitude": 33.6835395007525,
        "timeStamp": "2018-04-16T15:00:45.627Z",
