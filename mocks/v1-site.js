@@ -349,4 +349,23 @@ var GetSiteByBeacon = {
 };
 mocks.push(GetSiteByBeacon);
 
+var GetLiveMapBySite = {
+  name: 'GetLiveMapBySite',
+  mockRoute: '\/api\/v1\/insights\/positions\/site-id\/.*\/live-map',
+  testScope: 'success',
+  testScenario: 'singleResult',
+  jsonTemplate: [{
+
+    singleResult: function () {
+      return JSON.stringify(schemas.blsPMDSiteLiveMap);
+    },
+
+    noResults: function(){
+      return JSON.stringify(schemas.noResults);
+    }
+  }]
+
+};
+mocks.push(GetLiveMapBySite);
+
 exports.mocks = mocks;
