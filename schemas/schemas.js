@@ -2469,18 +2469,6 @@ module.exports.blsPMDSiteLiveMap1 = {
 };
 
 module.exports.blsPMDSiteLiveMap2 = {
-       "deviceID": "TW9ja3Rlc3REZXZpY2UwMnwxNTIzOTA0MDg3ODk5",
-       "longitude": -84.037038523284,
-       "latitude":   33.6834975007525,
-       "timeStamp": "2018-04-16T15:00:45.627Z",
-       "floorID": 22,
-       "floorSpaceID": 30,
-       "captureType": "v",
-       "site_ID": 22,
-       "zone_IDs": "25"
-};
-
-module.exports.blsPMDSiteLiveMap3 = {
        "deviceID": "TW9ja3Rlc3REZXZpY2UwM3wxNTIzOTExOTE0MDQz",
        "longitude": -84.0370222213284,
        "latitude": 33.6835295015525,
@@ -2490,6 +2478,18 @@ module.exports.blsPMDSiteLiveMap3 = {
        "captureType": "b",
        "site_ID": 22,
        "zone_IDs": "25"
+};
+
+module.exports.blsPMDSiteLiveMap3 = {
+  "deviceID": "TW9ja3Rlc3REZXZpY2UwMnwxNTIzOTA0MDg3ODk5",
+  "longitude": -84.037038523284,
+  "latitude":   33.6834975007525,
+  "timeStamp": "2018-04-16T15:00:45.627Z",
+  "floorID": 22,
+  "floorSpaceID": 30,
+  "captureType": "v",
+  "site_ID": 22,
+  "zone_IDs": "25"
 };
 
 module.exports.blsPMDSiteByBeacon = {
