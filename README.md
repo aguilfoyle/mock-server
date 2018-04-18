@@ -1,10 +1,14 @@
 # mock-server
 
+## Heroku Mock Server
+
 Pushing to the GITHUG develop branch will cause the Heroku mock server at https://mobile-mocks.herokuapp.com/ to be updated.
 
 If you are using the Acuity repo and want to push to GITHUB, you will need to add the GITHUB remote
   git remote add github git@github.com:AtriusDev/mock-server.git
   
+## Local Host Mock Server
+
 If you intend to run this as a local mock, you will need to get your local IP address and update the parnterStore under 'Localmock' to point the your actual IP address
 
 Example:
@@ -34,3 +38,9 @@ You can start the local mock server by doing the following command at the comman
 ```
 $ npm start
 ```
+
+## Building Blocks
+
+This server is based upon the the `mock-json-api` and the `dummy-json` packages.  For more about the `mock-json-api` see https://github.com/webroo/dummy-json
+For more information about the `dummy-json` see https://github.com/webroo/dummy-json
+
