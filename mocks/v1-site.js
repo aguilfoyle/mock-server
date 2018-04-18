@@ -375,7 +375,7 @@ var GetLiveMapBySite = {
       var count = 3;
       result.push(schemas.blsPMDSiteLiveMap1);
       result.push(schemas.blsPMDSiteLiveMap2);
-      result.push(schemas.blsPMDSiteLiveMap3);
+//      result.push(schemas.blsPMDSiteLiveMap3);
       return JSON.stringify({
         result:result,
         count: count
