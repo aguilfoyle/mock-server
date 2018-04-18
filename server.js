@@ -143,7 +143,7 @@ console.log('\x1b[32m', `Your current role is ${displayRole}` ,'\x1b[0m');
 httpServer.listen(process.env.PORT || 3000);
 
 // Only create the HTTPS port if this is not going to the Heroku site
-if (process.env.PORT) {
+if (!process.env.PORT) {
     console.log('Local mock, creating https server');
     httpsServer.listen(process.env.PORT || 3443);
 }
