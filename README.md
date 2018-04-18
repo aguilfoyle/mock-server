@@ -29,7 +29,7 @@ en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 	status: active
 ...
 ```
-You can start the local mock server by doing the following command at the command line.
+You can start the local mock server by doing the following command at the command line within the 'mock-server' directory.
 
 ```
 $ npm start
