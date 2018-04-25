@@ -2458,8 +2458,8 @@ module.exports.blsPMDSite = {
 
 module.exports.blsPMDSiteLiveMap1 = {
       "deviceID": "TW9ja3Rlc3REZXZpY2UwMXwxNTIzOTEyNzAwMzI0",
-      "longitude": -84.0370122234284,
-      "latitude":   33.6835495006525,
+      "longitude": -84.0370822234284,
+      "latitude":   33.6835595006525,
       "timeStamp": "2018-04-16T15:00:43.794Z",
       "floorID": 22,
       "floorSpaceID": 30,
@@ -2470,8 +2470,8 @@ module.exports.blsPMDSiteLiveMap1 = {
 
 module.exports.blsPMDSiteLiveMap2 = {
        "deviceID": "TW9ja3Rlc3REZXZpY2UwMnwxNTIzOTA0MDg3ODk5",
-       "longitude": -84.0370522213284,
-       "latitude": 33.6835305015525,
+       "longitude": -84.0370622213284,
+       "latitude": 33.6835385015525,
        "timeStamp": "2018-04-16T15:00:47.27Z",
        "floorID": 22,
        "floorSpaceID": 164,
