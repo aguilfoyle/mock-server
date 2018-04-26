@@ -337,7 +337,9 @@ var GetSiteByBeacon = {
   testScenario: 'singleResult',
   jsonTemplate: [{
 
-    singleResult: function () {
+    singleResult: function (req) {
+      console.log('/n/n/n/n');
+      console.log('req:', req);
       return JSON.stringify(schemas.blsPMDSiteByBeacon);
     },
 
