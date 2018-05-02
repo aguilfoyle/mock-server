@@ -350,21 +350,9 @@ var GetSiteByBeacon = {
         if (beacons) {
             // Use the first beacon, it should be the strongest
             console.log('beacon[0]:', beacons[0]);
+
             // Insert beacon into first light
-
-            //SAH05 DEBUG
-            //console.log('result[0]:', result[0]);
-            //console.log('floorspacings[0]:', result[0].floorSpaces[0]);
-            //console.log('lights:', result[0].floorSpaces[0].lights);
-            console.log('lights[0]', result[0].floorSpaces[0].lights.lights[0]);
-            console.log('BLEBeaconId:', result[0].floorSpaces[0].lights.lights[0].BLEBeaconId)
-            //SAH05 DEBUG
-
             result[0].floorSpaces[0].lights.lights[0].BLEBeaconId = beacons[0];
-
-            //SAH05 Debug
-            console.log('BLEBeaconId:', result[0].floorSpaces[0].lights.lights[0].BLEBeaconId)
-            //SAH05 Debug
         } else {
             console.log('Failed to find beacons.')
         }
