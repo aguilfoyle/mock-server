@@ -144,6 +144,7 @@ httpServer.listen(process.env.PORT || 3000);
 
 // Only create the HTTPS port if this is not going to the Heroku site
 if (!process.env.PORT) {
-    console.log('\x1b[32m', 'Local mock, creating https server at port 3443' ,'\x1b[0m');
+    console.log('\x1b[32m', 'Local mock creating http server at port 3000, will not work for Android', '\x1b[0m');
+    console.log('\x1b[32m', 'Local mock creating https server at port 3443, will not work with iOS or Android','\x1b[0m');
     httpsServer.listen(3443);
 }

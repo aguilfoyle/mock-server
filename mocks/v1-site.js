@@ -4,6 +4,8 @@
 var mocks = [];
 var schemas = require('../schemas/schemas');
 
+var queryString = require('query-string');
+
 var tagNames = ['Shopping Cart', 'Cart', 'Device', 'Floor', 'FloorSpace', 'Light', 'Bulb', 'Red', 'Blue', 'Green', 'Yellow', 'Orange', 'Ground', 'Ceiling',
     'Roof', 'Tile', 'Clear', 'Soft', 'Office', 'Building', 'Outside', 'Inside', 'Door', 'Window', 'Mobile', 'Phone', 'Tablet', 'Desktop'];
 
@@ -337,8 +339,32 @@ var GetSiteByBeacon = {
   testScenario: 'singleResult',
   jsonTemplate: [{
 
-    singleResult: function () {
-      return JSON.stringify(schemas.blsPMDSiteByBeacon);
+    singleResult: function (req) {
+      console.log('\n\n\n\n');
+      console.log('req.originalUrl:', req.originalUrl);
+      const parsed = queryString.parse(req.originalUrl);
+      result = [];
+      result.push(schemas.blsPMDSiteByBeacon);
+      if (parsed) {
+        const beacons = parsed['beaconIDs'];
+        if (beacons) {
+            // Use the first beacon, it should be the strongest
+            console.log('beacon[0]:', beacons[0]);
+
+            // Insert beacon into first light
+            result[0].floorSpaces[0].lights.lights[0].BLEBeaconId = beacons[0];
+        } else {
+            console.log('Failed to find beacons.')
+        }
+      } else {
+          console.log('Failed to parse URL:', req.originalUrl);
+          console.log('Returning reply with updated beacon');
+      }
+      
+      return JSON.stringify({
+            result: result,
+            count: 1
+        });
     },
 
     noResults: function(){
