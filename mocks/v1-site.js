@@ -4,6 +4,8 @@
 var mocks = [];
 var schemas = require('../schemas/schemas');
 
+var queryString = require('query-string');
+
 var tagNames = ['Shopping Cart', 'Cart', 'Device', 'Floor', 'FloorSpace', 'Light', 'Bulb', 'Red', 'Blue', 'Green', 'Yellow', 'Orange', 'Ground', 'Ceiling',
     'Roof', 'Tile', 'Clear', 'Soft', 'Office', 'Building', 'Outside', 'Inside', 'Door', 'Window', 'Mobile', 'Phone', 'Tablet', 'Desktop'];
 
@@ -338,8 +340,11 @@ var GetSiteByBeacon = {
   jsonTemplate: [{
 
     singleResult: function (req) {
-      console.log('/n/n/n/n');
-      console.log('req:', req);
+      console.log('\n\n\n\n');
+      console.log('req.originalUrl:', req.originalUrl);
+      const parsed = queryString.parse(req.originalUrl);
+      console.log('parsed:', parsed);
+      
       return JSON.stringify(schemas.blsPMDSiteByBeacon);
     },
 
