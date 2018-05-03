@@ -5,7 +5,9 @@
 Pushing to the GITHUG develop branch will cause the Heroku mock server at https://mobile-mocks.herokuapp.com/ to be updated.
 
 If you are using the Acuity repo and want to push to GITHUB, you will need to add the GITHUB remote
+```
   git remote add github git@github.com:AtriusDev/mock-server.git
+  ```
   
 ## Local Host Mock Server
 
