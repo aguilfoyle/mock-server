@@ -41,6 +41,6 @@ $ npm start
 
 ## Building Blocks
 
-This server is based upon the the `mock-json-api` and the `dummy-json` packages.  For more about the `mock-json-api` see https://github.com/webroo/dummy-json
+This server is based upon the the `mock-json-api` and the `dummy-json` packages.  For more about the `mock-json-api` see https://github.com/jeffflater/mock-json-api
 For more information about the `dummy-json` see https://github.com/webroo/dummy-json
 
