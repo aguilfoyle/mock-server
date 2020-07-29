@@ -18,7 +18,7 @@ var application = {
                 "result": [
                     {
                         "applicationID": 1,
-                        "applicationName": "Gordon--3-DEV",
+                        "applicationName": "Gordon-3-DEV",
                         "description": "IPS commissioning and maintenance iOS app"
                     },
                     {
