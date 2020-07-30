@@ -37,6 +37,36 @@ module.exports.floorSpaceMap = {
     "epsg_ID": "3857"
 };
 
+module.exports.line = {"BucketType": "{{company}}",
+    "ProdDivision": "{{company}}",
+    "LineNum": "{{company}}",
+    "Description": "{{company}}",
+    "ItemNum": "{{company}}",
+    "ProductApproval": "{{company}}",
+    "Qty": "{{int 0 100}}",
+    "UnitDollars": "{{company}}",
+    "ExtDollars": "{{company}}",
+    "POLineNum": "{{int 0 100}}",
+    "CartonMarking": "{{company}}",
+    "GroupNum": "{{int 0 100}}",
+    "NotBeforeDate": "{{company}}",
+    "TargetDate": "{{company}}",
+    "ShipPromDate": "{{company}}",
+    "RevShipPromDate": "{{company}}",
+    "POMName": "{{company}}",
+    "ShipFromName": "{{company}}",
+    "ProducedQty": "{{int 0 100}}",
+    "ProdStatus": "{{company}}",
+    "ShipmentNum": "{{int 0 100}}",
+    "ShippingStatus": "{{company}}",
+    "ProdNotRecQty": "{{int 0 100}}",
+    "AvailToShipQty": "{{int 0 100}}",
+    "Carrier": "{{company}}",
+    "ShipDate": "{{company}}",
+    "EstDeliveryDate": "{{company}}",
+    "ProNum": "{{company}}"
+};
+
 module.exports.wellKnown = {
     blsPMD:{
         id: 42
