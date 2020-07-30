@@ -108,11 +108,12 @@ var pizza = {
             var result = [];
             var count = 30;
             for (var i = 0; i < count; i++) {
-                result.push(schemas.line);
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                result[i].BucketType = "Order Processing"
             }
             return JSON.stringify({
-                result: result,
-                count: count
+                result: result
             });
         }
     }]
