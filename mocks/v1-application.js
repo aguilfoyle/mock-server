@@ -110,19 +110,19 @@ var pizza = {
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
-                if(i = 0 || i <=4){
+                if(i >= 0 && i <=4){
                     result[i].BucketType = "Order Processing"
                 }
-                if(i = 5 || i <=9){
+                if(i >= 5 && i <=9){
                     result[i].BucketType = "Scheduled"
                 }
-                if(i = 10 || i <=14){
+                if(i >= 10 && i <=14){
                     result[i].BucketType = "Producing"
                 }
-                if(i = 15 || i <=19){
+                if(i >= 15 && i <=19){
                     result[i].BucketType = "Shipping"
                 }
-                if(i = 20 || i <=24){
+                if(i >= 20 && i <=24){
                     result[i].BucketType = "Delivery"
                 }
                 if(i >= 25){
