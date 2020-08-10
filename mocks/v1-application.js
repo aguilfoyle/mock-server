@@ -111,13 +111,13 @@ var pizza = {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
                 if(i >= 0 && i <=4){
-                    result[i].BucketType = "Order Processing"
+                    result[i].BucketType = "Scheduled"
                 }
                 if(i >= 5 && i <=9){
                     result[i].BucketType = "Scheduled"
                 }
                 if(i >= 10 && i <=14){
-                    result[i].BucketType = "Producing"
+                    result[i].BucketType = "Scheduled"
                 }
                 if(i >= 15 && i <=19){
                     result[i].BucketType = "Shipping"
