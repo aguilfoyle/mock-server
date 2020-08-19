@@ -106,7 +106,7 @@ var pizza = {
         },
         multipleResults: function () {
             var result = [];
-            var count = 90;
+            var count = 30;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
