@@ -106,7 +106,7 @@ var pizza = {
         },
         multipleResults: function () {
             var result = [];
-            var count = 30;
+            var count = 1000;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -120,13 +120,13 @@ var pizza = {
                     result[i].bucketType = "Scheduled"
                 }
                 if(i >= 15 && i <=19){
-                    result[i].bucketType = "Shipping"
+                    result[i].bucketType = "Scheduled"
                 }
                 if(i >= 20 && i <=24){
-                    result[i].bucketType = "Shipping"
+                    result[i].bucketType = "Scheduled"
                 }
                 if(i >= 25){
-                    result[i].bucketType = "Foo"
+                    result[i].bucketType = "Scheduled"
                 }
             }
             return JSON.stringify({
