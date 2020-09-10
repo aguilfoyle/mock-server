@@ -65,7 +65,13 @@ module.exports.line = {
     "carrier": "{{company}}",
     "shipDate": "{{date '2015-06-01' '2015-06-30'}}",
     "estDeliveryDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "proNum": "{{int 0 100}}"
+    "proNum": "{{int 0 100}}",
+    "type": "{{company}}",
+    "alerts": [
+        {
+            "alertType": "{{int 1000 6999}}"
+        }
+    ]
 };
 
 module.exports.wellKnown = {
