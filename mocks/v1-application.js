@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'manyResults', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'multipleResults', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53403,13 +53403,15 @@ var pizza = {
                     result[i].bucketType = "Scheduled"
                 }
                 if(i >= 10 && i <=14){
-                    result[i].bucketType = "Scheduled"
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
                 }
                 if(i >= 15 && i <=19){
-                    result[i].bucketType = "Scheduled"
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <=24){
-                    result[i].bucketType = "Scheduled"
+                    result[i].bucketType = "Producing"
                 }
                 if(i >= 25){
                     result[i].bucketType = "Scheduled"
