@@ -53414,7 +53414,7 @@ var pizza = {
                     result[i].bucketType = "Shipping"
                 }
                 if(i >= 25){
-                    result[i].bucketType = "Scheduled"
+                    result[i].bucketType = "Delivery"
                 }
             }
             return JSON.stringify({
