@@ -53411,7 +53411,7 @@ var pizza = {
                     result[i].alerts = [];
                 }
                 if(i >= 20 && i <=24){
-                    result[i].bucketType = "Producing"
+                    result[i].bucketType = "Shipping"
                 }
                 if(i >= 25){
                     result[i].bucketType = "Scheduled"
