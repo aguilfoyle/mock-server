@@ -72,8 +72,8 @@ module.exports.line = {
             "alertType": "{{int 1000 6999}}"
         }
     ],
-    "deliveredDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "deliveredTime": "{{int 0 100}}"
+    "actualDeliveryDate": "{{date '2015-06-01' '2015-06-30'}}",
+    "deliveryTime": "{{int 0 23}}:{{int 0 59}}:{{int 0 59}}"
 };
 
 module.exports.wellKnown = {
