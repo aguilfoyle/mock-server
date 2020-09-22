@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'noScheduledWithoutAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allScheduled', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53421,43 +53421,6 @@ var pizza = {
                 result: result
             });
         },
-        noOrderProcessingWithoutAlerts: function () {
-            var result = [];
-            var count = 20;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                if(i >= 0 && i <=4){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <=9){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 10 && i <=14){
-                    result[i].bucketType = "Delivery";
-                }
-                if(i >= 15 && i <=19){
-                    result[i].bucketType = "Shipping";
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        allOrderProcessing: function () {
-            var result = [];
-            var count = 30;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                result[i].bucketType = "Order Processing"
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
         noScheduledWithAlerts: function () {
             var result = [];
             var count = 25;
@@ -53485,6 +53448,31 @@ var pizza = {
                 result: result
             });
         },
+        noOrderProcessingWithoutAlerts: function () {
+            var result = [];
+            var count = 20;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <=4){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <=9){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <=14){
+                    result[i].bucketType = "Delivery";
+                }
+                if(i >= 15 && i <=19){
+                    result[i].bucketType = "Shipping";
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
         noScheduledWithoutAlerts: function () {
             var result = [];
             var count = 20;
@@ -53504,6 +53492,30 @@ var pizza = {
                 if(i >= 15 && i <=19){
                     result[i].bucketType = "Shipping";
                 }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allOrderProcessing: function () {
+            var result = [];
+            var count = 30;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                result[i].bucketType = "Order Processing";
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allScheduled: function () {
+            var result = [];
+            var count = 30;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                result[i].bucketType = "Scheduled";
             }
             return JSON.stringify({
                 result: result
