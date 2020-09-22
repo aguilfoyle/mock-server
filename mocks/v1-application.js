@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allScheduedSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'noProducingSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53390,7 +53390,7 @@ var pizza = {
                 ]
             });
         },
-        noOrderProcessingWithAlerts: function () {
+        noOrderProcessingSomeAlerts: function () {
             var result = [];
             var count = 30;
             for (var i = 0; i < count; i++) {
@@ -53421,7 +53421,7 @@ var pizza = {
                 result: result
             });
         },
-        noScheduledWithAlerts: function () {
+        noScheduledSomeAlerts: function () {
             var result = [];
             var count = 25;
             for (var i = 0; i < count; i++) {
@@ -53448,7 +53448,34 @@ var pizza = {
                 result: result
             });
         },
-        noOrderProcessingWithoutAlerts: function () {
+        noProducingSomeAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <=4){
+                    result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <=9){
+                    result[i].bucketType = "Scheduled";
+                }
+                if(i >= 10 && i <=14){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <=19){
+                    result[i].bucketType = "Shipping";
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivery";
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noOrderProcessingNoAlerts: function () {
             var result = [];
             var count = 20;
             for (var i = 0; i < count; i++) {
@@ -53473,7 +53500,7 @@ var pizza = {
                 result: result
             });
         },
-        noScheduledWithoutAlerts: function () {
+        noScheduledNoAlerts: function () {
             var result = [];
             var count = 20;
             for (var i = 0; i < count; i++) {
