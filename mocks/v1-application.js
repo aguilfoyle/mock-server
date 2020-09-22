@@ -53400,7 +53400,7 @@ var pizza = {
                     result[i].bucketType = "Producing"
                 }
                 if(i >= 5 && i <=9){
-                    result[i].bucketType = "Scheduled"
+                    result[i].bucketType = "Delivered"
                 }
                 if(i >= 10 && i <=14){
                     result[i].bucketType = "Scheduled";
