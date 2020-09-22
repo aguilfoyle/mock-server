@@ -53390,37 +53390,6 @@ var pizza = {
                 ]
             });
         },
-        multipleResults: function () {
-            var result = [];
-            var count = 30;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                if(i >= 0 && i <=4){
-                    result[i].bucketType = "Producing"
-                }
-                if(i >= 5 && i <=9){
-                    result[i].bucketType = "Scheduled"
-                }
-                if(i >= 10 && i <=14){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <=19){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 20 && i <=24){
-                    result[i].bucketType = "Shipping"
-                }
-                if(i >= 25){
-                    result[i].bucketType = "Delivery"
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
         noOrderProcessingWithAlerts: function () {
             var result = [];
             var count = 30;
