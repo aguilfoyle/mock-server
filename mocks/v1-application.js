@@ -53499,7 +53499,7 @@ var pizza = {
         },
         allOrderProcessing: function () {
             var result = [];
-            var count = 30;
+            var count = 5;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53511,7 +53511,7 @@ var pizza = {
         },
         allScheduled: function () {
             var result = [];
-            var count = 30;
+            var count = 5;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
