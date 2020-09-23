@@ -54,6 +54,7 @@ module.exports.line = {
     "targetDate": "{{date '2015-06-01' '2015-06-30'}}",
     "shipPromDate": "{{date '2015-06-01' '2015-06-30'}}",
     "revShipPromDate": "{{date '2015-06-01' '2015-06-30'}}",
+    "origShipPromDate": "{{date '2015-06-01' '2015-06-30'}}",
     "pomName": "{{company}}",
     "shipFromName": "{{company}}",
     "producedQty": "{{int 0 100}}",
