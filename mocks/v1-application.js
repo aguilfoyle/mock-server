@@ -53788,7 +53788,7 @@ var pizza = {
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
-                result[i].bucketType = "Deliverd";
+                result[i].bucketType = "Delivered";
             }
             return JSON.stringify({
                 result: result
