@@ -53818,7 +53818,7 @@ var pizza = {
                     result[i].alerts = [];
                 }
                 if(i >= 25 && i <=29){
-                    result[i].bucketType = "Awaiting Shipment";
+                    result[i].bucketType = "Shipping";
                 }
                 if(i>=30){
                     result[i].bucketType = "Delivery";
