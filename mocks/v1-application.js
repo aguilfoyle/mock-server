@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allDelivered', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53796,15 +53796,15 @@ var pizza = {
         },
         allBucketsSomeAlerts: function () {
             var result = [];
-            var count = 35;
+            var count = 40;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
                 if(i >= 0 && i <=4){
-                    result[i].bucketType = "Producing"
+                    result[i].bucketType = "Order Processing";
                 }
                 if(i >= 5 && i <=9){
-                    result[i].bucketType = "Scheduled"
+                    result[i].bucketType = "Scheduled";
                 }
                 if(i >= 10 && i <=14){
                     result[i].bucketType = "Scheduled";
@@ -53812,16 +53812,19 @@ var pizza = {
                 }
                 if(i >= 15 && i <=19){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <=24){
-                    result[i].bucketType = "Shipping"
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
                 }
                 if(i >= 25 && i <=29){
-                    result[i].bucketType = "Delivery"
+                    result[i].bucketType = "Awaiting Shipment";
                 }
                 if(i>=30){
-                    result[i].bucketType = "Order Processing"
+                    result[i].bucketType = "Delivery";
+                }
+                if(i>=35){
+                    result[i].bucketType = "Delivered";
                 }
             }
             return JSON.stringify({
@@ -53830,7 +53833,7 @@ var pizza = {
         },
         allBucketsNoAlerts: function () {
             var result = [];
-            var count = 25;
+            var count = 30;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53850,6 +53853,9 @@ var pizza = {
                 }
                 if(i >= 20 && i <=25){
                     result[i].bucketType = "Delivery"
+                }
+                if(i >= 20 && i <=25){
+                    result[i].bucketType = "Delivered"
                 }
             }
             return JSON.stringify({
