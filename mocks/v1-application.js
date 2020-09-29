@@ -53866,6 +53866,9 @@ var pizza = {
                 result[i].LineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
                             "alertType": "2001.1"
@@ -53883,9 +53886,6 @@ var pizza = {
                             "alertType": "2005"
                         }
                     ];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Scheduled";
