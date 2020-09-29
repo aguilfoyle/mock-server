@@ -53866,7 +53866,7 @@ var pizza = {
                 result[i].LineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
-                    result[i].alerts: [
+                    result[i].alerts = [
                         {
                             "alertType": "2001.1"
                         },
