@@ -53590,7 +53590,7 @@ var pizza = {
         },
         noDeliveredSomeAlerts: function () {
             var result = [];
-            var count = 40;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53615,9 +53615,13 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivery";
                 }
-                if(i >= 35){
+                if(i >= 40){
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [];
                 }
