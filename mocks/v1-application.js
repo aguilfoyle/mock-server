@@ -53909,7 +53909,7 @@ var pizza = {
                     result[i].alerts = [];
                 }
                 if(i >= 40 && i <= 44){
-                    result[i].bucketType = "Delivery";
+                    result[i].bucketType = "Delivered";
                 }
                 if(i >= 45){
                     result[i].bucketType = "Delivered";
