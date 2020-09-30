@@ -53614,7 +53614,7 @@ var pizza = {
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Shipping";
                 }
-                if(i >= 30 && i <= 24){
+                if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivery";
                 }
                 if(i >= 35){
