@@ -53392,7 +53392,7 @@ var pizza = {
         },
         noOrderProcessingSomeAlerts: function () {
             var result = [];
-            var count = 35;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53416,8 +53416,16 @@ var pizza = {
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Delivery";
                 }
-                if(i >= 30){
+                if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivered";
+                }
+                if(i >= 40){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53426,7 +53434,7 @@ var pizza = {
         },
         noScheduledSomeAlerts: function () {
             var result = [];
-            var count = 30;
+            var count = 40;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53446,8 +53454,16 @@ var pizza = {
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Delivery";
                 }
-                if(i >= 25){
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivered";
+                }
+                if(i >= 35){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53456,7 +53472,7 @@ var pizza = {
         },
         noProducingSomeAlerts: function () {
             var result = [];
-            var count = 30;
+            var count = 40;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53476,8 +53492,16 @@ var pizza = {
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Delivery";
                 }
-                if(i >= 25){
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivered";
+                }
+                if(i >= 35){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53486,7 +53510,7 @@ var pizza = {
         },
         noAwaitingShipmentSomeAlerts: function () {
             var result = [];
-            var count = 35;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53510,8 +53534,16 @@ var pizza = {
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Delivery";
                 }
-                if(i >= 30){
+                if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivered";
+                }
+                if(i >= 40){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53520,7 +53552,7 @@ var pizza = {
         },
         noShippedSomeAlerts: function () {
             var result = [];
-            var count = 35;
+            var count = 40;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53544,8 +53576,12 @@ var pizza = {
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Shipping";
                 }
-                if(i >= 30){
+                if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivered";
+                }
+                if(i >= 35){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53554,7 +53590,7 @@ var pizza = {
         },
         noDeliveredSomeAlerts: function () {
             var result = [];
-            var count = 35;
+            var count = 40;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53578,8 +53614,12 @@ var pizza = {
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Shipping";
                 }
-                if(i >= 30){
+                if(i >= 30 && i <= 24){
                     result[i].bucketType = "Delivery";
+                }
+                if(i >= 35){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53602,12 +53642,14 @@ var pizza = {
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53629,12 +53671,14 @@ var pizza = {
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53656,12 +53700,14 @@ var pizza = {
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53687,9 +53733,11 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53718,6 +53766,36 @@ var pizza = {
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noDeliveredNoAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
@@ -53834,7 +53912,20 @@ var pizza = {
                 result: result
             });
         },
-        allShipped: function () {
+        allShippeddNoAlerts: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                result[i].bucketType = "Delivery";
+                result[i].alerts = [];
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allShippedAllAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -53846,13 +53937,62 @@ var pizza = {
                 result: result
             });
         },
-        allDelivered: function () {
+        allShippedSomeAlerts: function () {
+            var result = [];
+            var count = 10;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Delivery";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allDeliveredNoAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
                 result[i].bucketType = "Delivered";
+                result[i].alerts = [];
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allDeliveredAllAlerts: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                result[i].bucketType = "Delivered";
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allDeliveredSomeAlerts: function () {
+            var result = [];
+            var count = 10;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Delivered";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
             }
             return JSON.stringify({
                 result: result
