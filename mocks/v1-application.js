@@ -53940,11 +53940,11 @@ var pizza = {
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
                 }
-                if(i >= 20 && i <= 25){
+                if(i >= 20 && i <= 24){
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [];
                 }
-                if(i >= 20 && i <= 25){
+                if(i >= 25){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
