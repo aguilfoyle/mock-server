@@ -53392,7 +53392,7 @@ var pizza = {
         },
         noOrderProcessingSomeAlerts: function () {
             var result = [];
-            var count = 45;
+            var count = 50;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53412,6 +53412,52 @@ var pizza = {
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Shipping";
+                }
+                if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Delivery";
+                }
+                if(i >= 35 && i <= 39){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 40 && i <= 44){
+                    result[i].bucketType = "Delivered";
+                }
+                if(i >= 45){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noScheduledSomeAlerts: function () {
+            var result = [];
+            var count = 45;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Producing";
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                }
+                if(i >= 20 && i <= 24){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Delivery";
@@ -53432,47 +53478,9 @@ var pizza = {
                 result: result
             });
         },
-        noScheduledSomeAlerts: function () {
-            var result = [];
-            var count = 40;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Order Processing";
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Producing";
-                }
-                if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
-                }
-                if(i >= 20 && i <= 24){
-                    result[i].bucketType = "Delivery";
-                }
-                if(i >= 25 && i <= 29){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 30 && i <= 34){
-                    result[i].bucketType = "Delivered";
-                }
-                if(i >= 35){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
         noProducingSomeAlerts: function () {
             var result = [];
-            var count = 40;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53490,16 +53498,20 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 20 && i <= 24){
-                    result[i].bucketType = "Delivery";
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
                 }
                 if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivered";
                 }
-                if(i >= 35){
+                if(i >= 40){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
@@ -53552,7 +53564,7 @@ var pizza = {
         },
         noShippedSomeAlerts: function () {
             var result = [];
-            var count = 40;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
@@ -53577,9 +53589,13 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivered";
                 }
-                if(i >= 35){
+                if(i >= 40){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
@@ -53650,6 +53666,7 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
@@ -53674,11 +53691,12 @@ var pizza = {
                     result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Delivery";
+                    result[i].bucketType = "Shipping";
                     result[i].alerts = [];
                 }
                 if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
@@ -53703,11 +53721,12 @@ var pizza = {
                     result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Delivery";
+                    result[i].bucketType = "Shipping";
                     result[i].alerts = [];
                 }
                 if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
@@ -53767,6 +53786,7 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivered";
@@ -53796,6 +53816,7 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 20){
                     result[i].bucketType = "Delivery";
@@ -53904,13 +53925,44 @@ var pizza = {
                 result: result
             });
         },
-        allAwaitingShipment: function () {
+        allAwaitingShipmentNoAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
                 result[i].bucketType = "Shipping";
+                result[i].alerts = [];
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allAwaitingShipmentAllAlerts: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                result[i].bucketType = "Shipping";
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allAwaitingShipmentSomeAlerts: function () {
+            var result = [];
+            var count = 10;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Shipping";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
             }
             return JSON.stringify({
                 result: result
@@ -54087,6 +54139,7 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Delivery";
