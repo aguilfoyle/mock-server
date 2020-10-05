@@ -54092,14 +54092,22 @@ var pizza = {
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [];
+                    result[i].alerts = [
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
                 }
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Shipping";
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
+                    result[i].alerts = [
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
                 }
                 if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivery";
