@@ -54065,22 +54065,27 @@ var pizza = {
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
+                    //result[i].alerts = [
+                    //    {
+                    //        "alertType": "2001.1"
+                    //    },
+                    //    {
+                    //        "alertType": "2001.2"
+                    //    },
+                    //    {
+                    //        "alertType": "2002"
+                    //    },
+                    //    {
+                    //        "alertType": "2004"
+                    //    },
+                    //    {
+                    //        "alertType": "2005"
+                    //    }
+                    //];
                     result[i].alerts = [
-                        {
-                            "alertType": "2001.1"
-                        },
-                        {
-                            "alertType": "2001.2"
-                        },
                         {
                             "alertType": "2002"
                         },
-                        {
-                            "alertType": "2004"
-                        },
-                        {
-                            "alertType": "2005"
-                        }
                     ];
                 }
                 if(i >= 10 && i <= 14){
@@ -54089,25 +54094,27 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2002"
-                        },
-                    ];
+                    result[i].alerts = [];
                 }
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Shipping";
-                }
-                if(i >= 30 && i <= 34){
-                    result[i].bucketType = "Shipping";
                     result[i].alerts = [
                         {
                             "alertType": "2002"
                         },
                     ];
+                }
+                if(i >= 30 && i <= 34){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivery";
