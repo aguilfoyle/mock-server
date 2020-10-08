@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allOrderProcessing', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'noneShippedNoneDelivered', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53390,44 +53390,6 @@ var pizza = {
                 ]
             });
         },
-        halfShippedHalfDeliveredNoAlerts: function () {
-            var result = [];
-            var count = 10;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        halfAwaitingShipmentHalfDeliveredNoAlerts: function () {
-            var result = [];
-            var count = 10;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
         noOrderProcessingSomeAlerts: function () {
             var result = [];
             var count = 50;
@@ -54184,6 +54146,145 @@ var pizza = {
                     result[i].alerts = [];
                 }
                 if(i >= 25){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noneShippedNoneDelivered: function () {
+            var result = [];
+            var count = 20;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        someShippedNoneDelivered: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        someShippedSomeDelivered: function () {
+            var result = [];
+            var count = 30;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 20 && i <= 24){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 25){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allShippedNoneDelivered: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allShippedSomeDelivered: function () {
+            var result = [];
+            var count = 10;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 5){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allShippedAllDelivered: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
