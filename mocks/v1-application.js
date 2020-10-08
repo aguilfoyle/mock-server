@@ -53390,6 +53390,25 @@ var pizza = {
                 ]
             });
         },
+        halfShippedHalfDeliveredNoAlerts: function () {
+            var result = [];
+            var count = 10;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].LineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
         noOrderProcessingSomeAlerts: function () {
             var result = [];
             var count = 50;
@@ -54149,24 +54168,6 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        halfShippedHalfDeliveredNoAlerts: function () {
-            var result = [];
-            var count = 19;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].LineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
             }
             return JSON.stringify({
                 result: result
