@@ -53416,7 +53416,7 @@ var pizza = {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].LineNum = i;
                 if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Awaiting Shipment";
+                    result[i].bucketType = "Shipping";
                     result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
