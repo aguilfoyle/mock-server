@@ -50,11 +50,11 @@ module.exports.line = {
     "poLineNum": "{{int 0 100}}",
     "cartonMarking": "{{company}}",
     "groupNum": "{{int 0 100}}",
-    "notBeforeDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "targetDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "shipPromDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "revShipPromDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "origShipPromDate": "{{date '2015-06-01' '2015-06-30'}}",
+    "notBeforeDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
+    "targetDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
+    "shipPromDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
+    "revShipPromDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
+    "origShipPromDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
     "pomName": "{{company}}",
     "shipFromName": "{{company}}",
     "producedQty": "{{int 0 100}}",
@@ -64,8 +64,8 @@ module.exports.line = {
     "prodNotRecQty": "{{int 0 100}}",
     "availToShipQty": "{{int 0 100}}",
     "carrier": "{{company}}",
-    "shipDate": "{{date '2015-06-01' '2015-06-30'}}",
-    "estDeliveryDate": "{{date '2015-06-01' '2015-06-30'}}",
+    "shipDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
+    "estDeliveryDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
     "proNum": "{{int 0 100}}",
     "type": "{{company}}",
     "alerts": [
@@ -73,7 +73,7 @@ module.exports.line = {
             "alertType": "{{int 1000 6999}}"
         }
     ],
-    "actualDeliveryDate": "{{date '2015-06-01' '2015-06-30'}}",
+    "actualDeliveryDate": "{{date '2015-06-01' '2015-06-30' 'M/D/yyyy'}}",
     "deliveryTime": "{{int 0 23}}:{{int 0 59}}:{{int 0 59}}"
 };
 
