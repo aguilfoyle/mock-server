@@ -53383,6 +53383,234 @@ var pizza = {
                 ]
             });
         },
+        allBucketsWithNullTargetDates: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Order Processing",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "Wed Jun 24 2015 15:20:25 GMT+0000 (UTC)",
+                        "targetDate": null,
+                        "shipPromDate": "Mon Jun 08 2015 13:28:37 GMT+0000 (UTC)",
+                        "revShipPromDate": "Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "shipDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "estDeliveryDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                        "LineNum": 0
+                    },
+                    {
+                        "bucketType": "Scheduled",
+                        "prodDivision": "Helixicon",
+                        "lineNum": "Helixicon",
+                        "description": "Forecore",
+                        "itemNum": "18",
+                        "productApproval": "WestGate",
+                        "qty": "84",
+                        "unitDollars": "441.99",
+                        "extDollars": "322.05",
+                        "poLineNum": "25",
+                        "cartonMarking": "StrategyLine",
+                        "groupNum": "71",
+                        "notBeforeDate": "Sat Jun 20 2015 05:42:47 GMT+0000 (UTC)",
+                        "targetDate": null,
+                        "shipPromDate": "Thu Jun 11 2015 22:33:51 GMT+0000 (UTC)",
+                        "revShipPromDate": "Mon Jun 29 2015 14:57:10 GMT+0000 (UTC)",
+                        "pomName": "Celmax",
+                        "shipFromName": "Eluxa",
+                        "producedQty": "52",
+                        "prodStatus": "OpenServ",
+                        "shipmentNum": "27",
+                        "shippingStatus": "VTGrafix",
+                        "prodNotRecQty": "21",
+                        "availToShipQty": "34",
+                        "carrier": "Dynalab",
+                        "shipDate": "Fri Jun 19 2015 08:35:35 GMT+0000 (UTC)",
+                        "estDeliveryDate": "Wed Jun 24 2015 03:20:09 GMT+0000 (UTC)",
+                        "proNum": "86",
+                        "type": "Eluxa",
+                        "alerts": [
+                            {
+                                "alertType": "1983"
+                            }
+                        ],
+                        "LineNum": 1
+                    },
+                    {
+                        "bucketType": "Producing",
+                        "prodDivision": "MultiLingua",
+                        "lineNum": "Sunopia",
+                        "description": "CoreXTS",
+                        "itemNum": "9",
+                        "productApproval": "Haltheon",
+                        "qty": "17",
+                        "unitDollars": "282.49",
+                        "extDollars": "266.77",
+                        "poLineNum": "39",
+                        "cartonMarking": "Qualcore",
+                        "groupNum": "74",
+                        "notBeforeDate": "Tue Jun 09 2015 17:30:18 GMT+0000 (UTC)",
+                        "targetDate": null,
+                        "shipPromDate": "Fri Jun 19 2015 12:16:20 GMT+0000 (UTC)",
+                        "revShipPromDate": "Tue Jun 16 2015 11:52:46 GMT+0000 (UTC)",
+                        "pomName": "OpenServ",
+                        "shipFromName": "DuoServe",
+                        "producedQty": "34",
+                        "prodStatus": "QuadNet",
+                        "shipmentNum": "89",
+                        "shippingStatus": "DynaAir",
+                        "prodNotRecQty": "49",
+                        "availToShipQty": "87",
+                        "carrier": "MediaDime",
+                        "shipDate": "Thu Jun 11 2015 09:50:25 GMT+0000 (UTC)",
+                        "estDeliveryDate": "Tue Jun 09 2015 17:44:12 GMT+0000 (UTC)",
+                        "proNum": "72",
+                        "type": "SixtySix",
+                        "alerts": [
+                            {
+                                "alertType": "6534"
+                            }
+                        ],
+                        "LineNum": 2
+                    },
+                    {
+                        "bucketType": "Shipping",
+                        "prodDivision": "LoopSys",
+                        "lineNum": "Creatonix",
+                        "description": "Creatonix",
+                        "itemNum": "19",
+                        "productApproval": "DuoServe",
+                        "qty": "86",
+                        "unitDollars": "377.66",
+                        "extDollars": "402.97",
+                        "poLineNum": "26",
+                        "cartonMarking": "Conixco",
+                        "groupNum": "18",
+                        "notBeforeDate": "Thu Jun 18 2015 21:22:27 GMT+0000 (UTC)",
+                        "targetDate": null,
+                        "shipPromDate": "Sun Jun 28 2015 01:20:08 GMT+0000 (UTC)",
+                        "revShipPromDate": "Thu Jun 25 2015 15:13:02 GMT+0000 (UTC)",
+                        "pomName": "Citisys",
+                        "shipFromName": "Amsquare",
+                        "producedQty": "41",
+                        "prodStatus": "Opticast",
+                        "shipmentNum": "74",
+                        "shippingStatus": "Sophis",
+                        "prodNotRecQty": "40",
+                        "availToShipQty": "49",
+                        "carrier": "Quadtek",
+                        "shipDate": "Thu Jun 25 2015 22:38:28 GMT+0000 (UTC)",
+                        "estDeliveryDate": "Mon Jun 08 2015 01:10:00 GMT+0000 (UTC)",
+                        "proNum": "52",
+                        "type": "Cirpria",
+                        "alerts": [
+                            {
+                                "alertType": "2214"
+                            }
+                        ],
+                        "LineNum": 3
+                    },
+                    {
+                        "bucketType": "Delivery",
+                        "prodDivision": "Storex",
+                        "lineNum": "Cryptonica",
+                        "description": "WestGate",
+                        "itemNum": "86",
+                        "productApproval": "Protheon",
+                        "qty": "44",
+                        "unitDollars": "169.35",
+                        "extDollars": "239.32",
+                        "poLineNum": "3",
+                        "cartonMarking": "Tecomix",
+                        "groupNum": "27",
+                        "notBeforeDate": "Thu Jun 18 2015 10:14:49 GMT+0000 (UTC)",
+                        "targetDate": null,
+                        "shipPromDate": "Sat Jun 06 2015 04:29:14 GMT+0000 (UTC)",
+                        "revShipPromDate": "Mon Jun 08 2015 15:11:47 GMT+0000 (UTC)",
+                        "pomName": "Airconix",
+                        "shipFromName": "Storex",
+                        "producedQty": "87",
+                        "prodStatus": "Kancom",
+                        "shipmentNum": "11",
+                        "shippingStatus": "Hypervision",
+                        "prodNotRecQty": "82",
+                        "availToShipQty": "6",
+                        "carrier": "Storex",
+                        "shipDate": "Thu Jun 18 2015 15:37:38 GMT+0000 (UTC)",
+                        "estDeliveryDate": "Wed Jun 24 2015 20:22:23 GMT+0000 (UTC)",
+                        "proNum": "33",
+                        "type": "Sealine",
+                        "alerts": [
+                            {
+                                "alertType": "6168"
+                            }
+                        ],
+                        "LineNum": 4
+                    },
+                    {
+                        "bucketType": "Delivered",
+                        "prodDivision": "Cryosoft",
+                        "lineNum": "ForeTrust",
+                        "description": "Xenosys",
+                        "itemNum": "74",
+                        "productApproval": "TrioSys",
+                        "qty": "71",
+                        "unitDollars": "126.92",
+                        "extDollars": "374.71",
+                        "poLineNum": "51",
+                        "cartonMarking": "Connic",
+                        "groupNum": "78",
+                        "notBeforeDate": "Tue Jun 02 2015 02:31:38 GMT+0000 (UTC)",
+                        "targetDate": null,
+                        "shipPromDate": "Tue Jun 02 2015 06:56:54 GMT+0000 (UTC)",
+                        "revShipPromDate": "Wed Jun 24 2015 21:32:30 GMT+0000 (UTC)",
+                        "pomName": "StrategyLine",
+                        "shipFromName": "Iridimax",
+                        "producedQty": "76",
+                        "prodStatus": "Citisys",
+                        "shipmentNum": "86",
+                        "shippingStatus": "Helixicon",
+                        "prodNotRecQty": "22",
+                        "availToShipQty": "3",
+                        "carrier": "Solexis",
+                        "shipDate": "Sat Jun 06 2015 22:32:12 GMT+0000 (UTC)",
+                        "estDeliveryDate": "Mon Jun 15 2015 07:05:35 GMT+0000 (UTC)",
+                        "proNum": "11",
+                        "type": "Cameratek",
+                        "alerts": [
+                            {
+                                "alertType": "5693"
+                            }
+                        ],
+                        "LineNum": 5
+                    }
+                ]
+            });
+        },
         noResult: function() {
             return JSON.stringify({
                 "result": [
