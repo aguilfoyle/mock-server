@@ -53416,12 +53416,16 @@ var pizza = {
                         "estDeliveryDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
                         "proNum": "65",
                         "type": "StrategyLine",
+                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
                         "alerts": [
                             {
                                 "alertType": "4000"
                             }
                         ],
-                        "LineNum": 0
                     },
                     {
                         "bucketType": "Scheduled",
@@ -53453,12 +53457,16 @@ var pizza = {
                         "estDeliveryDate": "Wed Jun 24 2015 03:20:09 GMT+0000 (UTC)",
                         "proNum": "86",
                         "type": "Eluxa",
+                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
                         "alerts": [
                             {
                                 "alertType": "1983"
                             }
                         ],
-                        "LineNum": 1
                     },
                     {
                         "bucketType": "Producing",
@@ -53490,12 +53498,16 @@ var pizza = {
                         "estDeliveryDate": "Tue Jun 09 2015 17:44:12 GMT+0000 (UTC)",
                         "proNum": "72",
                         "type": "SixtySix",
+                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
                         "alerts": [
                             {
                                 "alertType": "6534"
                             }
                         ],
-                        "LineNum": 2
                     },
                     {
                         "bucketType": "Shipping",
@@ -53527,12 +53539,16 @@ var pizza = {
                         "estDeliveryDate": "Mon Jun 08 2015 01:10:00 GMT+0000 (UTC)",
                         "proNum": "52",
                         "type": "Cirpria",
+                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
                         "alerts": [
                             {
                                 "alertType": "2214"
                             }
                         ],
-                        "LineNum": 3
                     },
                     {
                         "bucketType": "Delivery",
@@ -53564,12 +53580,16 @@ var pizza = {
                         "estDeliveryDate": "Wed Jun 24 2015 20:22:23 GMT+0000 (UTC)",
                         "proNum": "33",
                         "type": "Sealine",
+                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
                         "alerts": [
                             {
                                 "alertType": "6168"
                             }
                         ],
-                        "LineNum": 4
                     },
                     {
                         "bucketType": "Delivered",
@@ -53601,12 +53621,16 @@ var pizza = {
                         "estDeliveryDate": "Mon Jun 15 2015 07:05:35 GMT+0000 (UTC)",
                         "proNum": "11",
                         "type": "Cameratek",
+                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
                         "alerts": [
                             {
                                 "alertType": "5693"
                             }
                         ],
-                        "LineNum": 5
                     }
                 ]
             });
