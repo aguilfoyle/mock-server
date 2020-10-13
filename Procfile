@@ -1,1 +1,1 @@
-web: node server.js
+web: node prestart.js && node server.js
