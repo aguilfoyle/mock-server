@@ -53670,7 +53670,7 @@ var pizza = {
                         "type": "StrategyLine",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "00:00:00",
+                        "deliveryTime": "00:00:01",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/5/2015",
                         "alerts": [
@@ -53916,7 +53916,7 @@ var pizza = {
                         "type": "Cameratek",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "24:00:00",
+                        "deliveryTime": "23:00:00",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
@@ -53957,7 +53957,7 @@ var pizza = {
                         "type": "Cameratek",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "25:00:00",
+                        "deliveryTime": "23:59:59",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
