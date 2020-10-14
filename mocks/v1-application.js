@@ -53418,7 +53418,7 @@ var pizza = {
                         "type": "StrategyLine",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "0:0:58"
+                        "deliveryTime": "0:0:58",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/5/2015",
                         "alerts": [
@@ -53459,7 +53459,7 @@ var pizza = {
                         "type": "Eluxa",
                         "origShipPromDate": "6/27/2015",
                         "actualDeliveryDate" :"6/27/2015",
-                        "deliveryTime": "9:50:56"
+                        "deliveryTime": "9:50:56",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/22/2015",
                         "alerts": [
@@ -53500,7 +53500,7 @@ var pizza = {
                         "type": "SixtySix",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/19/2015",
-                        "deliveryTime": "5:5:39"
+                        "deliveryTime": "5:5:39",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/17/2015",
                         "alerts": [
@@ -53541,7 +53541,7 @@ var pizza = {
                         "type": "Cirpria",
                         "origShipPromDate": "6/19/2015",
                         "actualDeliveryDate" : "6/5/2015",
-                        "deliveryTime": "2:15:20"
+                        "deliveryTime": "2:15:20",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/24/2015",
                         "alerts": [
@@ -53582,7 +53582,7 @@ var pizza = {
                         "type": "Sealine",
                         "origShipPromDate": "6/14/2015",
                         "actualDeliveryDate" : "6/7/2015",
-                        "deliveryTime": "10:1:46"
+                        "deliveryTime": "10:1:46",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/17/2015",
                         "alerts": [
@@ -53623,7 +53623,7 @@ var pizza = {
                         "type": "Cameratek",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "0:0:58"
+                        "deliveryTime": "0:0:58",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
