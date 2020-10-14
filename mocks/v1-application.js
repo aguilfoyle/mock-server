@@ -53711,7 +53711,7 @@ var pizza = {
                         "type": "Eluxa",
                         "origShipPromDate": "6/27/2015",
                         "actualDeliveryDate" :"6/27/2015",
-                        "deliveryTime": "09:50:56",
+                        "deliveryTime": "05:50:56",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/22/2015",
                         "alerts": [
@@ -53752,7 +53752,7 @@ var pizza = {
                         "type": "SixtySix",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/19/2015",
-                        "deliveryTime": "20:05:39",
+                        "deliveryTime": "12:00:00",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/17/2015",
                         "alerts": [
@@ -53793,7 +53793,7 @@ var pizza = {
                         "type": "Cirpria",
                         "origShipPromDate": "6/19/2015",
                         "actualDeliveryDate" : "6/5/2015",
-                        "deliveryTime": "23:15:20",
+                        "deliveryTime": "5:15:20",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/24/2015",
                         "alerts": [
@@ -53834,7 +53834,7 @@ var pizza = {
                         "type": "Sealine",
                         "origShipPromDate": "6/14/2015",
                         "actualDeliveryDate" : "6/7/2015",
-                        "deliveryTime": "17:01:46",
+                        "deliveryTime": "10:01:46",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/17/2015",
                         "alerts": [
@@ -53875,7 +53875,7 @@ var pizza = {
                         "type": "Cameratek",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "08:13:58",
+                        "deliveryTime": "17:13:58",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
