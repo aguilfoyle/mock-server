@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allDeliveredAllAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -55027,6 +55027,26 @@ var pizza = {
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Scheduled";
@@ -55034,6 +55054,26 @@ var pizza = {
                 }
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Producing";
@@ -55041,6 +55081,26 @@ var pizza = {
                 }
                 if(i >= 25 && i <= 29){
                     result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Shipping";
@@ -55048,6 +55108,26 @@ var pizza = {
                 }
                 if(i >= 35 && i <= 39){
                     result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
                 }
                 if(i >= 40 && i <= 44){
                     result[i].bucketType = "Delivery";
@@ -55055,6 +55135,26 @@ var pizza = {
                 }
                 if(i >= 45 && i <= 49){
                     result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
                 }
                 if(i >= 50){
                     result[i].bucketType = "Delivered";
@@ -55099,7 +55199,7 @@ var pizza = {
                 result: result
             });
         },
-        noneShippedNoneDelivered: function () {
+        noneShippedNoneDeliveredNoAlerts: function () {
             var result = [];
             var count = 20;
             for (var i = 0; i < count; i++) {
@@ -55125,7 +55225,7 @@ var pizza = {
                 result: result
             });
         },
-        someShippedNoneDelivered: function () {
+        someShippedNoneDeliveredNoAlerts: function () {
             var result = [];
             var count = 25;
             for (var i = 0; i < count; i++) {
@@ -55155,7 +55255,7 @@ var pizza = {
                 result: result
             });
         },
-        someShippedSomeDelivered: function () {
+        someShippedSomeDeliveredNoAlerts: function () {
             var result = [];
             var count = 30;
             for (var i = 0; i < count; i++) {
@@ -55189,7 +55289,7 @@ var pizza = {
                 result: result
             });
         },
-        allShippedNoneDelivered: function () {
+        allShippedNoneDeliveredNoAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -55204,7 +55304,7 @@ var pizza = {
                 result: result
             });
         },
-        allShippedSomeDelivered: function () {
+        allShippedSomeDeliveredNoAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -55223,7 +55323,7 @@ var pizza = {
                 result: result
             });
         },
-        allShippedAllDelivered: function () {
+        allShippedAllDeliveredNoAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
