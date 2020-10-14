@@ -53566,7 +53566,7 @@ var pizza = {
                         "notBeforeDate": "6/3/2015",
                         "targetDate": null,
                         "shipPromDate": "6/24/2015",
-                        "revShipPromDate": "6/15/2015
+                        "revShipPromDate": "6/15/2015",
                         "pomName": "Airconix",
                         "shipFromName": "Storex",
                         "producedQty": "87",
