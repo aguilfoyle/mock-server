@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allShippedSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsWithNullTargetDates', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53399,10 +53399,10 @@ var pizza = {
                         "poLineNum": "68",
                         "cartonMarking": "CoreMax",
                         "groupNum": "67",
-                        "notBeforeDate": "Wed Jun 24 2015 15:20:25 GMT+0000 (UTC)",
+                        "notBeforeDate": "6/25/2015",
                         "targetDate": null,
-                        "shipPromDate": "Mon Jun 08 2015 13:28:37 GMT+0000 (UTC)",
-                        "revShipPromDate": "Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
                         "pomName": "Proline",
                         "shipFromName": "MediaDime",
                         "producedQty": "13",
@@ -53412,15 +53412,15 @@ var pizza = {
                         "prodNotRecQty": "93",
                         "availToShipQty": "82",
                         "carrier": "Sealine",
-                        "shipDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
-                        "estDeliveryDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
                         "proNum": "65",
                         "type": "StrategyLine",
-                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
-                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
-                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "0:0:58"
                         "ordLnStatus": "MediaDime",
-                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "schedAsmDate": "6/5/2015",
                         "alerts": [
                             {
                                 "alertType": "4000"
@@ -53440,10 +53440,10 @@ var pizza = {
                         "poLineNum": "25",
                         "cartonMarking": "StrategyLine",
                         "groupNum": "71",
-                        "notBeforeDate": "Sat Jun 20 2015 05:42:47 GMT+0000 (UTC)",
+                        "notBeforeDate": "6/27/2015",
                         "targetDate": null,
-                        "shipPromDate": "Thu Jun 11 2015 22:33:51 GMT+0000 (UTC)",
-                        "revShipPromDate": "Mon Jun 29 2015 14:57:10 GMT+0000 (UTC)",
+                        "shipPromDate": "6/28/2015",
+                        "revShipPromDate": "6/13/2015",
                         "pomName": "Celmax",
                         "shipFromName": "Eluxa",
                         "producedQty": "52",
@@ -53453,15 +53453,15 @@ var pizza = {
                         "prodNotRecQty": "21",
                         "availToShipQty": "34",
                         "carrier": "Dynalab",
-                        "shipDate": "Fri Jun 19 2015 08:35:35 GMT+0000 (UTC)",
-                        "estDeliveryDate": "Wed Jun 24 2015 03:20:09 GMT+0000 (UTC)",
+                        "shipDate": "6/25/2015",
+                        "estDeliveryDate": "6/15/2015",
                         "proNum": "86",
                         "type": "Eluxa",
-                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
-                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
-                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "origShipPromDate": "6/27/2015",
+                        "actualDeliveryDate" :"6/27/2015",
+                        "deliveryTime": "9:50:56"
                         "ordLnStatus": "MediaDime",
-                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "schedAsmDate": "6/22/2015",
                         "alerts": [
                             {
                                 "alertType": "1983"
@@ -53481,10 +53481,10 @@ var pizza = {
                         "poLineNum": "39",
                         "cartonMarking": "Qualcore",
                         "groupNum": "74",
-                        "notBeforeDate": "Tue Jun 09 2015 17:30:18 GMT+0000 (UTC)",
+                        "notBeforeDate": "6/15/2015",
                         "targetDate": null,
-                        "shipPromDate": "Fri Jun 19 2015 12:16:20 GMT+0000 (UTC)",
-                        "revShipPromDate": "Tue Jun 16 2015 11:52:46 GMT+0000 (UTC)",
+                        "shipPromDate": "6/27/2015",
+                        "revShipPromDate": "6/20/2015",
                         "pomName": "OpenServ",
                         "shipFromName": "DuoServe",
                         "producedQty": "34",
@@ -53494,15 +53494,15 @@ var pizza = {
                         "prodNotRecQty": "49",
                         "availToShipQty": "87",
                         "carrier": "MediaDime",
-                        "shipDate": "Thu Jun 11 2015 09:50:25 GMT+0000 (UTC)",
-                        "estDeliveryDate": "Tue Jun 09 2015 17:44:12 GMT+0000 (UTC)",
+                        "shipDate": "6/7/2015",
+                        "estDeliveryDate": "6/24/2015",
                         "proNum": "72",
                         "type": "SixtySix",
-                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
-                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
-                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/19/2015",
+                        "deliveryTime": "5:5:39"
                         "ordLnStatus": "MediaDime",
-                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "schedAsmDate": "6/17/2015",
                         "alerts": [
                             {
                                 "alertType": "6534"
@@ -53522,10 +53522,10 @@ var pizza = {
                         "poLineNum": "26",
                         "cartonMarking": "Conixco",
                         "groupNum": "18",
-                        "notBeforeDate": "Thu Jun 18 2015 21:22:27 GMT+0000 (UTC)",
+                        "notBeforeDate": "6/9/2015",
                         "targetDate": null,
-                        "shipPromDate": "Sun Jun 28 2015 01:20:08 GMT+0000 (UTC)",
-                        "revShipPromDate": "Thu Jun 25 2015 15:13:02 GMT+0000 (UTC)",
+                        "shipPromDate": "6/24/2015",
+                        "revShipPromDate": "6/18/2015",
                         "pomName": "Citisys",
                         "shipFromName": "Amsquare",
                         "producedQty": "41",
@@ -53535,15 +53535,15 @@ var pizza = {
                         "prodNotRecQty": "40",
                         "availToShipQty": "49",
                         "carrier": "Quadtek",
-                        "shipDate": "Thu Jun 25 2015 22:38:28 GMT+0000 (UTC)",
-                        "estDeliveryDate": "Mon Jun 08 2015 01:10:00 GMT+0000 (UTC)",
+                        "shipDate": "6/25/2015",
+                        "estDeliveryDate": "6/24/2015",
                         "proNum": "52",
                         "type": "Cirpria",
-                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
-                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
-                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "origShipPromDate": "6/19/2015",
+                        "actualDeliveryDate" : "6/5/2015",
+                        "deliveryTime": "2:15:20"
                         "ordLnStatus": "MediaDime",
-                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "schedAsmDate": "6/24/2015",
                         "alerts": [
                             {
                                 "alertType": "2214"
@@ -53563,10 +53563,10 @@ var pizza = {
                         "poLineNum": "3",
                         "cartonMarking": "Tecomix",
                         "groupNum": "27",
-                        "notBeforeDate": "Thu Jun 18 2015 10:14:49 GMT+0000 (UTC)",
+                        "notBeforeDate": "6/3/2015",
                         "targetDate": null,
-                        "shipPromDate": "Sat Jun 06 2015 04:29:14 GMT+0000 (UTC)",
-                        "revShipPromDate": "Mon Jun 08 2015 15:11:47 GMT+0000 (UTC)",
+                        "shipPromDate": "6/24/2015",
+                        "revShipPromDate": "6/15/2015
                         "pomName": "Airconix",
                         "shipFromName": "Storex",
                         "producedQty": "87",
@@ -53576,15 +53576,15 @@ var pizza = {
                         "prodNotRecQty": "82",
                         "availToShipQty": "6",
                         "carrier": "Storex",
-                        "shipDate": "Thu Jun 18 2015 15:37:38 GMT+0000 (UTC)",
-                        "estDeliveryDate": "Wed Jun 24 2015 20:22:23 GMT+0000 (UTC)",
+                        "shipDate": "6/13/2015",
+                        "estDeliveryDate": "6/13/2015",
                         "proNum": "33",
                         "type": "Sealine",
-                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
-                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
-                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "origShipPromDate": "6/14/2015",
+                        "actualDeliveryDate" : "6/7/2015",
+                        "deliveryTime": "10:1:46"
                         "ordLnStatus": "MediaDime",
-                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "schedAsmDate": "6/17/2015",
                         "alerts": [
                             {
                                 "alertType": "6168"
@@ -53604,10 +53604,10 @@ var pizza = {
                         "poLineNum": "51",
                         "cartonMarking": "Connic",
                         "groupNum": "78",
-                        "notBeforeDate": "Tue Jun 02 2015 02:31:38 GMT+0000 (UTC)",
+                        "notBeforeDate": "6/25/2015",
                         "targetDate": null,
-                        "shipPromDate": "Tue Jun 02 2015 06:56:54 GMT+0000 (UTC)",
-                        "revShipPromDate": "Wed Jun 24 2015 21:32:30 GMT+0000 (UTC)",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
                         "pomName": "StrategyLine",
                         "shipFromName": "Iridimax",
                         "producedQty": "76",
@@ -53617,15 +53617,15 @@ var pizza = {
                         "prodNotRecQty": "22",
                         "availToShipQty": "3",
                         "carrier": "Solexis",
-                        "shipDate": "Sat Jun 06 2015 22:32:12 GMT+0000 (UTC)",
-                        "estDeliveryDate": "Mon Jun 15 2015 07:05:35 GMT+0000 (UTC)",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
                         "proNum": "11",
                         "type": "Cameratek",
-                        "origShipPromDate": "Sun Jun 28 2015 06:33:17 GMT+0000 (UTC)",
-                        "actualDeliveryDate" :"Sun Jun 14 2015 16:01:08 GMT+0000 (UTC)",
-                        "deliveryTime": "06:33:17 GMT+0000 (UTC)",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "0:0:58"
                         "ordLnStatus": "MediaDime",
-                        "schedAsmDate": "Fri Jun 05 2015 02:09:38 GMT+0000 (UTC)",
+                        "schedAsmDate": "6/26/2015",
                         "alerts": [
                             {
                                 "alertType": "5693"
