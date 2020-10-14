@@ -101,7 +101,7 @@ var pizza = {
 
         noResult: function() {
             return JSON.stringify({
-                "result": [
+                "result": ["foo"
 
                 ]
             });
