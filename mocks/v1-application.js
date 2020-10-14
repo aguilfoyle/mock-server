@@ -53957,7 +53957,7 @@ var pizza = {
                         "type": "Cameratek",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "25:00:00",
+                        "deliveryTime": "22:00:00",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
