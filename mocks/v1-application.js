@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allBucketsNoAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsNoAcceptedAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -55193,6 +55193,155 @@ var pizza = {
                 if(i >= 25){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allBucketsNoAcceptedAlerts: function () {
+            var result = [];
+            var count = 30;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "1111"
+                        },
+                        {
+                            "alertType": "2222.2"
+                        },
+                        {
+                            "alertType": "123456789"
+                        },
+                        {
+                            "alertType": "70"
+                        },
+                        {
+                            "alertType": "400"
+                        },
+                        {
+                            "alertType": "1"
+                        }
+                    ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "1111"
+                        },
+                        {
+                            "alertType": "2222.2"
+                        },
+                        {
+                            "alertType": "123456789"
+                        },
+                        {
+                            "alertType": "70"
+                        },
+                        {
+                            "alertType": "400"
+                        },
+                        {
+                            "alertType": "1"
+                        }
+                    ];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "1111"
+                        },
+                        {
+                            "alertType": "2222.2"
+                        },
+                        {
+                            "alertType": "123456789"
+                        },
+                        {
+                            "alertType": "70"
+                        },
+                        {
+                            "alertType": "400"
+                        },
+                        {
+                            "alertType": "1"
+                        }
+                    ];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "1111"
+                        },
+                        {
+                            "alertType": "2222.2"
+                        },
+                        {
+                            "alertType": "123456789"
+                        },
+                        {
+                            "alertType": "70"
+                        },
+                        {
+                            "alertType": "400"
+                        },
+                        {
+                            "alertType": "1"
+                        }
+                    ];
+                }
+                if(i >= 20 && i <= 24){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "1111"
+                        },
+                        {
+                            "alertType": "2222.2"
+                        },
+                        {
+                            "alertType": "123456789"
+                        },
+                        {
+                            "alertType": "70"
+                        },
+                        {
+                            "alertType": "400"
+                        },
+                        {
+                            "alertType": "1"
+                        }
+                    ];
+                }
+                if(i >= 25){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "1111"
+                        },
+                        {
+                            "alertType": "2222.2"
+                        },
+                        {
+                            "alertType": "123456789"
+                        },
+                        {
+                            "alertType": "70"
+                        },
+                        {
+                            "alertType": "400"
+                        },
+                        {
+                            "alertType": "1"
+                        }
+                    ];
                 }
             }
             return JSON.stringify({
