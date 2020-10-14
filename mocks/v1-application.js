@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'noOrderProcessingSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allProducingAllAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -54646,6 +54646,26 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -54675,7 +54695,29 @@ var pizza = {
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
-                result[i].bucketType = "Producing";
+                if (i >= 0 && i <= 4) {
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "9999"
+                        }
+                    ];
+                }
             }
             return JSON.stringify({
                 result: result
