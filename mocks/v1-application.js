@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allBucketsNoAcceptedAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsWithNullTargetDates', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53500,7 +53500,7 @@ var pizza = {
                         "type": "SixtySix",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/19/2015",
-                        "deliveryTime": "5:5:39",
+                        "deliveryTime": "20:5:39",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/17/2015",
                         "alerts": [
@@ -53541,7 +53541,7 @@ var pizza = {
                         "type": "Cirpria",
                         "origShipPromDate": "6/19/2015",
                         "actualDeliveryDate" : "6/5/2015",
-                        "deliveryTime": "2:15:20",
+                        "deliveryTime": "23:15:20",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/24/2015",
                         "alerts": [
@@ -53582,7 +53582,7 @@ var pizza = {
                         "type": "Sealine",
                         "origShipPromDate": "6/14/2015",
                         "actualDeliveryDate" : "6/7/2015",
-                        "deliveryTime": "10:1:46",
+                        "deliveryTime": "17:1:46",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/17/2015",
                         "alerts": [
@@ -53623,7 +53623,7 @@ var pizza = {
                         "type": "Cameratek",
                         "origShipPromDate": "6/24/2015",
                         "actualDeliveryDate" : "6/22/2015",
-                        "deliveryTime": "0:0:58",
+                        "deliveryTime": "8:0:58",
                         "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
