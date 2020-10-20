@@ -55929,12 +55929,12 @@ var pizza = {
                         // {
                         //     "alertType": "3002.1"
                         // },
-                        {
-                            "alertType": "3002.2"
-                        },
                         // {
-                        //     "alertType": "4001.1"
+                        //     "alertType": "3002.2"
                         // },
+                        {
+                            "alertType": "4001.1"
+                        },
                         // {
                         //     "alertType": "4001.2"
                         // },
@@ -56197,12 +56197,12 @@ var pizza = {
                         {
                             "alertType": "2002"
                         },
-                        {
-                            "alertType": "2004"
-                        },
-                        {
-                            "alertType": "2005"
-                        },
+                        // {
+                        //     "alertType": "2004"
+                        // },
+                        // {
+                        //     "alertType": "2005"
+                        // },
                         {
                             "alertType": "3001"
                         },
