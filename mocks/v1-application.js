@@ -55920,9 +55920,9 @@ var pizza = {
                         {
                             "alertType": "2004"
                         },
-                        {
-                            "alertType": "2005"
-                        },
+                        // {
+                        //     "alertType": "2005"
+                        // },
                         // {
                         //     "alertType": "3001"
                         // },
