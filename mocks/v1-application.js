@@ -55938,12 +55938,12 @@ var pizza = {
                         // {
                         //     "alertType": "4001.2"
                         // },
-                        {
-                            "alertType": "4001.3"
-                        },
                         // {
-                        //     "alertType": "4001.4"
+                        //     "alertType": "4001.3"
                         // },
+                        {
+                            "alertType": "4001.4"
+                        },
                         // {
                         //     "alertType": "4001.5"
                         // },
