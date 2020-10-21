@@ -55923,33 +55923,33 @@ var pizza = {
                         {
                             "alertType": "2005"
                         },
-                        {
-                            "alertType": "3001"
-                        },
-                        {
-                            "alertType": "3002.1"
-                        },
-                        {
-                            "alertType": "3002.2"
-                        },
+                        // {
+                        //     "alertType": "3001"
+                        // },
+                        // {
+                        //     "alertType": "3002.1"
+                        // },
+                        // {
+                        //     "alertType": "3002.2"
+                        // },
                         {
                             "alertType": "4001.1"
                         },
-                        {
-                            "alertType": "4001.2"
-                        },
-                        {
-                            "alertType": "4001.3"
-                        },
-                        {
-                            "alertType": "4001.4"
-                        },
-                        {
-                            "alertType": "4001.5"
-                        },
-                        {
-                            "alertType": "4001.6"
-                        },
+                        // {
+                        //     "alertType": "4001.2"
+                        // },
+                        // {
+                        //     "alertType": "4001.3"
+                        // },
+                        // {
+                        //     "alertType": "4001.4"
+                        // },
+                        // {
+                        //     "alertType": "4001.5"
+                        // },
+                        // {
+                        //     "alertType": "4001.6"
+                        // },
                         {
                             "alertType": "6001"
                         }
