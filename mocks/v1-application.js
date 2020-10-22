@@ -55628,12 +55628,12 @@ var pizza = {
                         {
                             "alertType": "2005"
                         },
-                        {
-                            "alertType": "3001"
-                        },
                         // {
-                        //     "alertType": "3002.1"
+                        //     "alertType": "3001"
                         // },
+                        {
+                            "alertType": "3002.1"
+                        },
                         // {
                         //     "alertType": "3002.2"
                         // },
