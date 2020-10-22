@@ -55569,6 +55569,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
