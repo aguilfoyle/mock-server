@@ -55568,7 +55568,7 @@ var pizza = {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Scheduled";
+                    result[i].bucketType = "Order Processing";
                     result[i].alerts = [
                         {
                             "alertType": "9999"
