@@ -54186,7 +54186,7 @@ var pizza = {
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
-                if(i == 1){
+                if(i == 0){
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
@@ -54200,11 +54200,11 @@ var pizza = {
                         },
                     ];
                 }
-                if(i == 2){
+                if(i == 1){
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [];
                 }
-                if(i == 3){
+                if(i == 2){
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
