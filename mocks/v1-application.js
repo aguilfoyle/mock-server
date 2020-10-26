@@ -54234,6 +54234,12 @@ var pizza = {
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -54249,7 +54255,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -54261,6 +54294,12 @@ var pizza = {
                     result[i].bucketType = "Producing";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -54276,7 +54315,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -54288,6 +54354,12 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -54303,7 +54375,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -54315,6 +54414,12 @@ var pizza = {
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -54330,7 +54435,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -54342,6 +54474,12 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -54357,7 +54495,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -54372,16 +54537,19 @@ var pizza = {
         },
         noScheduledSomeAlerts: function () {
             var result = [];
-            var count = 45;
+            var count = 50;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Producing";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54398,17 +54566,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54425,17 +54626,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 25 && i <= 29){
-                    result[i].bucketType = "Delivery";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54452,17 +54686,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 35 && i <= 39){
-                    result[i].bucketType = "Delivered";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54479,11 +54746,98 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
-                if(i >= 40){
+                if(i >= 35 && i <= 39){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 40 && i <= 44){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+                if(i >= 45){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
@@ -54494,16 +54848,19 @@ var pizza = {
         },
         noProducingSomeAlerts: function () {
             var result = [];
-            var count = 45;
+            var count = 50;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54520,17 +54877,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54547,17 +54937,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 25 && i <= 29){
-                    result[i].bucketType = "Delivery";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54574,17 +54997,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 35 && i <= 39){
-                    result[i].bucketType = "Delivered";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54601,11 +55057,98 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
-                if(i >= 40){
+                if(i >= 35 && i <= 39){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 40 && i <= 44){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+                if(i >= 45){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
@@ -54616,16 +55159,19 @@ var pizza = {
         },
         noAwaitingShipmentSomeAlerts: function () {
             var result = [];
-            var count = 45;
+            var count = 50;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54642,17 +55188,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Producing";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54669,17 +55248,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 25 && i <= 29){
-                    result[i].bucketType = "Delivery";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54696,17 +55308,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 35 && i <= 39){
-                    result[i].bucketType = "Delivered";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54723,11 +55368,98 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
-                if(i >= 40){
+                if(i >= 35 && i <= 39){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 40 && i <= 44){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+                if(i >= 45){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
@@ -54738,16 +55470,19 @@ var pizza = {
         },
         noShippedSomeAlerts: function () {
             var result = [];
-            var count = 45;
+            var count = 50;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54764,17 +55499,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Producing";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54791,17 +55559,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 25 && i <= 29){
-                    result[i].bucketType = "Shipping";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54818,17 +55619,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 35 && i <= 39){
-                    result[i].bucketType = "Delivered";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54845,11 +55679,98 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
-                if(i >= 40){
+                if(i >= 35 && i <= 39){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 40 && i <= 44){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+                if(i >= 45){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
@@ -54860,16 +55781,19 @@ var pizza = {
         },
         noDeliveredSomeAlerts: function () {
             var result = [];
-            var count = 45;
+            var count = 50;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54886,17 +55810,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 10 && i <= 14){
                     result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Producing";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54913,17 +55870,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
                 }
                 if(i >= 20 && i <= 24){
                     result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 25 && i <= 29){
-                    result[i].bucketType = "Shipping";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54940,17 +55930,50 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
+                }
+                if(i >= 25 && i <= 29){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 35 && i <= 39){
-                    result[i].bucketType = "Delivery";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "2001.1"
                         },
@@ -54967,11 +55990,98 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
-                if(i >= 40){
+                if(i >= 35 && i <= 39){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 40 && i <= 44){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+                if(i >= 45){
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [];
                 }
@@ -55019,6 +56129,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Producing";
@@ -55049,6 +56160,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -55079,6 +56191,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -55109,6 +56222,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -55139,6 +56253,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -55161,13 +56276,152 @@ var pizza = {
                 result: result
             });
         },
-        allOrderProcessing: function () {
+        allOrderProcessingNoAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
                 result[i].bucketType = "Order Processing";
+                result[i].alerts = [];
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allOrderProcessingAllAlerts: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if (i >= 0 && i <= 4) {
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allOrderProcessingSomeAlerts: function () {
+            var result = [];
+            var count = 10;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                        {
+                            "alertType": "2004"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
+                        }
+                    ];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
+                }
             }
             return JSON.stringify({
                 result: result
@@ -55196,6 +56450,12 @@ var pizza = {
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55211,7 +56471,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55230,6 +56517,12 @@ var pizza = {
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55245,7 +56538,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55281,6 +56601,12 @@ var pizza = {
                     result[i].bucketType = "Producing";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55296,7 +56622,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55315,6 +56668,12 @@ var pizza = {
                     result[i].bucketType = "Producing";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55330,7 +56689,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55366,6 +56752,12 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55381,7 +56773,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55400,6 +56819,12 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55415,7 +56840,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55451,6 +56903,12 @@ var pizza = {
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55466,7 +56924,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55485,6 +56970,12 @@ var pizza = {
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55500,7 +56991,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55536,6 +57054,12 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55551,7 +57075,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55570,6 +57121,12 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "2001.1"
                         },
                         {
@@ -55585,7 +57142,34 @@ var pizza = {
                             "alertType": "2005"
                         },
                         {
-                            "alertType": "9999"
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3002.1"
+                        },
+                        {
+                            "alertType": "3002.2"
+                        },
+                        {
+                            "alertType": "4001.1"
+                        },
+                        {
+                            "alertType": "4001.2"
+                        },
+                        {
+                            "alertType": "4001.3"
+                        },
+                        {
+                            "alertType": "4001.4"
+                        },
+                        {
+                            "alertType": "4001.5"
+                        },
+                        {
+                            "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "6001"
                         }
                     ];
                 }
@@ -55977,6 +57561,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -56507,6 +58092,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -56533,6 +58119,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
@@ -56563,6 +58150,7 @@ var pizza = {
                 result[i].lineNum = i;
                 if(i >= 0 && i <= 4){
                     result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
                 }
                 if(i >= 5 && i <= 9){
                     result[i].bucketType = "Scheduled";
