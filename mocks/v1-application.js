@@ -57553,19 +57553,19 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = '';
-                    result[i].shortCarrier = '';
+                    result[i].carrierShort = '';
                 }
                 if(i === 57){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = null;
-                    result[i].shortCarrier = '';
+                    result[i].carrierShort = '';
                 }
                 if(i === 58){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = '';
-                    result[i].shortCarrier = null;
+                    result[i].carrierShort = null;
                 }
                 if(i === 59){
                     result[i].bucketType = "Delivered";
@@ -57577,7 +57577,7 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = null;
-                    result[i].shortCarrier = null;
+                    result[i].carrierShort = null;
                 }
             }
             return JSON.stringify({

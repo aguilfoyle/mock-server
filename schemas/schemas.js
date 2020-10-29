@@ -64,7 +64,7 @@ module.exports.line = {
     "prodNotRecQty": "{{int 0 100}}",
     "availToShipQty": "{{int 0 100}}",
     "carrier": "{{company}}",
-    "shortCarrier": "{{company}}",
+    "carrierShort": "{{company}}",
     "shipDate": "{{date '2015-06-01' '2015-06-30' 'M/D/YYYY'}}",
     "estDeliveryDate": "{{date '2015-06-01' '2015-06-30' 'M/D/YYYY'}}",
     "proNum": "{{int 0 100}}",
