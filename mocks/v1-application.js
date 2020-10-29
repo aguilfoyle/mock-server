@@ -57184,7 +57184,7 @@ var pizza = {
         },
         allBucketsSomeAlerts: function () {
             var result = [];
-            var count = 70;
+            var count = 60;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -57370,7 +57370,6 @@ var pizza = {
                 }
                 if(i >= 30 && i <= 34){
                     result[i].bucketType = "Shipping";
-                    result[i].carrier = null;
                     result[i].alerts = [
                         {
                             "alertType": "9999"
@@ -57428,12 +57427,9 @@ var pizza = {
                 if(i >= 35 && i <= 39){
                     result[i].bucketType = "Shipping";
                     result[i].alerts = [];
-                    result[i].carrier = null;
-                    result[i].shortCarrier = null;
                 }
                 if(i >= 40 && i <= 44){
                     result[i].bucketType = "Delivery";
-                    result[i].carrier = '';
                     result[i].alerts = [
                         {
                             "alertType": "9999"
@@ -57490,13 +57486,10 @@ var pizza = {
                 }
                 if(i >= 45 && i <= 49){
                     result[i].bucketType = "Delivery";
-                    result[i].carrier = '';
-                    result[i].shortCarrier = '';
                     result[i].alerts = [];
                 }
                 if(i >= 50 && i <= 54){
                     result[i].bucketType = "Delivered";
-                    result[i].carrier = null;
                     result[i].alerts = [
                         {
                             "alertType": "9999"
@@ -57551,19 +57544,7 @@ var pizza = {
                         }
                     ];
                 }
-                if(i >= 55 && i <= 64){
-                    result[i].bucketType = "Delivered";
-                    result[i].carrier = '';
-                    result[i].shortCarrier = null;
-                    result[i].alerts = [];
-                }
-                if(i >= 65 && i <= 69){
-                    result[i].bucketType = "Delivered";
-                    result[i].carrier = null;
-                    result[i].shortCarrier = '';
-                    result[i].alerts = [];
-                }
-                if(i >= 69){
+                if(i >= 55){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
