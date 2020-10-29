@@ -57184,7 +57184,7 @@ var pizza = {
         },
         allBucketsSomeAlerts: function () {
             var result = [];
-            var count = 61;
+            var count = 60;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -57544,36 +57544,36 @@ var pizza = {
                         }
                     ];
                 }
-                if(i = 56){
+                if(i === 55){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = '';
                 }
-                if(i = 57){
+                if(i === 56){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = '';
                     result[i].shortCarrier = '';
                 }
-                if(i = 58){
+                if(i === 57){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = null;
                     result[i].shortCarrier = '';
                 }
-                if(i = 59){
+                if(i === 58){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = '';
                     result[i].shortCarrier = null;
                 }
-                if(i = 60){
+                if(i === 59){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = null;
                 }
 
-                if(i = 61){
+                if(i === 60){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = null;
