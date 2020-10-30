@@ -57184,7 +57184,7 @@ var pizza = {
         },
         allBucketsSomeAlerts: function () {
             var result = [];
-            var count = 61;
+            var count = 60;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -57545,7 +57545,7 @@ var pizza = {
                     ];
                 }
                 if(i >= 55){
-                    result[i].bucketType = "Delivery";
+                    result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                 }
             }
