@@ -54219,7 +54219,7 @@ var pizza = {
         },
         carrierAndCarrierShortCheck: function () {
             var result = [];
-            var count = 6;
+            var count = 9;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -54227,12 +54227,13 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
                     result[i].carrier = '';
+                    result[i].carrierShort = '';
                 }
                 if(i === 1){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
-                    result[i].carrier = '';
-                    result[i].carrierShort = '';
+                    result[i].carrier = null;
+                    result[i].carrierShort = null;
                 }
                 if(i === 2){
                     result[i].bucketType = "Delivered";
@@ -54251,12 +54252,24 @@ var pizza = {
                     result[i].alerts = [];
                     result[i].carrier = null;
                 }
-
                 if(i === 5){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
-                    result[i].carrier = null;
+                    result[i].carrier = '';
+                }
+                if(i === 6){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                     result[i].carrierShort = null;
+                }
+                if(i === 7){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrierShort = '';
+                }
+                if(i === 8){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
                 }
             }
             return JSON.stringify({
