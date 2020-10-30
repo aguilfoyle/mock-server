@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'shortCarrierNameCheck', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsSomeAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -57544,40 +57544,9 @@ var pizza = {
                         }
                     ];
                 }
-                if(i === 55){
-                    result[i].bucketType = "Delivered";
+                if(i >= 55){
+                    result[i].bucketType = "Delivery";
                     result[i].alerts = [];
-                    result[i].carrier = '';
-                }
-                if(i === 56){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = '';
-                    result[i].carrierShort = '';
-                }
-                if(i === 57){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = null;
-                    result[i].carrierShort = '';
-                }
-                if(i === 58){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = '';
-                    result[i].carrierShort = null;
-                }
-                if(i === 59){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = null;
-                }
-
-                if(i === 60){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = null;
-                    result[i].carrierShort = null;
                 }
             }
             return JSON.stringify({
