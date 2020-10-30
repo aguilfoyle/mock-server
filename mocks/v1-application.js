@@ -54217,6 +54217,52 @@ var pizza = {
                 result: result
             });
         },
+        carrierAndCarrierShortCheck: function () {
+            var result = [];
+            var count = 6;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrier = '';
+                }
+                if(i === 1){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrier = '';
+                    result[i].carrierShort = '';
+                }
+                if(i === 2){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrier = null;
+                    result[i].carrierShort = '';
+                }
+                if(i === 3){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrier = '';
+                    result[i].carrierShort = null;
+                }
+                if(i === 4){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrier = null;
+                }
+
+                if(i === 5){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                    result[i].carrier = null;
+                    result[i].carrierShort = null;
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
         noResult: function() {
             return JSON.stringify({
                 "result": [
@@ -58220,52 +58266,6 @@ var pizza = {
                 if(i >= 0){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        shortCarrierNameCheck: function () {
-            var result = [];
-            var count = 6;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i === 0){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = '';
-                }
-                if(i === 1){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = '';
-                    result[i].carrierShort = '';
-                }
-                if(i === 2){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = null;
-                    result[i].carrierShort = '';
-                }
-                if(i === 3){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = '';
-                    result[i].carrierShort = null;
-                }
-                if(i === 4){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = null;
-                }
-
-                if(i === 5){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                    result[i].carrier = null;
-                    result[i].carrierShort = null;
                 }
             }
             return JSON.stringify({
