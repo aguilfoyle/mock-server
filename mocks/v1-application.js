@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allBucketsAllAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForKathyOrderProcessing', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53380,6 +53380,294 @@ var pizza = {
                         ],
                         "LineNum": 29
                     }
+                ]
+            });
+        },
+        mockForKathyOrderProcessing: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Order Processing",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "6/4/2015",
+                        "targetDate": "6/26/2015",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForKathyScheduled: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Scheduled",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "6/4/2015",
+                        "targetDate": "6/26/2015",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForKathyProducing: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Producing",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "6/4/2015",
+                        "targetDate": "6/26/2015",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForKathyAwaitingShipment: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Shipping",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "6/4/2015",
+                        "targetDate": "6/26/2015",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForKathyShipped: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Delivery",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "6/4/2015",
+                        "targetDate": "6/26/2015",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForKathyDelivered: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Delivered",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "Sealine",
+                        "description": "SmartSystems",
+                        "itemNum": "35",
+                        "productApproval": "Optiplex",
+                        "qty": "100",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "68",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "67",
+                        "notBeforeDate": "6/4/2015",
+                        "targetDate": "6/26/2015",
+                        "shipPromDate": "6/4/2015",
+                        "revShipPromDate": "6/19/2015",
+                        "pomName": "Proline",
+                        "shipFromName": "MediaDime",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "StrategyLine",
+                        "origShipPromDate": "6/24/2015",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
                 ]
             });
         },
