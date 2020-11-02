@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'mockForKathyScheduled', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForKathyProducing', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53485,23 +53485,23 @@ var pizza = {
                     {
                         "bucketType": "Producing",
                         "prodDivision": "PeerSys",
-                        "lineNum": "Sealine",
-                        "description": "SmartSystems",
-                        "itemNum": "35",
-                        "productApproval": "Optiplex",
-                        "qty": "100",
+                        "lineNum": "1",
+                        "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
+                        "itemNum": "*266E25",
+                        "productApproval": "PAP",
+                        "qty": "47",
                         "unitDollars": "235.34",
                         "extDollars": "181.64",
-                        "poLineNum": "68",
+                        "poLineNum": "1",
                         "cartonMarking": "CoreMax",
-                        "groupNum": "67",
-                        "notBeforeDate": "6/4/2015",
-                        "targetDate": "6/26/2015",
-                        "shipPromDate": "6/4/2015",
-                        "revShipPromDate": "6/19/2015",
-                        "pomName": "Proline",
-                        "shipFromName": "MediaDime",
-                        "producedQty": "13",
+                        "groupNum": "1",
+                        "notBeforeDate": "11/1/2020",
+                        "targetDate": "11/10/2020",
+                        "shipPromDate": "11/13/2020",
+                        "revShipPromDate": null,
+                        "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "0",
                         "prodStatus": "OmniTouch",
                         "shipmentNum": "22",
                         "shippingStatus": "Citisys",
@@ -53512,11 +53512,11 @@ var pizza = {
                         "shipDate": "6/3/2015",
                         "estDeliveryDate": "6/10/2015",
                         "proNum": "65",
-                        "type": "StrategyLine",
-                        "origShipPromDate": "6/24/2015",
+                        "type": "A",
+                        "origShipPromDate": "11/13/2020",
                         "actualDeliveryDate" : "6/22/2015",
                         "deliveryTime": "00:01:58",
-                        "ordLnStatus": "MediaDime",
+                        "ordLnStatus": "Frozen",
                         "schedAsmDate": "6/5/2015",
                         "alerts": [
                             {
