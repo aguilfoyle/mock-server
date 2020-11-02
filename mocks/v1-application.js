@@ -53394,8 +53394,8 @@ var pizza = {
                         "itemNum": "*266E25",
                         "productApproval": "PAP",
                         "qty": "47",
-                        "unitDollars": null,
-                        "extDollars": null,
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
                         "poLineNum": "1",
                         "cartonMarking": "PO #123",
                         "groupNum": "1",
@@ -53406,7 +53406,7 @@ var pizza = {
                         "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
                         "shipFromName": "SWMDC (DALLAS, TX, USA)",
                         "producedQty": "0",
-                        "prodStatus": null,
+                        "prodStatus": "OmniTouch",
                         "shipmentNum": "0",
                         "shippingStatus": "Frozen",
                         "prodNotRecQty": "47",
@@ -53420,10 +53420,12 @@ var pizza = {
                         "origShipPromDate": "11/13/2020",
                         "actualDeliveryDate" : "11/16/2020",
                         "deliveryTime": "10:00:00",
-                        "ordLnStatus": null,
-                        "schedAsmDate": null,
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "11/09/2020",
                         "alerts": [
-
+                            {
+                                "alertType": "4000"
+                            }
                         ],
                     },
                 ]
