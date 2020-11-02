@@ -53502,7 +53502,7 @@ var pizza = {
                         "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
                         "shipFromName": "SWMDC (DALLAS, TX, USA)",
                         "producedQty": "0",
-                        "prodStatus": "OmniTouch",
+                        "prodStatus": "Frozen",
                         "shipmentNum": "22",
                         "shippingStatus": "Citisys",
                         "prodNotRecQty": "93",
@@ -53516,7 +53516,7 @@ var pizza = {
                         "origShipPromDate": "11/13/2020",
                         "actualDeliveryDate" : "6/22/2015",
                         "deliveryTime": "00:01:58",
-                        "ordLnStatus": "Frozen",
+                        "ordLnStatus": "OmniTouch",
                         "schedAsmDate": "6/5/2015",
                         "alerts": [
                             {
