@@ -53387,7 +53387,7 @@ var pizza = {
             return JSON.stringify({
                 "result": [
                     {
-                        "bucketType": "Scheduled",
+                        "bucketType": "Order Processing",
                         "prodDivision": "PeerSys",
                         "lineNum": "1",
                         "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
