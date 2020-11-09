@@ -54919,7 +54919,7 @@ var pizza = {
                 ]
             });
         },
-        allScheduedSomeAlertsSquashingCheck: function () {
+        allScheduedSomeLineAlertsSquashingCheck: function () {
             var result = [];
             var count = 3;
             for (var i = 0; i < count; i++) {
@@ -55022,7 +55022,7 @@ var pizza = {
                 ]
             });
         },
-        noOrderProcessingSomeAlerts: function () {
+        noOrderProcessingSomeLineAlerts: function () {
             var result = [];
             var count = 50;
             for (var i = 0; i < count; i++) {
@@ -55333,7 +55333,38 @@ var pizza = {
                 result: result
             });
         },
-        noScheduledSomeAlerts: function () {
+        noOrderProcessingNoLineAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noScheduledSomeLineAlerts: function () {
             var result = [];
             var count = 50;
             for (var i = 0; i < count; i++) {
@@ -55644,7 +55675,38 @@ var pizza = {
                 result: result
             });
         },
-        noProducingSomeAlerts: function () {
+        noScheduledNoLineAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noProducingSomeLineAlerts: function () {
             var result = [];
             var count = 50;
             for (var i = 0; i < count; i++) {
@@ -55955,7 +56017,38 @@ var pizza = {
                 result: result
             });
         },
-        noAwaitingShipmentSomeAlerts: function () {
+        noProducingNoLineAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noAwaitingShipmentSomeLineAlerts: function () {
             var result = [];
             var count = 50;
             for (var i = 0; i < count; i++) {
@@ -56266,7 +56359,38 @@ var pizza = {
                 result: result
             });
         },
-        noShippedSomeAlerts: function () {
+        noAwaitingShipmentNoLineAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [];
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noShippedSomeLineAlerts: function () {
             var result = [];
             var count = 50;
             for (var i = 0; i < count; i++) {
@@ -56577,7 +56701,38 @@ var pizza = {
                 result: result
             });
         },
-        noDeliveredSomeAlerts: function () {
+        noShippedNoLineAlerts: function () {
+            var result = [];
+            var count = 25;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i >= 0 && i <= 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [];
+                }
+                if(i >= 5 && i <= 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [];
+                }
+                if(i >= 10 && i <= 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [];
+                }
+                if(i >= 15 && i <= 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [];
+                }
+                if(i >= 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        noDeliveredSomeLineAlerts: function () {
             var result = [];
             var count = 50;
             for (var i = 0; i < count; i++) {
@@ -56888,162 +57043,7 @@ var pizza = {
                 result: result
             });
         },
-        noOrderProcessingNoAlerts: function () {
-            var result = [];
-            var count = 25;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 20){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        noScheduledNoAlerts: function () {
-            var result = [];
-            var count = 25;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Order Processing";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 20){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        noProducingNoAlerts: function () {
-            var result = [];
-            var count = 25;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Order Processing";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 20){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        noAwaitingShipmentNoAlerts: function () {
-            var result = [];
-            var count = 25;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Order Processing";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [];
-                }
-                if(i >= 20){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        noShippedNoAlerts: function () {
-            var result = [];
-            var count = 25;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i >= 0 && i <= 4){
-                    result[i].bucketType = "Order Processing";
-                    result[i].alerts = [];
-                }
-                if(i >= 5 && i <= 9){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [];
-                }
-                if(i >= 10 && i <= 14){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [];
-                }
-                if(i >= 15 && i <= 19){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [];
-                }
-                if(i >= 20){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        noDeliveredNoAlerts: function () {
+        noDeliveredNoLineAlerts: function () {
             var result = [];
             var count = 25;
             for (var i = 0; i < count; i++) {
@@ -57074,7 +57074,7 @@ var pizza = {
                 result: result
             });
         },
-        allOrderProcessingNoAlerts: function () {
+        allOrderProcessingNoLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57087,7 +57087,7 @@ var pizza = {
                 result: result
             });
         },
-        allOrderProcessingAllAlerts: function () {
+        allOrderProcessingAllLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57154,7 +57154,7 @@ var pizza = {
                 result: result
             });
         },
-        allOrderProcessingSomeAlerts: function () {
+        allOrderProcessingSomeLineAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -57225,7 +57225,7 @@ var pizza = {
                 result: result
             });
         },
-        allScheduledNoAlerts: function () {
+        allScheduledNoLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57238,7 +57238,7 @@ var pizza = {
                 result: result
             });
         },
-        allScheduledAllAlerts: function () {
+        allScheduledAllLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57305,7 +57305,7 @@ var pizza = {
                 result: result
             });
         },
-        allScheduedSomeAlerts: function () {
+        allScheduedSomeLineAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -57376,7 +57376,7 @@ var pizza = {
                 result: result
             });
         },
-        allProducingNoAlerts: function () {
+        allProducingNoLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57389,7 +57389,7 @@ var pizza = {
                 result: result
             });
         },
-        allProducingAllAlerts: function () {
+        allProducingAllLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57456,7 +57456,7 @@ var pizza = {
                 result: result
             });
         },
-        allProducingSomeAlerts: function () {
+        allProducingSomeLineAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -57527,7 +57527,7 @@ var pizza = {
                 result: result
             });
         },
-        allAwaitingShipmentNoAlerts: function () {
+        allAwaitingShipmentNoLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57540,7 +57540,7 @@ var pizza = {
                 result: result
             });
         },
-        allAwaitingShipmentAllAlerts: function () {
+        allAwaitingShipmentAllLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57607,7 +57607,7 @@ var pizza = {
                 result: result
             });
         },
-        allAwaitingShipmentSomeAlerts: function () {
+        allAwaitingShipmentSomeLineAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -57678,7 +57678,7 @@ var pizza = {
                 result: result
             });
         },
-        allShippeddNoAlerts: function () {
+        allShippeddNoLineAlerts: function () {
             var result = [];
             var count = 1;
             for (var i = 0; i < count; i++) {
@@ -57691,7 +57691,7 @@ var pizza = {
                 result: result
             });
         },
-        allShippedAllAlerts: function () {
+        allShippedAllLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57758,7 +57758,7 @@ var pizza = {
                 result: result
             });
         },
-        allShippedSomeAlerts: function () {
+        allShippedSomeLineAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -57829,7 +57829,7 @@ var pizza = {
                 result: result
             });
         },
-        allDeliveredNoAlerts: function () {
+        allDeliveredNoLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57842,7 +57842,7 @@ var pizza = {
                 result: result
             });
         },
-        allDeliveredAllAlerts: function () {
+        allDeliveredAllLineAlerts: function () {
             var result = [];
             var count = 5;
             for (var i = 0; i < count; i++) {
@@ -57909,7 +57909,7 @@ var pizza = {
                 result: result
             });
         },
-        allDeliveredSomeAlerts: function () {
+        allDeliveredSomeLineAlerts: function () {
             var result = [];
             var count = 10;
             for (var i = 0; i < count; i++) {
@@ -57980,7 +57980,7 @@ var pizza = {
                 result: result
             });
         },
-        allBucketsSomeAlerts: function () {
+        allBucketsSomeLineAlerts: function () {
             var result = [];
             var count = 60;
             for (var i = 0; i < count; i++) {
@@ -58351,7 +58351,7 @@ var pizza = {
                 result: result
             });
         },
-        allBucketsNoAlerts: function () {
+        allBucketsNoLineAlerts: function () {
             var result = [];
             var count = 30;
             for (var i = 0; i < count; i++) {
@@ -58386,7 +58386,7 @@ var pizza = {
                 result: result
             });
         },
-        allBucketsNoAcceptedAlerts: function () {
+        allBucketsNoAcceptedLineAlerts: function () {
             var result = [];
             var count = 30;
             for (var i = 0; i < count; i++) {
@@ -58535,7 +58535,7 @@ var pizza = {
                 result: result
             });
         },
-        allBucketsAllAlerts: function () {
+        allBucketsAllLineAlerts: function () {
             var result = [];
             var count = 30;
             for (var i = 0; i < count; i++) {
