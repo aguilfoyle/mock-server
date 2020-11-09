@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allBucketsAllAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForKathyRedAndGreenDates', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53719,6 +53719,138 @@ var pizza = {
                 ]
             });
         },
+        mockForKathyRedAndGreenDates: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Shipping",
+                        "prodDivision": "4110",
+                        "lineNum": "1.000",
+                        "description": "EI500 M12",
+                        "itemNum": "*124K76",
+                        "productApproval": null,
+                        "qty": "5",
+                        "unitDollars": null,
+                        "extDollars": "232.00",
+                        "poLineNum": "0",
+                        "cartonMarking": null,
+                        "groupNum": "0",
+                        "notBeforeDate": null,
+                        "targetDate": null,
+                        "shipPromDate": "11/10/2020",
+                        "revShipPromDate": "11/9/2020",
+                        "pomName": null,
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "0",
+                        "prodStatus": null,
+                        "shipmentNum": "1",
+                        "shippingStatus": "Released for Shipment",
+                        "prodNotRecQty": "0",
+                        "availToShipQty": "5",
+                        "carrier": "TEMPORARY CARRIER",
+                        "carrierShort": "TEMP",
+                        "shipDate": null,
+                        "estDeliveryDate": null,
+                        "proNum": null,
+                        "type": null,
+                        "origShipPromDate": "11/10/2020",
+                        "actualDeliveryDate" : null,
+                        "deliveryTime": null,
+                        "ordLnStatus": "REL",
+                        "schedAsmDate": null,
+                        "alerts": [
+                            {
+                                "alertType": "2001.1"
+                            }
+                        ],
+                    },
+                    {
+                        "bucketType": "Shipping",
+                        "prodDivision": "4110",
+                        "lineNum": "2.000",
+                        "description": "EI500 M12",
+                        "itemNum": "*124K76",
+                        "productApproval": null,
+                        "qty": "5",
+                        "unitDollars": null,
+                        "extDollars": "232.00",
+                        "poLineNum": "0",
+                        "cartonMarking": null,
+                        "groupNum": "0",
+                        "notBeforeDate": null,
+                        "targetDate": null,
+                        "shipPromDate": "11/10/2020",
+                        "revShipPromDate": "11/11/2020",
+                        "pomName": null,
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "0",
+                        "prodStatus": null,
+                        "shipmentNum": "1",
+                        "shippingStatus": "Released for Shipment",
+                        "prodNotRecQty": "0",
+                        "availToShipQty": "5",
+                        "carrier": "TEMPORARY CARRIER",
+                        "carrierShort": "TEMP",
+                        "shipDate": null,
+                        "estDeliveryDate": null,
+                        "proNum": null,
+                        "type": null,
+                        "origShipPromDate": "11/10/2020",
+                        "actualDeliveryDate" : null,
+                        "deliveryTime": null,
+                        "ordLnStatus": "REL",
+                        "schedAsmDate": null,
+                        "alerts": [
+                            {
+                                "alertType": "2001.1"
+                            }
+                        ],
+                    },
+                    {
+                        "bucketType": "Shipping",
+                        "prodDivision": "4110",
+                        "lineNum": "3.000",
+                        "description": "EI500 M12",
+                        "itemNum": "*124K76",
+                        "productApproval": null,
+                        "qty": "5",
+                        "unitDollars": null,
+                        "extDollars": "232.00",
+                        "poLineNum": "0",
+                        "cartonMarking": null,
+                        "groupNum": "0",
+                        "notBeforeDate": null,
+                        "targetDate": null,
+                        "shipPromDate": "11/10/2020",
+                        "revShipPromDate": "11/10/2020",
+                        "pomName": null,
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "0",
+                        "prodStatus": null,
+                        "shipmentNum": "1",
+                        "shippingStatus": "Released for Shipment",
+                        "prodNotRecQty": "0",
+                        "availToShipQty": "5",
+                        "carrier": "TEMPORARY CARRIER",
+                        "carrierShort": "TEMP",
+                        "shipDate": null,
+                        "estDeliveryDate": null,
+                        "proNum": null,
+                        "type": null,
+                        "origShipPromDate": "11/10/2020",
+                        "actualDeliveryDate" : null,
+                        "deliveryTime": null,
+                        "ordLnStatus": "REL",
+                        "schedAsmDate": null,
+                        "alerts": [
+                            {
+                                "alertType": "2001.1"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
         allBuckets: function() {
             return JSON.stringify({
                 "result": [
@@ -53733,7 +53865,7 @@ var pizza = {
                         "unitDollars": "235.34",
                         "extDollars": "181.64",
                         "poLineNum": "68",
-                        "cartonMarking": "CoreMax",
+                        "cartonMarking": "Optiplex",
                         "groupNum": "67",
                         "notBeforeDate": "6/4/2015",
                         "targetDate": "6/26/2015",
