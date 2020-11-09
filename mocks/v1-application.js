@@ -53844,7 +53844,7 @@ var pizza = {
                         "schedAsmDate": null,
                         "alerts": [
                             {
-                                "alertType": "2001.1"
+                                "alertType": "1234"
                             }
                         ],
                     },
