@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allOrderProcessingAllHeaderAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allOrderProcessingOnly3003HeaderAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -59716,6 +59716,31 @@ var pizza = {
                         },
                         {
                             "alertType": "5001.3"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        allOrderProcessingOnly3003HeaderAlerts: function () {
+            var result = [];
+            var count = 5;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if (i >= 0 && i <= 4) {
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
+                            "alertType": "3003"
                         },
                     ];
                 }
