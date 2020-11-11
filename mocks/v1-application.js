@@ -65839,7 +65839,7 @@ var pizza = {
                         "schedAsmDate": "6/5/2015",
                         "alerts": [
                             {
-                                "alertType": "4000"
+                                "alertType": "3001"
                             }
                         ],
                     },
@@ -66049,7 +66049,7 @@ var pizza = {
                         "schedAsmDate": "6/26/2015",
                         "alerts": [
                             {
-                                "alertType": "2002"
+                                "alertType": "1234"
                             }
                         ],
                     }
