@@ -65182,6 +65182,12 @@ var pizza = {
                     result[i].bucketType = "Order Processing";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "3003"
                         },
                         {
@@ -65266,6 +65272,12 @@ var pizza = {
                 if(i >= 15 && i <= 19){
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "3003"
                         },
@@ -65352,6 +65364,12 @@ var pizza = {
                     result[i].bucketType = "Producing";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "3003"
                         },
                         {
@@ -65436,6 +65454,12 @@ var pizza = {
                 if(i >= 35 && i <= 39){
                     result[i].bucketType = "Shipping";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "3003"
                         },
@@ -65522,6 +65546,12 @@ var pizza = {
                     result[i].bucketType = "Delivery";
                     result[i].alerts = [
                         {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
+                        {
                             "alertType": "3003"
                         },
                         {
@@ -65606,6 +65636,12 @@ var pizza = {
                 if(i >= 55){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [
+                        {
+                            "alertType": "9999"
+                        },
+                        {
+                            "alertType": null
+                        },
                         {
                             "alertType": "3003"
                         },
