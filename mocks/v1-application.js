@@ -54947,7 +54947,7 @@ var pizza = {
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
-                            "alertType": "3003"
+                            "alertType": "5001.2"
                         }
                     ];
                 }
