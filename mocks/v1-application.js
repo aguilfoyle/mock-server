@@ -55665,7 +55665,7 @@ var pizza = {
                     ];
                 }
                 if(i === 35){
-                    result[i].bucketType = "Scheduled";
+                    result[i].bucketType = "Producing";
                     result[i].alerts = [
                         {
                             "alertType": "2001.81426.81428"
