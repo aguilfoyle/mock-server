@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'DevReasonCodesMiscOtherAlertsProducingBucketOnly', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'DevReasonCodesMiscOtherAlertsAwaitingShipmentBucketOnly', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -60967,6 +60967,15 @@ var pizza = {
                         {
                             "alertType": "2001.81442.0"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 1){
@@ -60974,6 +60983,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -60983,6 +61001,15 @@ var pizza = {
                         {
                             "alertType": "2001.81451.0"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 3){
@@ -60990,6 +61017,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -60999,6 +61035,15 @@ var pizza = {
                         {
                             "alertType": "2001.81456.0"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 5){
@@ -61006,6 +61051,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61015,6 +61069,15 @@ var pizza = {
                         {
                             "alertType": "2001.81357.78645"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 7){
@@ -61022,6 +61085,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61031,6 +61103,15 @@ var pizza = {
                         {
                             "alertType": "2001.81357.78574"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 9){
@@ -61038,6 +61119,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61047,6 +61137,15 @@ var pizza = {
                         {
                             "alertType": "2001.81357.81378"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 11){
@@ -61054,6 +61153,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61063,6 +61171,15 @@ var pizza = {
                         {
                             "alertType": "2001.81358.81366"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 13){
@@ -61070,6 +61187,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61079,6 +61205,15 @@ var pizza = {
                         {
                             "alertType": "2001.81358.81368"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 15){
@@ -61086,6 +61221,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61095,6 +61239,15 @@ var pizza = {
                         {
                             "alertType": "2001.81359.81370"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 17){
@@ -61102,6 +61255,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61111,6 +61273,15 @@ var pizza = {
                         {
                             "alertType": "2001.81360.78577"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 19){
@@ -61118,6 +61289,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61127,6 +61307,15 @@ var pizza = {
                         {
                             "alertType": "2001.81360.78578"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 21){
@@ -61134,6 +61323,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61143,6 +61341,15 @@ var pizza = {
                         {
                             "alertType": "2001.81361.81374"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 23){
@@ -61150,6 +61357,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61159,6 +61375,15 @@ var pizza = {
                         {
                             "alertType": "2001.81362.81376"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 25){
@@ -61166,6 +61391,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61175,6 +61409,15 @@ var pizza = {
                         {
                             "alertType": "2001.81362.78579"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 27){
@@ -61182,6 +61425,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61191,6 +61443,15 @@ var pizza = {
                         {
                             "alertType": "2001.81429.81431"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 29){
@@ -61198,6 +61459,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61207,6 +61477,15 @@ var pizza = {
                         {
                             "alertType": "2001.81412.81414"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 31){
@@ -61214,6 +61493,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61223,6 +61511,15 @@ var pizza = {
                         {
                             "alertType": "2001.81413.81416"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 33){
@@ -61230,6 +61527,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61239,6 +61545,15 @@ var pizza = {
                         {
                             "alertType": "2001.81426.81427"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 35){
@@ -61246,6 +61561,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61255,6 +61579,15 @@ var pizza = {
                         {
                             "alertType": "2001.81432.81449"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 37){
@@ -61262,6 +61595,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61271,6 +61613,15 @@ var pizza = {
                         {
                             "alertType": "2001.81432.81434"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 39){
@@ -61278,6 +61629,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61287,6 +61647,15 @@ var pizza = {
                         {
                             "alertType": "2001.81437.81438"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 41){
@@ -61294,6 +61663,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
@@ -61303,6 +61681,15 @@ var pizza = {
                         {
                             "alertType": "2001.81437.81440"
                         },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 43){
@@ -61310,6 +61697,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
