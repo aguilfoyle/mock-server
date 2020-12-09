@@ -57123,7 +57123,7 @@ var pizza = {
                     ];
                 }
                 if(i === 2){
-                    result[i].bucketType = "Scheduled";
+                    result[i].bucketType = "Shipping";
                     result[i].alerts = [
                         {
                             "alertType": "2001.81451.0"
