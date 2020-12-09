@@ -59319,6 +59319,15 @@ var pizza = {
                         {
                             "alertType": "2001.81432.81433"
                         },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
                     ];
                 }
                 if(i === 38){
@@ -59360,6 +59369,15 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
                         },
                     ];
                 }
