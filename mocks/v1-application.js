@@ -53918,7 +53918,7 @@ var pizza = {
                         "notBeforeDate": "1/1/2021",
                         "targetDate": "1/10/2021",
                         "shipPromDate": "1/13/2021",
-                        "revShipPromDate": "1/15/20201",
+                        "revShipPromDate": "1/15/2021",
                         "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
                         "shipFromName": "SWMDC (DALLAS, TX, USA)",
                         "producedQty": "0",
