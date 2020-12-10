@@ -53903,7 +53903,7 @@ var pizza = {
             return JSON.stringify({
                 "result": [
                     {
-                        "bucketType": "Shipping",
+                        "bucketType": "Scheduled",
                         "prodDivision": "PeerSys",
                         "lineNum": "1.000",
                         "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
@@ -53921,14 +53921,14 @@ var pizza = {
                         "revShipPromDate": "1/15/2021",
                         "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
                         "shipFromName": "SWMDC (DALLAS, TX, USA)",
-                        "producedQty": "0",
-                        "prodStatus": "Frozen",
-                        "shipmentNum": "0",
-                        "shippingStatus": "In Transit to DC",
-                        "prodNotRecQty": "47",
-                        "availToShipQty": "0",
-                        "carrier": null,
-                        "carrierShort": null,
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
                         "shipDate": "6/3/2015",
                         "estDeliveryDate": "6/10/2015",
                         "proNum": "65",
@@ -53936,11 +53936,11 @@ var pizza = {
                         "origShipPromDate": "1/13/2021",
                         "actualDeliveryDate" : "6/22/2015",
                         "deliveryTime": "00:01:58",
-                        "ordLnStatus": "OmniTouch",
+                        "ordLnStatus": "MediaDime",
                         "schedAsmDate": "6/5/2015",
                         "alerts": [
                             {
-                                "alertType": "2001.81357.81378"
+                                "alertType": "2001.81450.0"
                             }
                         ],
                     },
