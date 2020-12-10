@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allBucketsNoAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForBlogPostReasonCodes', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53845,6 +53845,54 @@ var pizza = {
                         "alerts": [
                             {
                                 "alertType": "1234"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForBlogPostReasonCodes: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Scheduled",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "1.000",
+                        "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
+                        "itemNum": "*266E25",
+                        "productApproval": "PAP",
+                        "qty": "47",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "1",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "1",
+                        "notBeforeDate": "1/1/2021",
+                        "targetDate": "1/10/2021",
+                        "shipPromDate": "1/13/2021",
+                        "revShipPromDate": "1/10/2021",
+                        "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "A",
+                        "origShipPromDate": "1/13/2021",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "2001.81359.81370"
                             }
                         ],
                     },
