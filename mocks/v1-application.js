@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'mockForBlogPostReasonCodesDatePulledIn', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForBlogPostReasonCodesDatePushedOut', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53917,8 +53917,8 @@ var pizza = {
                         "groupNum": "1",
                         "notBeforeDate": "1/1/2021",
                         "targetDate": "1/10/2021",
-                        "shipPromDate": "1/15/2021",
-                        "revShipPromDate": null,
+                        "shipPromDate": "1/13/2021",
+                        "revShipPromDate": "1/15/2021",
                         "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
                         "shipFromName": "SWMDC (DALLAS, TX, USA)",
                         "producedQty": "13",
