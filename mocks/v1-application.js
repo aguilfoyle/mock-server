@@ -93,7 +93,7 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'allBucketsNoAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'allBucketsHalfLineAlerstWithHeaderAlerts', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served
@@ -53431,7 +53431,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyOrderProcessing: function() {
+        mockForOrderTrackerAnnouncementOrderProcessing: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53479,7 +53479,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyScheduled: function() {
+        mockForOrderTrackerAnnouncementScheduled: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53527,7 +53527,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyProducing: function() {
+        mockForOrderTrackerAnnouncementProducing: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53575,7 +53575,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyAwaitingShipment: function() {
+        mockForOrderTrackerAnnouncementAwaitingShipment: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53623,7 +53623,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyShipped: function() {
+        mockForOrderTrackerAnnouncementShipped: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53671,7 +53671,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyDelivered: function() {
+        mockForOrderTrackerAnnouncementDelivered: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53719,7 +53719,7 @@ var pizza = {
                 ]
             });
         },
-        mockForKathyRedAndGreenDates: function() {
+        mockForOrderTrackerAnnouncementRedAndGreenDates: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -53845,6 +53845,102 @@ var pizza = {
                         "alerts": [
                             {
                                 "alertType": "1234"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForReasonCodesAnnouncementDatePulledIn: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Scheduled",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "1.000",
+                        "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
+                        "itemNum": "*266E25",
+                        "productApproval": "PAP",
+                        "qty": "47",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "1",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "1",
+                        "notBeforeDate": "1/1/2021",
+                        "targetDate": "1/10/2021",
+                        "shipPromDate": "1/08/2021",
+                        "revShipPromDate": "1/08/2021",
+                        "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "A",
+                        "origShipPromDate": "1/13/2021",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "2001.81359.81370"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForReasonCodesAnnouncementDatePushedOut: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Scheduled",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "1.000",
+                        "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
+                        "itemNum": "*266E25",
+                        "productApproval": "PAP",
+                        "qty": "47",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "1",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "1",
+                        "notBeforeDate": "1/1/2021",
+                        "targetDate": "1/10/2021",
+                        "shipPromDate": "1/13/2021",
+                        "revShipPromDate": "1/15/2021",
+                        "pomName": "IPF (CRAWFORDSVILLE, IN, USA)",
+                        "shipFromName": "SWMDC (DALLAS, TX, USA)",
+                        "producedQty": "13",
+                        "prodStatus": "OmniTouch",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "A",
+                        "origShipPromDate": "1/13/2021",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "MediaDime",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "2001.81450.0"
                             }
                         ],
                     },
@@ -54919,7 +55015,7 @@ var pizza = {
                 ]
             });
         },
-        allScheduedSomeLineAlertsSquashingCheck: function () {
+        allScheduedSomeLineAlerts2002SquashingCheck: function () {
             var result = [];
             var count = 3;
             for (var i = 0; i < count; i++) {
@@ -55009,6 +55105,8661 @@ var pizza = {
                 if(i === 8){
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesOrderProcessingBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesScheduledBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesProducingBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesAwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesShippedBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesDeliveredBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckScheduledBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckProducingBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckAwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesWithMiscOtherAlertsOrderProcessingBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesWithMiscOtherAlertsScheduledBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesMiscOtherAlertsProducingBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesMiscOtherAlertsAwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesMiscOtherAlertsShippedBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesMiscOtherAlertsDeliveredBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81450.0"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81451.0"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81452.0"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81456.0"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78645"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78646"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.78574"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81364"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81378"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81365"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81366"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81367"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81368"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81358.81369"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81370"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81359.81371"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78577"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.81372"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81360.78578"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81373"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81374"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81361.81375"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81376"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.81377"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81362.78579"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81430"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81429.81431"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81425"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81414"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81412.81415"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81416"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81413.81417"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81427"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81428"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81449"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81433"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81432.81434"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81435.81436"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81438"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81439"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81440"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81437.81441"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        ProdReasonCodesScheduledBucketOnly: function () {
+            var result = [];
+            var count = 44;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81756.0"
+                        },
+                    ];
+                }
+                if(i === 1){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81760.0"
+                        },
+                    ];
+                }
+                if(i === 2){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81761.0"
+                        },
+                    ];
+                }
+                if(i === 3){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81762.0"
+                        },
+                    ];
+                }
+                if(i === 4){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81764.0"
+                        },
+                    ];
+                }
+                if(i === 5){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81422.81428"
+                        },
+                    ];
+                }
+                if(i === 6){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81422.78645"
+                        },
+                    ];
+                }
+                if(i === 7){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81422.78646"
+                        },
+                    ];
+                }
+                if(i === 8){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81422.78574"
+                        },
+                    ];
+                }
+                if(i === 9){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81422.81429"
+                        },
+                    ];
+                }
+                if(i === 10){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81422.81443"
+                        },
+                    ];
+                }
+                if(i === 11){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81423.81430"
+                        },
+                    ];
+                }
+                if(i === 12){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81423.81431"
+                        },
+                    ];
+                }
+                if(i === 13){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81423.81432"
+                        },
+                    ];
+                }
+                if(i === 14){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81423.81433"
+                        },
+                    ];
+                }
+                if(i === 15){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81423.81434"
+                        },
+                    ];
+                }
+                if(i === 16){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81435"
+                        },
+                    ];
+                }
+                if(i === 17){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81424.81436"
+                        },
+                    ];
+                }
+                if(i === 18){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81425.78577"
+                        },
+                    ];
+                }
+                if(i === 19){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81425.81437"
+                        },
+                    ];
+                }
+                if(i === 20){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81425.78578"
+                        },
+                    ];
+                }
+                if(i === 21){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81438"
+                        },
+                    ];
+                }
+                if(i === 22){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81439"
+                        },
+                    ];
+                }
+                if(i === 23){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81426.81440"
+                        },
+                    ];
+                }
+                if(i === 24){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81427.81441"
+                        },
+                    ];
+                }
+                if(i === 25){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81427.81442"
+                        },
+                    ];
+                }
+                if(i === 26){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81427.78579"
+                        },
+                    ];
+                }
+                if(i === 27){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81732.81733"
+                        },
+                    ];
+                }
+                if(i === 28){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81732.81734"
+                        },
+                    ];
+                }
+                if(i === 29){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81727.81728"
+                        },
+                    ];
+                }
+                if(i === 30){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81720.81722"
+                        },
+                    ];
+                }
+                if(i === 31){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81720.81723"
+                        },
+                    ];
+                }
+                if(i === 32){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81721.81724"
+                        },
+                    ];
+                }
+                if(i === 33){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81721.81725"
+                        },
+                    ];
+                }
+                if(i === 34){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81729.81730"
+                        },
+                    ];
+                }
+                if(i === 35){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81729.81731"
+                        },
+                    ];
+                }
+                if(i === 36){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81746.81757"
+                        },
+                    ];
+                }
+                if(i === 37){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81746.81747"
+                        },
+                    ];
+                }
+                if(i === 38){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81746.81748"
+                        },
+                    ];
+                }
+                if(i === 39){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81749.81750"
+                        },
+                    ];
+                }
+                if(i === 40){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81751.81752"
+                        },
+                    ];
+                }
+                if(i === 41){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81751.81753"
+                        },
+                    ];
+                }
+                if(i === 42){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81751.81754"
+                        },
+                    ];
+                }
+                if(i === 43){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck20011ScheduledBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck20011ProducingBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck20011AwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck20012ScheduledBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck20012ProducingBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck20012AwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.2"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckTwoDifferentReasonCodesScheduledBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckTwoDifferentReasonCodesProducingBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckTwoDifferentReasonCodesAwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckTwoSameReasonCodesScheduledBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckTwoSameReasonCodesProducingBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheckTwoSameReasonCodesAwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck2002ScheduledBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck2002ProducingBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+            }
+            return JSON.stringify({
+                result: result
+            });
+        },
+        DevReasonCodesSquashingCheck2002AwaitingShipmentBucketOnly: function () {
+            var result = [];
+            var count = 1;
+            for (var i = 0; i < count; i++) {
+                result.push(JSON.parse(JSON.stringify(schemas.line)));
+                result[i].lineNum = i;
+                if(i === 0){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81357.81363"
+                        },
+                        {
+                            "alertType": "2001.81442.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
                 }
             }
             return JSON.stringify({
