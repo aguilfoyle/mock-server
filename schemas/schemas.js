@@ -65,6 +65,7 @@ module.exports.line = {
     "availToShipQty": "{{int 0 100}}",
     "carrier": "{{company}}",
     "carrierShort": "{{company}}",
+    "proURL": "https://foo.com",
     "shipDate": "{{date '2015-06-01' '2015-06-30' 'M/D/YYYY'}}",
     "estDeliveryDate": "{{date '2015-06-01' '2015-06-30' 'M/D/YYYY'}}",
     "proNum": "{{int 0 100}}",
