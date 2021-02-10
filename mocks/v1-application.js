@@ -1922,7 +1922,6 @@ var pizza = {
             });
         },
 */
-/*
         DevandProdReasonCodesDeliveredBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -2286,7 +2285,6 @@ var pizza = {
                 result: result
             });
         },
-*/
         manyResults: function() {
             return JSON.stringify({
                 "result": [
