@@ -8191,7 +8191,7 @@ var pizza = {
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
-                            "alertType": "2001.81357.81363"
+                            "alertType": "2001.81422.81428"
                         },
                         {
                             "alertType": "2001.81756.0"
