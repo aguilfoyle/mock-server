@@ -1940,7 +1940,7 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [
                         {
-                            "alertType": "2001.81760.0
+                            "alertType": "2001.81760.0"
                         },
                     ];
                 }
