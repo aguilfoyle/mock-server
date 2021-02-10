@@ -93,10 +93,11 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'DevandProdReasonCodesScheduledBucketOnly', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForOrderTrackerAnnouncementOrderProcessing', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served by the API
+/*
         DevandProdReasonCodesOrderProcessingBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -460,6 +461,8 @@ var pizza = {
                 result: result
             });
         },
+*/
+/*
         DevandProdReasonCodesScheduledBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -823,6 +826,8 @@ var pizza = {
                 result: result
             });
         },
+*/
+/*
         DevandProdReasonCodesProducingBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -1186,6 +1191,8 @@ var pizza = {
                 result: result
             });
         },
+*/
+/*
         DevandProdReasonCodesAwaitingShipmentBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -1549,6 +1556,8 @@ var pizza = {
                 result: result
             });
         },
+*/
+/*
         DevandProdReasonCodesShippedBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -1912,6 +1921,8 @@ var pizza = {
                 result: result
             });
         },
+*/
+/*
         DevandProdReasonCodesDeliveredBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -2275,6 +2286,7 @@ var pizza = {
                 result: result
             });
         },
+*/
         manyResults: function() {
             return JSON.stringify({
                 "result": [
