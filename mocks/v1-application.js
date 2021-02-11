@@ -93,10 +93,106 @@ var pizza = {
     name: 'pizza',
     mockRoute: '\/api\/v1\/order\/.*', //a regex for the route, ex. '\/api\/steps\/.*\/users' is a valid route
     testScope: 'success', //success=200 & a scenario response | notFound=404 | error=500 and there's many more...
-    testScenario: 'NewDevAndProdReasonCodesScheduledBucketOnly', //change this to one of hte scenario names below and restart the mock server to get new data
+    testScenario: 'mockForADCOrderTrackerAnnouncementProducing', //change this to one of hte scenario names below and restart the mock server to get new data
     latency: '500-3000', //add this line ot implement 1-5 seconds of random latency per call
     jsonTemplate: [{
         //you can use regular javascript to create objects to be served by the API
+        mockForADCOrderTrackerAnnouncementProducing: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Producing",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "1.000",
+                        "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
+                        "itemNum": "*266E25",
+                        "productApproval": "PAP",
+                        "qty": "47",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "0",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "1",
+                        "notBeforeDate": "11/1/2020",
+                        "targetDate": "11/10/2020",
+                        "shipPromDate": "3/9/2021",
+                        "revShipPromDate": null,
+                        "pomName": "MEX (GUADALUPE, NL, MEX)",
+                        "shipFromName": "SEMDC (CONYERS, GA, USA)",
+                        "producedQty": "0",
+                        "prodStatus": "Frozen",
+                        "shipmentNum": "22",
+                        "shippingStatus": "Citisys",
+                        "prodNotRecQty": "93",
+                        "availToShipQty": "82",
+                        "carrier": "Sealine",
+                        "carrierShort": "MediaDime",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "A",
+                        "origShipPromDate": "11/13/2020",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "OmniTouch",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
+        mockForADCOrderTrackerAnnouncementAwaitingShipment: function() {
+            return JSON.stringify({
+                "result": [
+                    {
+                        "bucketType": "Shipping",
+                        "prodDivision": "PeerSys",
+                        "lineNum": "1.000",
+                        "description": "IBG 36000LM SEF ATL ND MVOLT GZ10 40K 80CRI DWH",
+                        "itemNum": "*266E25",
+                        "productApproval": "PAP",
+                        "qty": "47",
+                        "unitDollars": "235.34",
+                        "extDollars": "181.64",
+                        "poLineNum": "1",
+                        "cartonMarking": "CoreMax",
+                        "groupNum": "1",
+                        "notBeforeDate": "11/1/2020",
+                        "targetDate": "11/10/2020",
+                        "shipPromDate": "11/13/2020",
+                        "revShipPromDate": null,
+                        "pomName": "MEX (GUADALUPE, NL, MEX)",
+                        "shipFromName": "SEMDC (CONYERS, GA, USA)",
+                        "producedQty": "0",
+                        "prodStatus": "Frozen",
+                        "shipmentNum": "1",
+                        "shippingStatus": "In Transit to DC",
+                        "prodNotRecQty": "47",
+                        "availToShipQty": "47",
+                        "carrier": "UNITED PARCEL SERVICE",
+                        "carrierShort": "UPS",
+                        "shipDate": "6/3/2015",
+                        "estDeliveryDate": "6/10/2015",
+                        "proNum": "65",
+                        "type": "A",
+                        "origShipPromDate": "11/13/2020",
+                        "actualDeliveryDate" : "6/22/2015",
+                        "deliveryTime": "00:01:58",
+                        "ordLnStatus": "OmniTouch",
+                        "schedAsmDate": "6/5/2015",
+                        "alerts": [
+                            {
+                                "alertType": "4000"
+                            }
+                        ],
+                    },
+                ]
+            });
+        },
         NewDevAndProdReasonCodesOrderProcessingBucketOnly: function () {
             var result = [];
             var count = 44;
@@ -61722,7 +61818,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementOrderProcessing: function() {
+        mockForInitialOrderTrackerAnnouncementOrderProcessing: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -61770,7 +61866,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementScheduled: function() {
+        mockForInitialOrderTrackerAnnouncementScheduled: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -61818,7 +61914,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementProducing: function() {
+        mockForInitialOrderTrackerAnnouncementProducing: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -61866,7 +61962,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementAwaitingShipment: function() {
+        mockForInitialOrderTrackerAnnouncementAwaitingShipment: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -61914,7 +62010,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementShipped: function() {
+        mockForInitialOrderTrackerAnnouncementShipped: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -61962,7 +62058,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementDelivered: function() {
+        mockForInitialOrderTrackerAnnouncementDelivered: function() {
             return JSON.stringify({
                 "result": [
                     {
@@ -62010,7 +62106,7 @@ var pizza = {
                 ]
             });
         },
-        mockForOrderTrackerAnnouncementRedAndGreenDates: function() {
+        mockForInitialOrderTrackerAnnouncementRedAndGreenDates: function() {
             return JSON.stringify({
                 "result": [
                     {
