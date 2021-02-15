@@ -195,7 +195,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesOrderProcessingBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -548,6 +548,14 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -558,7 +566,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesScheduledBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -911,6 +919,14 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -921,7 +937,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesProducingBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -1274,6 +1290,14 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -1284,7 +1308,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesAwaitingShipmentBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -1637,6 +1661,14 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -1647,7 +1679,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesShippedBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -2000,6 +2032,14 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -2010,7 +2050,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesDeliveredBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -2363,6 +2403,14 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -2373,7 +2421,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodes2002SquashingCheckScheduledBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -2855,6 +2903,17 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2002"
@@ -2868,7 +2927,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodes2002SquashingCheckProducingBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -3356,6 +3415,17 @@ var pizza = {
                         },
                     ];
                 }
+                if(i === 44){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
             }
             return JSON.stringify({
                 result: result
@@ -3363,7 +3433,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodes2002SquashingCheckAwaitingShipmentBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -3850,6 +3920,17 @@ var pizza = {
                         },
                     ];
                 }
+                if(i === 44){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
+                        },
+                        {
+                            "alertType": "2002"
+                        },
+                    ];
+                }
             }
             return JSON.stringify({
                 result: result
@@ -3857,7 +3938,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesWithMiscOtherAlertsOrderProcessingBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -4597,6 +4678,23 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "3001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Order Processing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "3001"
@@ -4616,7 +4714,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesWithMiscOtherAlertsScheduledBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -5356,6 +5454,23 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Scheduled";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2001.1"
@@ -5375,7 +5490,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesWithMiscOtherAlertsProducingBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -6115,6 +6230,23 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Producing";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2001.1"
@@ -6134,7 +6266,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesWithMiscOtherAlertsAwaitingShipmentBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -6874,6 +7006,23 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "2001.1"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Shipping";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2001.1"
@@ -6893,7 +7042,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesWithMiscOtherAlertsShippedBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -7504,6 +7653,20 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "6001"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Delivery";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "6001"
@@ -7520,7 +7683,7 @@ var pizza = {
         },
         NewDevAndProdReasonCodesWithMiscOtherAlertsDeliveredBucketOnly: function () {
             var result = [];
-            var count = 44;
+            var count = 45;
             for (var i = 0; i < count; i++) {
                 result.push(JSON.parse(JSON.stringify(schemas.line)));
                 result[i].lineNum = i;
@@ -8131,6 +8294,20 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81751.81755"
+                        },
+                        {
+                            "alertType": "2005"
+                        },
+                        {
+                            "alertType": "3003"
+                        },
+                    ];
+                }
+                if(i === 44){
+                    result[i].bucketType = "Delivered";
+                    result[i].alerts = [
+                        {
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2005"
@@ -8158,7 +8335,7 @@ var pizza = {
                             "alertType": "2001.1"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8180,7 +8357,7 @@ var pizza = {
                             "alertType": "2001.1"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8202,7 +8379,7 @@ var pizza = {
                             "alertType": "2001.1"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8224,7 +8401,7 @@ var pizza = {
                             "alertType": "2001.2"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8246,7 +8423,7 @@ var pizza = {
                             "alertType": "2001.2"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8268,7 +8445,7 @@ var pizza = {
                             "alertType": "2001.2"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8290,7 +8467,7 @@ var pizza = {
                             "alertType": "2001.81422.81428"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8312,7 +8489,7 @@ var pizza = {
                             "alertType": "2001.81422.81428"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8334,7 +8511,7 @@ var pizza = {
                             "alertType": "2001.81422.81428"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8353,10 +8530,10 @@ var pizza = {
                     result[i].bucketType = "Scheduled";
                     result[i].alerts = [
                         {
-                            "alertType": "2001.81422.81428"
+                            "alertType": "2001.81778.0"
                         },
                         {
-                            "alertType": "2001.81422.81428"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8375,10 +8552,10 @@ var pizza = {
                     result[i].bucketType = "Producing";
                     result[i].alerts = [
                         {
-                            "alertType": "2001.81422.81428"
+                            "alertType": "2001.81778.0"
                         },
                         {
-                            "alertType": "2001.81422.81428"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8397,10 +8574,10 @@ var pizza = {
                     result[i].bucketType = "Shipping";
                     result[i].alerts = [
                         {
-                            "alertType": "2001.81422.81428"
+                            "alertType": "2001.81778.0"
                         },
                         {
-                            "alertType": "2001.81422.81428"
+                            "alertType": "2001.81778.0"
                         },
                     ];
                 }
@@ -8422,7 +8599,7 @@ var pizza = {
                             "alertType": "2001.81422.81428"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2002"
@@ -8447,7 +8624,7 @@ var pizza = {
                             "alertType": "2001.81422.81428"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2002"
@@ -8472,7 +8649,7 @@ var pizza = {
                             "alertType": "2001.81422.81428"
                         },
                         {
-                            "alertType": "2001.81756.0"
+                            "alertType": "2001.81778.0"
                         },
                         {
                             "alertType": "2002"
