@@ -72067,6 +72067,9 @@ var pizza = {
                             "alertType": "4001.6"
                         },
                         {
+                            "alertType": "4003.1"
+                        },
+                        {
                             "alertType": "6001"
                         }
                     ];
@@ -72124,6 +72127,9 @@ var pizza = {
                         },
                         {
                             "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "4003.1"
                         },
                         {
                             "alertType": "6001"
@@ -72185,6 +72191,9 @@ var pizza = {
                             "alertType": "4001.6"
                         },
                         {
+                            "alertType": "4003.1"
+                        },
+                        {
                             "alertType": "6001"
                         }
                     ];
@@ -72244,6 +72253,9 @@ var pizza = {
                             "alertType": "4001.6"
                         },
                         {
+                            "alertType": "4003.1"
+                        },
+                        {
                             "alertType": "6001"
                         }
                     ];
@@ -72301,6 +72313,9 @@ var pizza = {
                         },
                         {
                             "alertType": "4001.6"
+                        },
+                        {
+                            "alertType": "4003.1"
                         },
                         {
                             "alertType": "6001"
