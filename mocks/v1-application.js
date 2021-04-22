@@ -193,7 +193,7 @@ var pizza = {
                 ]
             });
         },
-        DevAdHocReasonCodesAllBuckets: function () {
+        DevAndProdAdHocReasonCodesAllBuckets: function () {
             var result = [];
             var count = 12;
             for (var i = 0; i < count; i++) {
@@ -291,112 +291,6 @@ var pizza = {
                     result[i].alerts = [
                         {
                             "alertType": "2001.81425.81788"
-                        },
-                    ];
-                }
-            }
-            return JSON.stringify({
-                result: result
-            });
-        },
-        ProdAdHocReasonCodesAllBuckets: function () {
-            var result = [];
-            var count = 12;
-            for (var i = 0; i < count; i++) {
-                result.push(JSON.parse(JSON.stringify(schemas.line)));
-                result[i].lineNum = i;
-                if(i === 0){
-                    result[i].bucketType = "Order Processing";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81746.81853"
-                        },
-                    ];
-                }
-                if(i === 1){
-                    result[i].bucketType = "Order Processing";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81425.81854"
-                        },
-                    ];
-                }
-                if(i === 2){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81746.81853"
-                        },
-                    ];
-                }
-                if(i === 3){
-                    result[i].bucketType = "Scheduled";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81425.81854"
-                        },
-                    ];
-                }if(i === 4){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81746.81853"
-                        },
-                    ];
-                }
-                if(i === 5){
-                    result[i].bucketType = "Producing";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81425.81854"
-                        },
-                    ];
-                }
-                if(i === 6){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81746.81853"
-                        },
-                    ];
-                }
-                if(i === 7){
-                    result[i].bucketType = "Shipping";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81425.81854"
-                        },
-                    ];
-                }
-                if(i === 8){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81746.81853"
-                        },
-                    ];
-                }
-                if(i === 9){
-                    result[i].bucketType = "Delivery";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81425.81854"
-                        },
-                    ];
-                }
-                if(i === 10){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81746.81853"
-                        },
-                    ];
-                }
-                if(i === 11){
-                    result[i].bucketType = "Delivered";
-                    result[i].alerts = [
-                        {
-                            "alertType": "2001.81425.81854"
                         },
                     ];
                 }
