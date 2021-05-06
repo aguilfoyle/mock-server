@@ -290,7 +290,7 @@ var pizza = {
                     result[i].bucketType = "Delivered";
                     result[i].alerts = [
                         {
-                            "alertType": "2001.81425.81854"
+                            "alertType": "2001.81425.81788"
                         },
                     ];
                 }
