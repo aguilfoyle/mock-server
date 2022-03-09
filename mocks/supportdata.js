@@ -9,7 +9,7 @@ var collectors= {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"collectors": [
+            return JSON.stringify({"Collector": [
       {
         "collectorId": "1000",
         "name": "100",
@@ -600,7 +600,7 @@ var contacttypes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"ContactTypes": [
+            return JSON.stringify({"ContactType": [
     {
         "code": "PRIV_PREF",
         "name": "Privacy Preference",
@@ -681,7 +681,7 @@ var creditclassifications = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"creditClassifications": [
+            return JSON.stringify({"CreditClassification": [
       {
         "code": "HIGH",
         "name": "High Risk",
@@ -757,7 +757,7 @@ var creditmanagers = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"creditAnalysts": [
+            return JSON.stringify({"CreditManager": [
       {
         "creditManagerId": "100003800",
         "name": "Davis, Edward C (Ed)"
@@ -837,7 +837,7 @@ var distributorcategories = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"distributorCategories": [
+            return JSON.stringify({"DistributorCategory": [
       {
 		"code": "88 Parent",
 		"name": "88 Parent Account",
@@ -901,7 +901,7 @@ var emailformattypes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"emailFormatTypes": [
+            return JSON.stringify({"emailFormatType": [
       {
         "code": "MAILATTH",
         "name": "Text mail with HTML attachment",
@@ -941,30 +941,22 @@ var freightassignments = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"freightAssignments": [
+            return JSON.stringify({"FreightAssignment": [
       {
         "code": "1223345",
-        "name": "1223345",
-		"oracleCode":"",
-		"description":""
+		"oracleCode":""
       },
       {
         "code": "Charge Factory",
-        "name": "Charge Factory",
-		"oracleCode":"",
-		"description":""
+		"oracleCode":""
       },
       {
         "code": "Charge Agent",
-        "name": "Charge Agent",
-		"oracleCode":"",
-		"description":""
+		"oracleCode":""
       },
       {
         "code": "Charge Distributor",
-        "name": "Charge Distributor",
-		"oracleCode":"",
-		"description":""
+		"oracleCode":""
       }
     ]});
         }
@@ -981,7 +973,7 @@ var freightterms = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"freightTerms": [
+            return JSON.stringify({"FreightTerm": [
       {
         "code": "Collect",
         "oracleCode": ""
@@ -1049,7 +1041,7 @@ var operatingunits = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"operatingUnits": [
+            return JSON.stringify({"OperatingUnit": [
       {
         "operatingUnit": "US",
         "name": "",
@@ -1080,7 +1072,7 @@ var phonelinetypes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"phoneLineTypes": [
+            return JSON.stringify({"PhoneLineType": [
       {
         "code": "Fax",
         "name": "Fax",
@@ -1126,7 +1118,7 @@ var saleschannels = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"salesChannels": [
+            return JSON.stringify({"SalesChannel": [
       {
         "code": "FI",
         "description": "Foreign/International",
@@ -1244,7 +1236,7 @@ var taxcodes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"taxCodes": [
+            return JSON.stringify({"TaxCode": [
       {
         "code": "CND VAT",
         "description": "Canadian VAT Tax Group",
@@ -1642,7 +1634,7 @@ var warehouses = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"facilities": [
+            return JSON.stringify({"Warehouse": [
       {
         "operatingUnit": "CA",
         "warehouseId": 8,
@@ -2043,7 +2035,7 @@ var websitetypes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"websites": [
+            return JSON.stringify({"WebsiteType": [
       {
         "code": "HOMEPAGE",
         "description": "Home Page",
