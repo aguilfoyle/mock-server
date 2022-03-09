@@ -10,437 +10,518 @@ var collectors= {
     jsonTemplate: [{
         alldata: function() {
             return JSON.stringify({"collectors": [
-      {
-        "value": "1000",
-        "label": "100"
+            {
+        "collectorId": "1000",
+        "name": "100",
+		"description":""
       },
       {
-        "value": "1001",
-        "label": "200"
+        "collectorId": "1001",
+        "name": "200",
+		"description":""
       },
       {
-        "value": "1002",
-        "label": "210"
+        "collectorId": "1002",
+        "name": "210",
+		"description":""
       },
       {
-        "value": "1003",
-        "label": "220"
+        "collectorId": "1003",
+        "name": "220",
+		"description":""
       },
       {
-        "value": "1004",
-        "label": "300"
+        "collectorId": "1004",
+        "name": "300",
+		"description":""
       },
       {
-        "value": "1005",
-        "label": "400"
+        "collectorId": "1005",
+        "name": "400",
+		"description":""
       },
       {
-        "value": "1006",
-        "label": "500"
+        "collectorId": "1006",
+        "name": "500",
+		"description":""
       },
       {
-        "value": "1007",
-        "label": "600"
+        "collectorId": "1007",
+        "name": "600",
+		"description":""
       },
       {
-        "value": "1008",
-        "label": "700"
+        "collectorId": "1008",
+        "name": "700",
+		"description":""
       },
       {
-        "value": "1009",
-        "label": "710"
+        "collectorId": "1009",
+        "name": "710",
+		"description":""
       },
       {
-        "value": "1010",
-        "label": "720"
+        "collectorId": "1010",
+        "name": "720",
+		"description":""
       },
       {
-        "value": "1011",
-        "label": "730"
+        "collectorId": "1011",
+        "name": "730",
+		"description":""
       },
       {
-        "value": "1012",
-        "label": "740"
+        "collectorId": "1012",
+        "name": "740",
+		"description":""
       },
       {
-        "value": "1013",
-        "label": "750"
+        "collectorId": "1013",
+        "name": "750",
+		"description":""
       },
       {
-        "value": "1014",
-        "label": "800"
+        "collectorId": "1014",
+        "name": "800",
+		"description":""
       },
       {
-        "value": "1015",
-        "label": "810"
+        "collectorId": "1015",
+        "name": "810",
+		"description":""
       },
       {
-        "value": "1016",
-        "label": "900"
+        "collectorId": "1016",
+        "name": "900",
+		"description":""
       },
       {
-        "value": "1017",
-        "label": "910"
+        "collectorId": "1017",
+        "name": "910",
+		"description":""
       },
       {
-        "value": "1018",
-        "label": "920"
+        "collectorId": "1018",
+        "name": "920",
+		"description":""
       },
       {
-        "value": "1019",
-        "label": "930"
+        "collectorId": "1019",
+        "name": "930",
+		"description":""
       },
       {
-        "value": "1020",
-        "label": "988"
+        "collectorId": "1020",
+        "name": "988",
+		"description":""
       },
       {
-        "value": "1021",
-        "label": "BOGUS"
+        "collectorId": "1021",
+        "name": "BOGUS",
+		"description":""
       },
       {
-        "value": "1040",
-        "label": "610"
+        "collectorId": "1040",
+        "name": "610",
+		"description":""
       },
       {
-        "value": "1",
-        "label": "Default Collector"
+        "collectorId": "1",
+        "name": "Default Collector",
+		"description":""
       },
       {
-        "value": "1101",
-        "label": "770"
+        "collectorId": "1101",
+        "name": "770",
+		"description":""
       },
       {
-        "value": "1380",
-        "label": "Mark Adkins"
+        "collectorId": "1380",
+        "name": "Mark Adkins",
+		"description":""
       },
       {
-        "value": "1260",
-        "label": "602"
+        "collectorId": "1260",
+        "name": "602",
+		"description":""
       },
       {
-        "value": "1240",
-        "label": "402"
+        "collectorId": "1240",
+        "name": "402",
+		"description":""
       },
       {
-        "value": "1280",
-        "label": "403"
+        "collectorId": "1280",
+        "name": "403"
       },
       {
-        "value": "1281",
-        "label": "603"
+        "collectorId": "1281",
+        "name": "603"
       },
       {
-        "value": "1160",
-        "label": "Teresa Davis"
+        "collectorId": "1160",
+        "name": "Teresa Davis"
       },
       {
-        "value": "1161",
-        "label": "Tammy Archer"
+        "collectorId": "1161",
+        "name": "Tammy Archer"
       },
       {
-        "value": "1162",
-        "label": "Tina Hobbs"
+        "collectorId": "1162",
+        "name": "Tina Hobbs"
       },
       {
-        "value": "1163",
-        "label": "Katrina Wood"
+        "collectorId": "1163",
+        "name": "Katrina Wood"
       },
       {
-        "value": "1164",
-        "label": "Lajuana Garcia"
+        "collectorId": "1164",
+        "name": "Lajuana Garcia"
       },
       {
-        "value": "1166",
-        "label": "Elaine Powers"
+        "collectorId": "1166",
+        "name": "Elaine Powers"
       },
       {
-        "value": "1167",
-        "label": "Iris Sance"
+        "collectorId": "1167",
+        "name": "Iris Sance"
       },
       {
-        "value": "1168",
-        "label": "Annmarie Patterson"
+        "collectorId": "1168",
+        "name": "Annmarie Patterson"
       },
       {
-        "value": "1080",
-        "label": "760"
+        "collectorId": "1080",
+        "name": "760"
       },
       {
-        "value": "1140",
-        "label": "101"
+        "collectorId": "1140",
+        "name": "101"
       },
       {
-        "value": "1141",
-        "label": "102"
+        "collectorId": "1141",
+        "name": "102"
       },
       {
-        "value": "1142",
-        "label": "201"
+        "collectorId": "1142",
+        "name": "201"
       },
       {
-        "value": "1143",
-        "label": "301"
+        "collectorId": "1143",
+        "name": "301"
       },
       {
-        "value": "1144",
-        "label": "302"
+        "collectorId": "1144",
+        "name": "302"
       },
       {
-        "value": "1145",
-        "label": "401"
+        "collectorId": "1145",
+        "name": "401"
       },
       {
-        "value": "1146",
-        "label": "501"
+        "collectorId": "1146",
+        "name": "501"
       },
       {
-        "value": "1147",
-        "label": "601"
+        "collectorId": "1147",
+        "name": "601"
       },
       {
-        "value": "1148",
-        "label": "701"
+        "collectorId": "1148",
+        "name": "701"
       },
       {
-        "value": "1149",
-        "label": "123"
+        "collectorId": "1149",
+        "name": "123"
       },
       {
-        "value": "1150",
-        "label": "731"
+        "collectorId": "1150",
+        "name": "731"
       },
       {
-        "value": "1151",
-        "label": "741"
+        "collectorId": "1151",
+        "name": "741"
       },
       {
-        "value": "1152",
-        "label": "751"
+        "collectorId": "1152",
+        "name": "751"
       },
       {
-        "value": "1153",
-        "label": "771"
+        "collectorId": "1153",
+        "name": "771"
       },
       {
-        "value": "1180",
-        "label": "Susan Hodges"
+        "collectorId": "1180",
+        "name": "Susan Hodges"
       },
       {
-        "value": "1220",
-        "label": "Paula Fitzpatrick"
+        "collectorId": "1220",
+        "name": "Paula Fitzpatrick"
       },
       {
-        "value": "1320",
-        "label": "404"
+        "collectorId": "1320",
+        "name": "404",
+		"description":""
       },
       {
-        "value": "1321",
-        "label": "604"
+        "collectorId": "1321",
+        "name": "604",
+		"description":""
       },
       {
-        "value": "1060",
-        "label": "688"
+        "collectorId": "1060",
+        "name": "688",
+		"description":""
       },
       {
-        "value": "1061",
-        "label": "788"
+        "collectorId": "1061",
+        "name": "788",
+		"description":""
       },
       {
-        "value": "1120",
-        "label": "611"
+        "collectorId": "1120",
+        "name": "611",
+		"description":""
       },
       {
-        "value": "1121",
-        "label": "612"
+        "collectorId": "1121",
+        "name": "612",
+		"description":""
       },
       {
-        "value": "1340",
-        "label": "Eric Hall"
+        "collectorId": "1340",
+        "name": "Eric Hall",
+		"description":""
       },
       {
-        "value": "2403",
-        "label": "Sharon Sawyer"
+        "collectorId": "2403",
+        "name": "Sharon Sawyer",
+		"description":""
       },
       {
-        "value": "2404",
-        "label": "Kelle Bondman"
+        "collectorId": "2404",
+        "name": "Kelle Bondman",
+		"description":""
       },
       {
-        "value": "2405",
-        "label": "Andrea Marks"
+        "collectorId": "2405",
+        "name": "Andrea Marks",
+		"description":""
       },
       {
-        "value": "2406",
-        "label": "Tara Coley"
+        "collectorId": "2406",
+        "name": "Tara Coley",
+		"description":""
       },
       {
-        "value": "2407",
-        "label": "Jan Thomas"
+        "collectorId": "2407",
+        "name": "Jan Thomas",
+		"description":""
       },
       {
-        "value": "2408",
-        "label": "Maria Alvarez"
+        "collectorId": "2408",
+        "name": "Maria Alvarez",
+		"description":""
       },
       {
-        "value": "2409",
-        "label": "Alicia Baldwin"
+        "collectorId": "2409",
+        "name": "Alicia Baldwin",
+		"description":""
       },
       {
-        "value": "2410",
-        "label": "Georgia Eads"
+        "collectorId": "2410",
+        "name": "Georgia Eads",
+		"description":""
       },
       {
-        "value": "3417",
-        "label": "Tameika Frazier"
+        "collectorId": "3417",
+        "name": "Tameika Frazier",
+		"description":""
       },
       {
-        "value": "3418",
-        "label": "Patty Koch"
+        "collectorId": "3418",
+        "name": "Patty Koch",
+		"description":""
       },
       {
-        "value": "3419",
-        "label": "Keiona Fenn"
+        "collectorId": "3419",
+        "name": "Keiona Fenn",
+		"description":""
       },
       {
-        "value": "8416",
-        "label": "Elizabeth Smith"
+        "collectorId": "8416",
+        "name": "Elizabeth Smith",
+		"description":""
       },
       {
-        "value": "2400",
-        "label": "Jayce Creque"
+        "collectorId": "2400",
+        "name": "Jayce Creque",
+		"description":""
       },
       {
-        "value": "2401",
-        "label": "503"
+        "collectorId": "2401",
+        "name": "503",
+		"description":""
       },
       {
-        "value": "2402",
-        "label": "503B"
+        "collectorId": "2402",
+        "name": "503B",
+		"description":""
       },
       {
-        "value": "3403",
-        "label": "111"
+        "collectorId": "3403",
+        "name": "111",
+		"description":""
       },
       {
-        "value": "3404",
-        "label": "112"
+        "collectorId": "3404",
+        "name": "112",
+		"description":""
       },
       {
-        "value": "3405",
-        "label": "113"
+        "collectorId": "3405",
+        "name": "113",
+		"description":""
       },
       {
-        "value": "3406",
-        "label": "121"
+        "collectorId": "3406",
+        "name": "121",
+		"description":""
       },
       {
-        "value": "3407",
-        "label": "122"
+        "collectorId": "3407",
+        "name": "122",
+		"description":""
       },
       {
-        "value": "3408",
-        "label": "211"
+        "collectorId": "3408",
+        "name": "211",
+		"description":""
       },
       {
-        "value": "3409",
-        "label": "212"
+        "collectorId": "3409",
+        "name": "212",
+		"description":""
       },
       {
-        "value": "3410",
-        "label": "221"
+        "collectorId": "3410",
+        "name": "221",
+		"description":""
       },
       {
-        "value": "3411",
-        "label": "222"
+        "collectorId": "3411",
+        "name": "222",
+		"description":""
       },
       {
-        "value": "3412",
-        "label": "131"
+        "collectorId": "3412",
+        "name": "131",
+		"description":""
       },
       {
-        "value": "3413",
-        "label": "141"
+        "collectorId": "3413",
+        "name": "141",
+		"description":""
       },
       {
-        "value": "5416",
-        "label": "110"
+        "collectorId": "5416",
+        "name": "110",
+		"description":""
       },
       {
-        "value": "5417",
-        "label": "130"
+        "collectorId": "5417",
+        "name": "130",
+		"description":""
       },
       {
-        "value": "5418",
-        "label": "140"
+        "collectorId": "5418",
+        "name": "140",
+		"description":""
       },
       {
-        "value": "5419",
-        "label": "Jose Navarro"
+        "collectorId": "5419",
+        "name": "Jose Navarro",
+		"description":""
       },
       {
-        "value": "6416",
-        "label": "114"
+        "collectorId": "6416",
+        "name": "114",
+		"description":""
       },
       {
-        "value": "6417",
-        "label": "124"
+        "collectorId": "6417",
+        "name": "124",
+		"description":""
       },
       {
-        "value": "6418",
-        "label": "125"
+        "collectorId": "6418",
+        "name": "125",
+		"description":""
       },
       {
-        "value": "9416",
-        "label": "120"
+        "collectorId": "9416",
+        "name": "120",
+		"description":""
       },
       {
-        "value": "1400",
-        "label": "Jevon Sullivan"
+        "collectorId": "1400",
+        "name": "Jevon Sullivan",
+		"description":""
       },
       {
-        "value": "3414",
-        "label": "Tamara Bryant"
+        "collectorId": "3414",
+        "name": "Tamara Bryant",
+		"description":""
       },
       {
-        "value": "3415",
-        "label": "Kim Gray"
+        "collectorId": "3415",
+        "name": "Kim Gray",
+		"description":""
       },
       {
-        "value": "4416",
-        "label": "KARSTENDELZER"
+        "collectorId": "4416",
+        "name": "KARSTENDELZER",
+		"description":""
       },
       {
-        "value": "4417",
-        "label": "MARYKNIGHT"
+        "collectorId": "4417",
+        "name": "MARYKNIGHT",
+		"description":""
       },
       {
-        "value": "4418",
-        "label": "TAMILECALLAWAY"
+        "collectorId": "4418",
+        "name": "TAMILECALLAWAY",
+		"description":""
       },
       {
-        "value": "4419",
-        "label": "MAHENDRASHRIVASTAVA"
+        "collectorId": "4419",
+        "name": "MAHENDRASHRIVASTAVA",
+		"description":""
       },
       {
-        "value": "4421",
-        "label": "CHARLOTTESTEPHENS"
+        "collectorId": "4421",
+        "name": "CHARLOTTESTEPHENS",
+		"description":""
       },
       {
-        "value": "4422",
-        "label": "MAURETTATHOMAS"
+        "collectorId": "4422",
+        "name": "MAURETTATHOMAS",
+		"description":""
       },
       {
-        "value": "4423",
-        "label": "KATEPATNETT"
+        "collectorId": "4423",
+        "name": "KATEPATNETT",
+		"description":""
       },
       {
-        "value": "7416",
-        "label": "230"
+        "collectorId": "7416",
+        "name": "230",
+		"description":""
       },
       {
-        "value": "7417",
-        "label": "231"
+        "collectorId": "7417",
+        "name": "231",
+		"description":""
       }
     ]});
         }
