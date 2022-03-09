@@ -11,436 +11,517 @@ var collectors= {
         alldata: function() {
             return JSON.stringify({"collectors": [
       {
-        "value": "1000",
-        "label": "100"
+        "collectorId": "1000",
+        "name": "100",
+		"description":""
       },
       {
-        "value": "1001",
-        "label": "200"
+        "collectorId": "1001",
+        "name": "200",
+		"description":""
       },
       {
-        "value": "1002",
-        "label": "210"
+        "collectorId": "1002",
+        "name": "210",
+		"description":""
       },
       {
-        "value": "1003",
-        "label": "220"
+        "collectorId": "1003",
+        "name": "220",
+		"description":""
       },
       {
-        "value": "1004",
-        "label": "300"
+        "collectorId": "1004",
+        "name": "300",
+		"description":""
       },
       {
-        "value": "1005",
-        "label": "400"
+        "collectorId": "1005",
+        "name": "400",
+		"description":""
       },
       {
-        "value": "1006",
-        "label": "500"
+        "collectorId": "1006",
+        "name": "500",
+		"description":""
       },
       {
-        "value": "1007",
-        "label": "600"
+        "collectorId": "1007",
+        "name": "600",
+		"description":""
       },
       {
-        "value": "1008",
-        "label": "700"
+        "collectorId": "1008",
+        "name": "700",
+		"description":""
       },
       {
-        "value": "1009",
-        "label": "710"
+        "collectorId": "1009",
+        "name": "710",
+		"description":""
       },
       {
-        "value": "1010",
-        "label": "720"
+        "collectorId": "1010",
+        "name": "720",
+		"description":""
       },
       {
-        "value": "1011",
-        "label": "730"
+        "collectorId": "1011",
+        "name": "730",
+		"description":""
       },
       {
-        "value": "1012",
-        "label": "740"
+        "collectorId": "1012",
+        "name": "740",
+		"description":""
       },
       {
-        "value": "1013",
-        "label": "750"
+        "collectorId": "1013",
+        "name": "750",
+		"description":""
       },
       {
-        "value": "1014",
-        "label": "800"
+        "collectorId": "1014",
+        "name": "800",
+		"description":""
       },
       {
-        "value": "1015",
-        "label": "810"
+        "collectorId": "1015",
+        "name": "810",
+		"description":""
       },
       {
-        "value": "1016",
-        "label": "900"
+        "collectorId": "1016",
+        "name": "900",
+		"description":""
       },
       {
-        "value": "1017",
-        "label": "910"
+        "collectorId": "1017",
+        "name": "910",
+		"description":""
       },
       {
-        "value": "1018",
-        "label": "920"
+        "collectorId": "1018",
+        "name": "920",
+		"description":""
       },
       {
-        "value": "1019",
-        "label": "930"
+        "collectorId": "1019",
+        "name": "930",
+		"description":""
       },
       {
-        "value": "1020",
-        "label": "988"
+        "collectorId": "1020",
+        "name": "988",
+		"description":""
       },
       {
-        "value": "1021",
-        "label": "BOGUS"
+        "collectorId": "1021",
+        "name": "BOGUS",
+		"description":""
       },
       {
-        "value": "1040",
-        "label": "610"
+        "collectorId": "1040",
+        "name": "610",
+		"description":""
       },
       {
-        "value": "1",
-        "label": "Default Collector"
+        "collectorId": "1",
+        "name": "Default Collector",
+		"description":""
       },
       {
-        "value": "1101",
-        "label": "770"
+        "collectorId": "1101",
+        "name": "770",
+		"description":""
       },
       {
-        "value": "1380",
-        "label": "Mark Adkins"
+        "collectorId": "1380",
+        "name": "Mark Adkins",
+		"description":""
       },
       {
-        "value": "1260",
-        "label": "602"
+        "collectorId": "1260",
+        "name": "602",
+		"description":""
       },
       {
-        "value": "1240",
-        "label": "402"
+        "collectorId": "1240",
+        "name": "402",
+		"description":""
       },
       {
-        "value": "1280",
-        "label": "403"
+        "collectorId": "1280",
+        "name": "403"
       },
       {
-        "value": "1281",
-        "label": "603"
+        "collectorId": "1281",
+        "name": "603"
       },
       {
-        "value": "1160",
-        "label": "Teresa Davis"
+        "collectorId": "1160",
+        "name": "Teresa Davis"
       },
       {
-        "value": "1161",
-        "label": "Tammy Archer"
+        "collectorId": "1161",
+        "name": "Tammy Archer"
       },
       {
-        "value": "1162",
-        "label": "Tina Hobbs"
+        "collectorId": "1162",
+        "name": "Tina Hobbs"
       },
       {
-        "value": "1163",
-        "label": "Katrina Wood"
+        "collectorId": "1163",
+        "name": "Katrina Wood"
       },
       {
-        "value": "1164",
-        "label": "Lajuana Garcia"
+        "collectorId": "1164",
+        "name": "Lajuana Garcia"
       },
       {
-        "value": "1166",
-        "label": "Elaine Powers"
+        "collectorId": "1166",
+        "name": "Elaine Powers"
       },
       {
-        "value": "1167",
-        "label": "Iris Sance"
+        "collectorId": "1167",
+        "name": "Iris Sance"
       },
       {
-        "value": "1168",
-        "label": "Annmarie Patterson"
+        "collectorId": "1168",
+        "name": "Annmarie Patterson"
       },
       {
-        "value": "1080",
-        "label": "760"
+        "collectorId": "1080",
+        "name": "760"
       },
       {
-        "value": "1140",
-        "label": "101"
+        "collectorId": "1140",
+        "name": "101"
       },
       {
-        "value": "1141",
-        "label": "102"
+        "collectorId": "1141",
+        "name": "102"
       },
       {
-        "value": "1142",
-        "label": "201"
+        "collectorId": "1142",
+        "name": "201"
       },
       {
-        "value": "1143",
-        "label": "301"
+        "collectorId": "1143",
+        "name": "301"
       },
       {
-        "value": "1144",
-        "label": "302"
+        "collectorId": "1144",
+        "name": "302"
       },
       {
-        "value": "1145",
-        "label": "401"
+        "collectorId": "1145",
+        "name": "401"
       },
       {
-        "value": "1146",
-        "label": "501"
+        "collectorId": "1146",
+        "name": "501"
       },
       {
-        "value": "1147",
-        "label": "601"
+        "collectorId": "1147",
+        "name": "601"
       },
       {
-        "value": "1148",
-        "label": "701"
+        "collectorId": "1148",
+        "name": "701"
       },
       {
-        "value": "1149",
-        "label": "123"
+        "collectorId": "1149",
+        "name": "123"
       },
       {
-        "value": "1150",
-        "label": "731"
+        "collectorId": "1150",
+        "name": "731"
       },
       {
-        "value": "1151",
-        "label": "741"
+        "collectorId": "1151",
+        "name": "741"
       },
       {
-        "value": "1152",
-        "label": "751"
+        "collectorId": "1152",
+        "name": "751"
       },
       {
-        "value": "1153",
-        "label": "771"
+        "collectorId": "1153",
+        "name": "771"
       },
       {
-        "value": "1180",
-        "label": "Susan Hodges"
+        "collectorId": "1180",
+        "name": "Susan Hodges"
       },
       {
-        "value": "1220",
-        "label": "Paula Fitzpatrick"
+        "collectorId": "1220",
+        "name": "Paula Fitzpatrick"
       },
       {
-        "value": "1320",
-        "label": "404"
+        "collectorId": "1320",
+        "name": "404",
+		"description":""
       },
       {
-        "value": "1321",
-        "label": "604"
+        "collectorId": "1321",
+        "name": "604",
+		"description":""
       },
       {
-        "value": "1060",
-        "label": "688"
+        "collectorId": "1060",
+        "name": "688",
+		"description":""
       },
       {
-        "value": "1061",
-        "label": "788"
+        "collectorId": "1061",
+        "name": "788",
+		"description":""
       },
       {
-        "value": "1120",
-        "label": "611"
+        "collectorId": "1120",
+        "name": "611",
+		"description":""
       },
       {
-        "value": "1121",
-        "label": "612"
+        "collectorId": "1121",
+        "name": "612",
+		"description":""
       },
       {
-        "value": "1340",
-        "label": "Eric Hall"
+        "collectorId": "1340",
+        "name": "Eric Hall",
+		"description":""
       },
       {
-        "value": "2403",
-        "label": "Sharon Sawyer"
+        "collectorId": "2403",
+        "name": "Sharon Sawyer",
+		"description":""
       },
       {
-        "value": "2404",
-        "label": "Kelle Bondman"
+        "collectorId": "2404",
+        "name": "Kelle Bondman",
+		"description":""
       },
       {
-        "value": "2405",
-        "label": "Andrea Marks"
+        "collectorId": "2405",
+        "name": "Andrea Marks",
+		"description":""
       },
       {
-        "value": "2406",
-        "label": "Tara Coley"
+        "collectorId": "2406",
+        "name": "Tara Coley",
+		"description":""
       },
       {
-        "value": "2407",
-        "label": "Jan Thomas"
+        "collectorId": "2407",
+        "name": "Jan Thomas",
+		"description":""
       },
       {
-        "value": "2408",
-        "label": "Maria Alvarez"
+        "collectorId": "2408",
+        "name": "Maria Alvarez",
+		"description":""
       },
       {
-        "value": "2409",
-        "label": "Alicia Baldwin"
+        "collectorId": "2409",
+        "name": "Alicia Baldwin",
+		"description":""
       },
       {
-        "value": "2410",
-        "label": "Georgia Eads"
+        "collectorId": "2410",
+        "name": "Georgia Eads",
+		"description":""
       },
       {
-        "value": "3417",
-        "label": "Tameika Frazier"
+        "collectorId": "3417",
+        "name": "Tameika Frazier",
+		"description":""
       },
       {
-        "value": "3418",
-        "label": "Patty Koch"
+        "collectorId": "3418",
+        "name": "Patty Koch",
+		"description":""
       },
       {
-        "value": "3419",
-        "label": "Keiona Fenn"
+        "collectorId": "3419",
+        "name": "Keiona Fenn",
+		"description":""
       },
       {
-        "value": "8416",
-        "label": "Elizabeth Smith"
+        "collectorId": "8416",
+        "name": "Elizabeth Smith",
+		"description":""
       },
       {
-        "value": "2400",
-        "label": "Jayce Creque"
+        "collectorId": "2400",
+        "name": "Jayce Creque",
+		"description":""
       },
       {
-        "value": "2401",
-        "label": "503"
+        "collectorId": "2401",
+        "name": "503",
+		"description":""
       },
       {
-        "value": "2402",
-        "label": "503B"
+        "collectorId": "2402",
+        "name": "503B",
+		"description":""
       },
       {
-        "value": "3403",
-        "label": "111"
+        "collectorId": "3403",
+        "name": "111",
+		"description":""
       },
       {
-        "value": "3404",
-        "label": "112"
+        "collectorId": "3404",
+        "name": "112",
+		"description":""
       },
       {
-        "value": "3405",
-        "label": "113"
+        "collectorId": "3405",
+        "name": "113",
+		"description":""
       },
       {
-        "value": "3406",
-        "label": "121"
+        "collectorId": "3406",
+        "name": "121",
+		"description":""
       },
       {
-        "value": "3407",
-        "label": "122"
+        "collectorId": "3407",
+        "name": "122",
+		"description":""
       },
       {
-        "value": "3408",
-        "label": "211"
+        "collectorId": "3408",
+        "name": "211",
+		"description":""
       },
       {
-        "value": "3409",
-        "label": "212"
+        "collectorId": "3409",
+        "name": "212",
+		"description":""
       },
       {
-        "value": "3410",
-        "label": "221"
+        "collectorId": "3410",
+        "name": "221",
+		"description":""
       },
       {
-        "value": "3411",
-        "label": "222"
+        "collectorId": "3411",
+        "name": "222",
+		"description":""
       },
       {
-        "value": "3412",
-        "label": "131"
+        "collectorId": "3412",
+        "name": "131",
+		"description":""
       },
       {
-        "value": "3413",
-        "label": "141"
+        "collectorId": "3413",
+        "name": "141",
+		"description":""
       },
       {
-        "value": "5416",
-        "label": "110"
+        "collectorId": "5416",
+        "name": "110",
+		"description":""
       },
       {
-        "value": "5417",
-        "label": "130"
+        "collectorId": "5417",
+        "name": "130",
+		"description":""
       },
       {
-        "value": "5418",
-        "label": "140"
+        "collectorId": "5418",
+        "name": "140",
+		"description":""
       },
       {
-        "value": "5419",
-        "label": "Jose Navarro"
+        "collectorId": "5419",
+        "name": "Jose Navarro",
+		"description":""
       },
       {
-        "value": "6416",
-        "label": "114"
+        "collectorId": "6416",
+        "name": "114",
+		"description":""
       },
       {
-        "value": "6417",
-        "label": "124"
+        "collectorId": "6417",
+        "name": "124",
+		"description":""
       },
       {
-        "value": "6418",
-        "label": "125"
+        "collectorId": "6418",
+        "name": "125",
+		"description":""
       },
       {
-        "value": "9416",
-        "label": "120"
+        "collectorId": "9416",
+        "name": "120",
+		"description":""
       },
       {
-        "value": "1400",
-        "label": "Jevon Sullivan"
+        "collectorId": "1400",
+        "name": "Jevon Sullivan",
+		"description":""
       },
       {
-        "value": "3414",
-        "label": "Tamara Bryant"
+        "collectorId": "3414",
+        "name": "Tamara Bryant",
+		"description":""
       },
       {
-        "value": "3415",
-        "label": "Kim Gray"
+        "collectorId": "3415",
+        "name": "Kim Gray",
+		"description":""
       },
       {
-        "value": "4416",
-        "label": "KARSTENDELZER"
+        "collectorId": "4416",
+        "name": "KARSTENDELZER",
+		"description":""
       },
       {
-        "value": "4417",
-        "label": "MARYKNIGHT"
+        "collectorId": "4417",
+        "name": "MARYKNIGHT",
+		"description":""
       },
       {
-        "value": "4418",
-        "label": "TAMILECALLAWAY"
+        "collectorId": "4418",
+        "name": "TAMILECALLAWAY",
+		"description":""
       },
       {
-        "value": "4419",
-        "label": "MAHENDRASHRIVASTAVA"
+        "collectorId": "4419",
+        "name": "MAHENDRASHRIVASTAVA",
+		"description":""
       },
       {
-        "value": "4421",
-        "label": "CHARLOTTESTEPHENS"
+        "collectorId": "4421",
+        "name": "CHARLOTTESTEPHENS",
+		"description":""
       },
       {
-        "value": "4422",
-        "label": "MAURETTATHOMAS"
+        "collectorId": "4422",
+        "name": "MAURETTATHOMAS",
+		"description":""
       },
       {
-        "value": "4423",
-        "label": "KATEPATNETT"
+        "collectorId": "4423",
+        "name": "KATEPATNETT",
+		"description":""
       },
       {
-        "value": "7416",
-        "label": "230"
+        "collectorId": "7416",
+        "name": "230",
+		"description":""
       },
       {
-        "value": "7417",
-        "label": "231"
+        "collectorId": "7417",
+        "name": "231",
+		"description":""
       }
     ]});
         }
@@ -602,44 +683,64 @@ var creditclassifications = {
         alldata: function() {
             return JSON.stringify({"creditClassifications": [
       {
-        "value": "HIGH",
-        "label": "High Risk"
+        "code": "HIGH",
+        "name": "High Risk",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "LOW",
-        "label": "Low Risk"
+        "code": "LOW",
+        "name": "Low Risk",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "MODERATE",
-        "label": "Moderate Risk"
+        "code": "MODERATE",
+        "name": "Moderate Risk",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "GUARANTOR",
-        "label": "Guarantor"
+        "code": "GUARANTOR",
+        "name": "Guarantor",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "A",
-        "label": "A"
+        "code": "A",
+        "name": "A",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "B",
-        "label": "B"
+        "code": "B",
+        "name": "B",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "C",
-        "label": "C"
+        "code": "C",
+        "name": "C",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "D",
-        "label": "D"
+        "code": "D",
+        "name": "D",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "L",
-        "label": "L"
+        "code": "L",
+        "name": "L",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "U",
-        "label": "U"
+        "code": "U",
+        "name": "U",
+		"oracleCode":"",
+		"description":""
       }
     ]});
         }
@@ -658,68 +759,68 @@ var creditmanagers = {
         alldata: function() {
             return JSON.stringify({"creditAnalysts": [
       {
-        "value": "100003800",
-        "label": "Davis, Edward C (Ed)"
+        "creditManagerId": "100003800",
+        "name": "Davis, Edward C (Ed)"
       },
       {
-        "value": "100004300",
-        "label": "Fitzpatrick, Paula"
+        "creditManagerId": "100004300",
+        "name": "Fitzpatrick, Paula"
       },
       {
-        "value": "100003603",
-        "label": "Bondman, Kelle J"
+        "creditManagerId": "100003603",
+        "name": "Bondman, Kelle J"
       },
       {
-        "value": "100009314",
-        "label": "Callaway, Tamile"
+        "creditManagerId": "100009314",
+        "name": "Callaway, Tamile"
       },
       {
-        "value": "100004043",
-        "label": "Knight, Mary"
+        "creditManagerId": "100004043",
+        "name": "Knight, Mary"
       },
       {
-        "value": "100019486",
-        "label": "Gray, Kimberly Nicole"
+        "creditManagerId": "100019486",
+        "name": "Gray, Kimberly Nicole"
       },
       {
-        "value": "100037554",
-        "label": "Shrivastava, Mahendra Kumar"
+        "creditManagerId": "100037554",
+        "name": "Shrivastava, Mahendra Kumar"
       },
       {
-        "value": "100055569",
-        "label": "Prince, Jernita Laquise"
+        "creditManagerId": "100055569",
+        "name": "Prince, Jernita Laquise"
       },
       {
-        "value": "100066581",
-        "label": "Frazier, Tameika Sumpter"
+        "creditManagerId": "100066581",
+        "name": "Frazier, Tameika Sumpter"
       },
       {
-        "value": "100066582",
-        "label": "Jennings, Kelvin Torran"
+        "creditManagerId": "100066582",
+        "name": "Jennings, Kelvin Torran"
       },
       {
-        "value": "100066583",
-        "label": "Fenn, Keiona Chatinna"
+        "creditManagerId": "100066583",
+        "name": "Fenn, Keiona Chatinna"
       },
       {
-        "value": "100066587",
-        "label": "Blake Thomas, Mauretta E"
+        "creditManagerId": "100066587",
+        "name": "Blake Thomas, Mauretta E"
       },
       {
-        "value": "100080286",
-        "label": "Navarro Salazar, Jose Luis"
+        "creditManagerId": "100080286",
+        "name": "Navarro Salazar, Jose Luis"
       },
       {
-        "value": "100087290",
-        "label": "Palacios, Jesus"
+        "creditManagerId": "100087290",
+        "name": "Palacios, Jesus"
       },
       {
-        "value": "100101291",
-        "label": "Jordan - CTR, Mackema"
+        "creditManagerId": "100101291",
+        "name": "Jordan - CTR, Mackema"
       },
       {
-        "value": "100088291",
-        "label": "Smith, Elizabeth H"
+        "creditManagerId": "100088291",
+        "name": "Smith, Elizabeth H"
       }
     ]});
         }
@@ -738,37 +839,53 @@ var distributorcategories = {
         alldata: function() {
             return JSON.stringify({"distributorCategories": [
       {
-        "value": "88 Parent",
-        "label": "88 Parent Account"
-      },
-      {
-        "value": "BR Customer",
-        "label": "Bills Receivable Customer"
-      },
-      {
-        "value": "Buying Group",
-        "label": "Buying Group Account"
-      },
-      {
-        "value": "Chain",
-        "label": "Chain"
-      },
-      {
-        "value": "Customer",
-        "label": "Customer"
-      },
-      {
-        "value": "Prospect",
-        "label": "Prospect"
-      },
-      {
-        "value": "Salesperson",
-        "label": "Salesperson's Customer Account"
-      },
-      {
-        "value": "True Parent",
-        "label": "True Parent Account"
-      }
+		"code": "88 Parent",
+		"name": "88 Parent Account",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "BR Customer",
+		"name": "Bills Receivable Customer",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "Buying Group",
+		"name": "Buying Group Account",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "Chain",
+		"name": "Chain",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "Customer",
+		"name": "Customer",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "Prospect",
+		"name": "Prospect",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "Salesperson",
+		"name": "Salesperson's Customer Account",
+		"oracleCode":"",
+		"description":""
+	  },
+	  {
+		"code": "True Parent",
+		"name": "True Parent Account",
+		"oracleCode":"",
+		"description":""
+	  }
     ]});
         }
     }]
@@ -786,20 +903,28 @@ var emailformattypes = {
         alldata: function() {
             return JSON.stringify({"emailFormatTypes": [
       {
-        "value": "MAILATTH",
-        "label": "Text mail with HTML attachment"
+        "code": "MAILATTH",
+        "name": "Text mail with HTML attachment",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "MAILHTML",
-        "label": "HTML mail"
+        "code": "MAILHTML",
+        "name": "HTML mail",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "MAILTEXT",
-        "label": "Plain text mail"
+        "code": "MAILTEXT",
+        "name": "Plain text mail",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "MAILHTM2",
-        "label": "HTML mail without standard attachment"
+        "code": "MAILHTM2",
+        "name": "HTML mail without standard attachment",
+		"oracleCode":"",
+		"description":""
       }
     ]});
         }
@@ -818,20 +943,28 @@ var freightassignments = {
         alldata: function() {
             return JSON.stringify({"freightAssignments": [
       {
-        "value": "1223345",
-        "label": "1223345"
+        "code": "1223345",
+        "name": "1223345",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Charge Factory",
-        "label": "Charge Factory"
+        "code": "Charge Factory",
+        "name": "Charge Factory",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Charge Agent",
-        "label": "Charge Agent"
+        "code": "Charge Agent",
+        "name": "Charge Agent",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Charge Distributor",
-        "label": "Charge Distributor"
+        "code": "Charge Distributor",
+        "name": "Charge Distributor",
+		"oracleCode":"",
+		"description":""
       }
     ]});
         }
@@ -850,40 +983,40 @@ var freightterms = {
         alldata: function() {
             return JSON.stringify({"freightTerms": [
       {
-        "value": "Collect",
-        "label": "Collect"
+        "code": "Collect",
+        "oracleCode": ""
       },
       {
-        "value": "Prepay & Add with cost conversion",
-        "label": "Prepay & Add with cost conversion"
+        "code": "Prepay & Add with cost conversion",
+        "oracleCode": ""
       },
       {
-        "value": "Prepay & Add",
-        "label": "Prepay & Add"
+        "code": "Prepay & Add",
+        "oracleCode": ""
       },
       {
-        "value": "Prepaid",
-        "label": "Prepaid"
+        "code": "Prepaid",
+        "oracleCode": ""
       },
       {
-        "value": "To Be Determined",
-        "label": "To Be Determined"
+        "code": "To Be Determined",
+        "oracleCode": ""
       },
       {
-        "value": "Third Party Billing",
-        "label": "Third Party Billing"
+        "code": "Third Party Billing",
+        "oracleCode": ""
       },
       {
-        "value": "Freight Allowed",
-        "label": "Freight Allowed"
+        "code": "Freight Allowed",
+        "oracleCode": ""
       },
       {
-        "value": "Freight Not Allowed",
-        "label": "Freight Not Allowed"
+        "code": "Freight Not Allowed",
+        "oracleCode": ""
       },
       {
-        "value": "Bill Air Freight Difference",
-        "label": "Bill Air Freight Difference"
+        "code": "Bill Air Freight Difference",
+        "oracleCode": ""
       }
     ]});
         }
@@ -918,16 +1051,19 @@ var operatingunits = {
         alldata: function() {
             return JSON.stringify({"operatingUnits": [
       {
-        "value": "US",
-        "label": "USA"
+        "operatingUnit": "US",
+        "name": "",
+		"organizationId":""
       },
       {
-        "value": "CA",
-        "label": "CANADA"
+        "operatingUnit": "CA",
+        "name": "",
+		"organizationId":""
       },
       {
-        "value": "MX",
-        "label": "MEXICO"
+        "operatingUnit": "MX",
+        "name": "",
+		"organizationId":""
       }
     ]});
         }
@@ -946,24 +1082,34 @@ var phonelinetypes = {
         alldata: function() {
             return JSON.stringify({"phoneLineTypes": [
       {
-        "value": "Fax",
-        "label": "Fax"
+        "code": "Fax",
+        "name": "Fax",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Telephone",
-        "label": "Telephone"
+        "code": "Telephone",
+        "name": "Telephone",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Mobile",
-        "label": "Mobile"
+        "code": "Mobile",
+        "name": "Mobile",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Pager",
-        "label": "Pager"
+        "code": "Pager",
+        "name": "Pager",
+		"oracleCode":"",
+		"description":""
       },
       {
-        "value": "Voice Mail",
-        "label": "Voice Mail"
+        "code": "Voice Mail",
+        "name": "Voice Mail",
+		"oracleCode":"",
+		"description":""
       }
     ]});
         }
@@ -982,72 +1128,106 @@ var saleschannels = {
         alldata: function() {
             return JSON.stringify({"salesChannels": [
       {
-        "value": "FI",
-        "label": "Foreign/International"
+        "code": "FI",
+        "description": "Foreign/International",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "SP",
-        "label": "Salesperson"
+        "code": "SP",
+        "description": "Salesperson",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "IC",
-        "label": "Intercompany"
+        "code": "IC",
+        "description": "Intercompany",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "CN",
-        "label": "Contractor"
+        "code": "CN",
+        "description": "Contractor",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "AO",
-        "label": "All Other"
+        "code": "AO",
+        "description": "All Other",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "CA",
-        "label": "Catalog"
+        "code": "CA",
+        "description": "Catalog",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "DR",
-        "label": "C&I Direct"
+        "code": "DR",
+        "description": "C&I Direct",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "ED",
-        "label": "Electrical Distributor"
+        "code": "ED",
+        "description": "Electrical Distributor",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "ES",
-        "label": "ESCO"
+        "code": "ES",
+        "description": "ESCO",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HC",
-        "label": "Home Centers"
+        "code": "HC",
+        "description": "Home Centers",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "IN",
-        "label": "DOT/Infrastructure"
+        "code": "IN",
+        "description": "DOT/Infrastructure",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "MD",
-        "label": "Media"
+        "code": "MD",
+        "description": "Media",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "OE",
-        "label": "OEM"
+        "code": "OE",
+        "description": "OEM",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "SR",
-        "label": "Showroom"
+        "code": "SR",
+        "description": "Showroom",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "UA",
-        "label": "Utility"
+        "code": "UA",
+        "description": "Utility",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "EMAIL_CENTER",
-        "label": "Email Center"
+        "code": "EMAIL_CENTER",
+        "description": "Email Center",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "DI",
-        "label": "Digital Retail"
+        "code": "DI",
+        "description": "Digital Retail",
+		"oracleCode":"",
+		"name":""
       }
     ]});
         }
@@ -1066,260 +1246,386 @@ var taxcodes = {
         alldata: function() {
             return JSON.stringify({"taxCodes": [
       {
-        "value": "CND VAT",
-        "label": "Canadian VAT Tax Group"
+        "code": "CND VAT",
+        "description": "Canadian VAT Tax Group",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "Exempt",
-        "label": "Exempt"
+        "code": "Exempt",
+        "description": "Exempt",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "Exempt HLP",
-        "label": "Exempt"
+        "code": "Exempt HLP",
+        "description": "Exempt",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "GST",
-        "label": "Goods and Services Tax"
+        "code": "GST",
+        "description": "Goods and Services Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "GST Ad-Hoc",
-        "label": "GST for Tax Only Transactions"
+        "code": "GST Ad-Hoc",
+        "description": "GST for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "GST HLP",
-        "label": "Goods and Services Tax"
+        "code": "GST HLP",
+        "description": "Goods and Services Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "GST HLP Ad-Hoc",
-        "label": "GST for Tax Only Transactions"
+        "code": "GST HLP Ad-Hoc",
+        "description": "GST for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "GST-AP",
-        "label": "GST-AP"
+        "code": "GST-AP",
+        "description": "GST-AP",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HST Ad-Hoc",
-        "label": "HST for Tax Only Transactions"
+        "code": "HST Ad-Hoc",
+        "description": "HST for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HST HLP Ad-Hoc",
-        "label": "HST for Tax Only Transactions"
+        "code": "HST HLP Ad-Hoc",
+        "description": "HST for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HST-AP",
-        "label": "HST-AP"
+        "code": "HST-AP",
+        "description": "HST-AP",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTBC",
-        "label": "HST British Columbia"
+        "code": "HSTBC",
+        "description": "HST British Columbia",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNB",
-        "label": "HST New Brunswick"
+        "code": "HSTNB",
+        "description": "HST New Brunswick",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNB",
-        "label": "HST New Brunswick"
+        "code": "HSTNB",
+        "description": "HST New Brunswick",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNB HLP",
-        "label": "HST New Brunswick"
+        "code": "HSTNB HLP",
+        "description": "HST New Brunswick",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNB HLP",
-        "label": "HST New Brunswick"
+        "code": "HSTNB HLP",
+        "description": "HST New Brunswick",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNB HLP",
-        "label": "HST New Brunswick"
+        "code": "HSTNB HLP",
+        "description": "HST New Brunswick",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNL",
-        "label": "HST Newfoundland and Labrador"
+        "code": "HSTNL",
+        "description": "HST Newfoundland and Labrador"
       },
       {
-        "value": "HSTNL HLP",
-        "label": "HST Newfoundland and Labrador"
+        "code": "HSTNL HLP",
+        "description": "HST Newfoundland and Labrador",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNS",
-        "label": "HST Nova Scotia"
+        "code": "HSTNS",
+        "description": "HST Nova Scotia",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTNS HLP",
-        "label": "HST Nova Scotia"
+        "code": "HSTNS HLP",
+        "description": "HST Nova Scotia",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTON",
-        "label": "HST Ontario"
+        "code": "HSTON",
+        "description": "HST Ontario",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTON HLP",
-        "label": "HST Ontario"
+        "code": "HSTON HLP",
+        "description": "HST Ontario",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTPE",
-        "label": "HST Prince Edward Island"
+        "code": "HSTPE",
+        "description": "HST Prince Edward Island",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "HSTPE",
-        "label": "HST Prince Edward Island"
+        "code": "HSTPE",
+        "description": "HST Prince Edward Island",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST BC",
-        "label": "Provincial Sales Tax"
+        "code": "PST BC",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP BC",
-        "label": "Provincial Sales Tax"
+        "code": "PST HLP BC",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP BC Ad-Hoc",
-        "label": "Provincial Sales Tax for Tax Only Transactions"
+        "code": "PST HLP BC Ad-Hoc",
+        "description": "Provincial Sales Tax for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP MB",
-        "label": "Provincial Sales Tax"
+        "code": "PST HLP MB",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP MB",
-        "label": "Provincial Sales Tax"
+        "code": "PST HLP MB",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP MB Ad-Hoc",
-        "label": "Provincial Sales Tax for Tax Only Transactions"
+        "code": "PST HLP MB Ad-Hoc",
+        "description": "Provincial Sales Tax for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP NS Ad-Hoc",
-        "label": "Provincial Sales Tax for Tax Only Transactions"
+        "code": "PST HLP NS Ad-Hoc",
+        "description": "Provincial Sales Tax for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP ON Ad-Hoc",
-        "label": "Provincial Sales Tax for Tax Only Transactions"
+        "code": "PST HLP ON Ad-Hoc",
+        "description": "Provincial Sales Tax for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP PE",
-        "label": "Provincial Sales Tax"
+        "code": "PST HLP PE",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP PE Ad-Hoc",
-        "label": "Provincial Sales Tax for Tax Only Transactions"
+        "code": "PST HLP PE Ad-Hoc",
+        "description": "Provincial Sales Tax for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP SK",
-        "label": "Provincial Sales Tax"
+        "code": "PST HLP SK",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP SK",
-        "label": "Provincial Sales Tax"
+        "code": "PST HLP SK",
+        "description": "Provincial Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST HLP SK Ad-Hoc",
-        "label": "Provincial Sales Tax for Tax Only Transactions"
+        "code": "PST HLP SK Ad-Hoc",
+        "description": "Provincial Sales Tax for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PST-AP",
-        "label": "PST-AP"
+        "code": "PST-AP",
+        "description": "PST-AP",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST",
-        "label": "Quebec Sales Tax"
+        "code": "QST",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST",
-        "label": "Quebec Sales Tax"
+        "code": "QST",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST",
-        "label": "Quebec Sales Tax"
+        "code": "QST",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST",
-        "label": "Quebec Sales Tax"
+        "code": "QST",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST Ad-Hoc",
-        "label": "QST for Tax Only Transactions"
+        "code": "QST Ad-Hoc",
+        "description": "QST for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP",
-        "label": "Quebec Sales Tax"
+        "code": "QST HLP",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP",
-        "label": "Quebec Sales Tax"
+        "code": "QST HLP",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP",
-        "label": "Quebec Sales Tax"
+        "code": "QST HLP",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP",
-        "label": "Quebec Sales Tax"
+        "code": "QST HLP",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP",
-        "label": "Quebec Sales Tax"
+        "code": "QST HLP",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP",
-        "label": "Quebec Sales Tax"
+        "code": "QST HLP",
+        "description": "Quebec Sales Tax",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST HLP Ad-Hoc",
-        "label": "QST for Tax Only Transactions"
+        "code": "QST HLP Ad-Hoc",
+        "description": "QST for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "QST-AP",
-        "label": "QST-AP"
+        "code": "QST-AP",
+        "description": "QST-AP",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "Exempt",
-        "label": "Exempt"
+        "code": "Exempt",
+        "description": "Exempt",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "MEX VAT",
-        "label": "Mexican Tax Group"
+        "code": "MEX VAT",
+        "description": "Mexican Tax Group",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT",
-        "label": "VAT"
+        "code": "VAT",
+        "description": "VAT",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT 15%",
-        "label": "Vat 15%-OUTPUT"
+        "code": "VAT 15%",
+        "description": "Vat 15%-OUTPUT",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT 16%",
-        "label": "Vat 16%-OUTPUT"
+        "code": "VAT 16%",
+        "description": "Vat 16%-OUTPUT",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT Ad-Hoc",
-        "label": "VAT for Tax Only Transactions"
+        "code": "VAT Ad-Hoc",
+        "description": "VAT for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT HSA 16%",
-        "label": "Vat Hsa 16%-OUTPUT"
+        "code": "VAT HSA 16%",
+        "description": "Vat Hsa 16%-OUTPUT",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT TAX LR",
-        "label": "VAT TAX LR"
+        "code": "VAT TAX LR",
+        "description": "VAT TAX LR",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "VAT TAX LR",
-        "label": "VAT TAX LR"
+        "code": "VAT TAX LR",
+        "description": "VAT TAX LR",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "Ad-Hoc",
-        "label": "Used for Tax Only Transactions"
+        "code": "Ad-Hoc",
+        "description": "Used for Tax Only Transactions",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "Exempt",
-        "label": "No Sales tax will be assessed to the customer."
+        "code": "Exempt",
+        "description": "No Sales tax will be assessed to the customer.",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "Location",
-        "label": "Location Based Sales Tax"
+        "code": "Location",
+        "description": "Location Based Sales Tax",
+		"oracleCode":"",
+		"name":""
       }
     ]});
         }
@@ -1739,28 +2045,40 @@ var websitetypes = {
         alldata: function() {
             return JSON.stringify({"websites": [
       {
-        "value": "HOMEPAGE",
-        "label": "Home Page"
+        "code": "HOMEPAGE",
+        "description": "Home Page",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "MARKETINGURL",
-        "label": "Marketing URL"
+        "code": "MARKETINGURL",
+        "description": "Marketing URL",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "SALESURL",
-        "label": "Sales URL"
+        "code": "SALESURL",
+        "description": "Sales URL",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "SUPPORTURL",
-        "label": "Support URL"
+        "code": "SUPPORTURL",
+        "description": "Support URL",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PORTAL-INV",
-        "label": "Portal - Invoicing"
+        "code": "PORTAL-INV",
+        "description": "Portal - Invoicing",
+		"oracleCode":"",
+		"name":""
       },
       {
-        "value": "PORTAL-NON-I",
-        "label": "Portal - Non-Invoicing"
+        "code": "PORTAL-NON-I",
+        "description": "Portal - Non-Invoicing",
+		"oracleCode":"",
+		"name":""
       }
     ]});
         }
