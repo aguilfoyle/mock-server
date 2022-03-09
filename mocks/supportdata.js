@@ -1,145 +1,15 @@
 var mocks = [];
 var schemas = require('../schemas/schemas');
 
-var supportdata = {
-    name: 'supportdata',
-    mockRoute: '\/api\/v1\/supportdata',
+var collectors= {
+    name: 'collectors',
+    mockRoute: '\/api\/v1\/supportdata\/collectors',
     testScope: 'success', 
     testScenario: 'alldata', 
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({
-  "value": {
-    "addressTypes": [
-      {
-        "value": "hasBillToAddress",
-        "label": "Bill To"
-      },
-      {
-        "value": "hasSoldToAddress",
-        "label": "Sold To"
-      },
-      {
-        "value": "hasShipToAddress",
-        "label": "Ship To"
-      },
-      {
-        "value": "hasAcknowledgmentAddress",
-        "label": "Acknowledgment"
-      },
-      {
-        "value": "hasStatementAddress",
-        "label": "Statement"
-      },
-      {
-        "value": "hasLateChargeAddress",
-        "label": "Late Charge"
-      },
-      {
-        "value": "hasLegalAddress",
-        "label": "Legal"
-      },
-      {
-        "value": "hasMarketAddress",
-        "label": "Market"
-      },
-      {
-        "value": "hasDraweeAddress",
-        "label": "Drawee"
-      }
-    ],
-    "cfdiCodes": [
-      {
-        "value": "G01",
-        "label": "G01 - Acquisition of merchandise"
-      },
-      {
-        "value": "G02",
-        "label": "G02 - Returns, discounts or bonuses"
-      },
-      {
-        "value": "G03",
-        "label": "G03 - General expenses"
-      },
-      {
-        "value": "I01",
-        "label": "I01 - Buildings"
-      },
-      {
-        "value": "I02",
-        "label": "I02 - Furniture and office equipment for investments"
-      },
-      {
-        "value": "I03",
-        "label": "I03 - Transport equipment"
-      },
-      {
-        "value": "I04",
-        "label": "I04 - Computer equipment and accessories"
-      },
-      {
-        "value": "I05",
-        "label": "I05 - Dies, dies, molds, dies and tooling"
-      },
-      {
-        "value": "I06",
-        "label": "I06 - Telephone communications"
-      },
-      {
-        "value": "I07",
-        "label": "I07 - Satellite communications"
-      },
-      {
-        "value": "I08",
-        "label": "I08 - Other machinery and equipment"
-      },
-      {
-        "value": "D01",
-        "label": "D01 - Medical, dental and hospital fees"
-      },
-      {
-        "value": "D02",
-        "label": "D02 - Medical expenses for disability or disability"
-      },
-      {
-        "value": "D03",
-        "label": "D03 - Funeral expenses"
-      },
-      {
-        "value": "D04",
-        "label": "D04 - Donations"
-      },
-      {
-        "value": "D05",
-        "label": "D05 - Real interest actually paid for mortgage loans (house)."
-      },
-      {
-        "value": "D06",
-        "label": "D06 - Voluntary contributions to the SAR"
-      },
-      {
-        "value": "D07",
-        "label": "D07 - Premiums for insurance of medical expenses"
-      },
-      {
-        "value": "D08",
-        "label": "D08 - Mandatory school transportation expenses"
-      },
-      {
-        "value": "D09",
-        "label": "D09 - Deposits in savings accounts, premiums based on pension plans"
-      },
-      {
-        "value": "D10",
-        "label": "D10 - Payments for educational services (tuition)"
-      },
-      {
-        "value": "P01",
-        "label": "P01 - To define"
-      }
-    ],
-    "collectors": [
+            return JSON.stringify({"collectors": [
       {
         "value": "1000",
         "label": "100"
@@ -572,54 +442,49 @@ var supportdata = {
         "value": "7417",
         "label": "231"
       }
-    ],
-    "contactTypes": [
-      {
-        "value": "PRIV_PREF",
-        "label": "Privacy Preference"
-      },
-      {
-        "value": "EMAIL",
-        "label": "E-mail"
-      },
-      {
-        "value": "FAX",
-        "label": "Fax"
-      },
-      {
-        "value": "MAIL",
-        "label": "Mail"
-      },
-      {
-        "value": "TLX",
-        "label": "Telex"
-      },
-      {
-        "value": "ALL",
-        "label": "All"
-      },
-      {
-        "value": "CALL",
-        "label": "Call"
-      },
-      {
-        "value": "EDI",
-        "label": "EDI"
-      },
-      {
-        "value": "SMS",
-        "label": "SMS"
-      },
-      {
-        "value": "VISIT",
-        "label": "Visit"
-      },
-      {
-        "value": "WEB",
-        "label": "WEB"
-      }
-    ],
-    "creditClassifications": [
+    ]});
+        }
+    }]
+};
+mocks.push(collectors);
+
+var contactpointpurposes = {
+    name: 'contactpointpurposes',
+    mockRoute: '\/api\/v1\/supportdata\/contactpointpurposes',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"foo":"bar"});
+        }
+    }]
+};
+mocks.push(contactpointpurposes);
+
+var contacttypes = {
+    name: 'contacttypes',
+    mockRoute: '\/api\/v1\/supportdata\/contacttypes',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"foo":"bar"});
+        }
+    }]
+};
+mocks.push(contacttypes);
+
+var creditclassifications = {
+    name: 'creditclassifications',
+    mockRoute: '\/api\/v1\/supportdata\/creditclassifications',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"creditClassifications": [
       {
         "value": "HIGH",
         "label": "High Risk"
@@ -660,8 +525,22 @@ var supportdata = {
         "value": "U",
         "label": "U"
       }
-    ],
-    "creditAnalysts": [
+    ]});
+        }
+    }]
+};
+mocks.push(creditclassifications);
+
+
+var creditmanagers = {
+    name: 'creditmanagers',
+    mockRoute: '\/api\/v1\/supportdata\/creditmanagers',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"creditAnalysts": [
       {
         "value": "100003800",
         "label": "Davis, Edward C (Ed)"
@@ -726,8 +605,22 @@ var supportdata = {
         "value": "100088291",
         "label": "Smith, Elizabeth H"
       }
-    ],
-    "distributorCategories": [
+    ]});
+        }
+    }]
+};
+mocks.push(creditmanagers);
+
+
+var distributorcategories = {
+    name: 'distributorcategories',
+    mockRoute: '\/api\/v1\/supportdata\/distributorcategories',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"distributorCategories": [
       {
         "value": "88 Parent",
         "label": "88 Parent Account"
@@ -760,42 +653,22 @@ var supportdata = {
         "value": "True Parent",
         "label": "True Parent Account"
       }
-    ],
-    "emailBusinessPurposes": [
-      {
-        "value": "ASSISTANT",
-        "label": "Assistant"
-      },
-      {
-        "value": "BUSINESS",
-        "label": "Business"
-      },
-      {
-        "value": "HOME-BUSINESS",
-        "label": "Home-Business"
-      },
-      {
-        "value": "PERSONAL",
-        "label": "Personal"
-      },
-      {
-        "value": "EMERGENCY",
-        "label": "Emergency"
-      },
-      {
-        "value": "COLLECTIONS",
-        "label": "Collections"
-      },
-      {
-        "value": "DUNNING",
-        "label": "Dunning"
-      },
-      {
-        "value": "INVOICE-EMAIL",
-        "label": "Invoice Email"
-      }
-    ],
-    "emailFormatTypes": [
+    ]});
+        }
+    }]
+};
+mocks.push(distributorcategories);
+
+
+var emailformattypes = {
+    name: 'emailformattypes',
+    mockRoute: '\/api\/v1\/supportdata\/emailformattypes',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"emailFormatTypes": [
       {
         "value": "MAILATTH",
         "label": "Text mail with HTML attachment"
@@ -812,8 +685,22 @@ var supportdata = {
         "value": "MAILHTM2",
         "label": "HTML mail without standard attachment"
       }
-    ],
-    "freightAssignments": [
+    ]});
+        }
+    }]
+};
+mocks.push(emailformattypes);
+
+
+var freightassignments = {
+    name: 'freightassignments',
+    mockRoute: '\/api\/v1\/supportdata\/freightassignments',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"freightAssignments": [
       {
         "value": "1223345",
         "label": "1223345"
@@ -830,8 +717,22 @@ var supportdata = {
         "value": "Charge Distributor",
         "label": "Charge Distributor"
       }
-    ],
-    "freightTerms": [
+    ]});
+        }
+    }]
+};
+mocks.push(freightassignments);
+
+
+var freightterms = {
+    name: 'freightterms',
+    mockRoute: '\/api\/v1\/supportdata\/freightterms',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"freightTerms": [
       {
         "value": "Collect",
         "label": "Collect"
@@ -868,8 +769,37 @@ var supportdata = {
         "value": "Bill Air Freight Difference",
         "label": "Bill Air Freight Difference"
       }
-    ],
-    "operatingUnits": [
+    ]});
+        }
+    }]
+};
+mocks.push(freightterms);
+
+
+var istaxregistrationnumberduplicated = {
+    name: 'istaxregistrationnumberduplicated',
+    mockRoute: '\/api\/v1\/supportdata\/taxregistrationnumduplicated\/\\d+$',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"foo":"bar"});
+        }
+    }]
+};
+mocks.push(istaxregistrationnumberduplicated);
+
+
+var operatingunits = {
+    name: 'operatingunits',
+    mockRoute: '\/api\/v1\/supportdata\/operatingunits',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"operatingUnits": [
       {
         "value": "US",
         "label": "USA"
@@ -882,42 +812,22 @@ var supportdata = {
         "value": "MX",
         "label": "MEXICO"
       }
-    ],
-    "phoneBusinessPurposes": [
-      {
-        "value": "ASSISTANT",
-        "label": "Assistant"
-      },
-      {
-        "value": "BUSINESS",
-        "label": "Business"
-      },
-      {
-        "value": "HOME-BUSINESS",
-        "label": "Home-Business"
-      },
-      {
-        "value": "PERSONAL",
-        "label": "Personal"
-      },
-      {
-        "value": "EMERGENCY",
-        "label": "Emergency"
-      },
-      {
-        "value": "COLLECTIONS",
-        "label": "Collections"
-      },
-      {
-        "value": "DUNNING",
-        "label": "Dunning"
-      },
-      {
-        "value": "INVOICE-EMAIL",
-        "label": "Invoice Email"
-      }
-    ],
-    "phoneLineTypes": [
+    ]});
+        }
+    }]
+};
+mocks.push(operatingunits);
+
+
+var phonelinetypes = {
+    name: 'phonelinetypes',
+    mockRoute: '\/api\/v1\/supportdata\/phonelinetypes',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"phoneLineTypes": [
       {
         "value": "Fax",
         "label": "Fax"
@@ -938,158 +848,22 @@ var supportdata = {
         "value": "Voice Mail",
         "label": "Voice Mail"
       }
-    ],
-    "profileClasses": [
-      {
-        "value": "0",
-        "label": "DEFAULT-Default Profile Used by Customer Interface program"
-      },
-      {
-        "value": "1100",
-        "label": "602-Bryant, Tamara"
-      },
-      {
-        "value": "1121",
-        "label": "603-Thomas, Erica"
-      },
-      {
-        "value": "1120",
-        "label": "403-Davis, Theresa"
-      },
-      {
-        "value": "1080",
-        "label": "402-Sullivan, Jevon"
-      },
-      {
-        "value": "1140",
-        "label": "404-"
-      },
-      {
-        "value": "1141",
-        "label": "604-Hall, Eric"
-      },
-      {
-        "value": "1060",
-        "label": "101-Creque, Jayce"
-      },
-      {
-        "value": "1061",
-        "label": "102-Archer, Tammy"
-      },
-      {
-        "value": "1062",
-        "label": "201-Garcia, Lajuana"
-      },
-      {
-        "value": "1063",
-        "label": "301-Moncrief, Margaret"
-      },
-      {
-        "value": "1064",
-        "label": "302-Hodges, Susan"
-      },
-      {
-        "value": "1065",
-        "label": "401-Hobbs, Tina"
-      },
-      {
-        "value": "1066",
-        "label": "501-Patterson, AnnMarie"
-      },
-      {
-        "value": "1067",
-        "label": "601-Archer, Tammy"
-      },
-      {
-        "value": "1068",
-        "label": "701-Fitzpatrick, Paula"
-      },
-      {
-        "value": "1069",
-        "label": "123-Navarro, Jose"
-      },
-      {
-        "value": "1070",
-        "label": "731-Sance, Iris"
-      },
-      {
-        "value": "1071",
-        "label": "741-Sance, Iris"
-      },
-      {
-        "value": "1072",
-        "label": "751-Sance, Iris"
-      },
-      {
-        "value": "1073",
-        "label": "771-Sance, Iris"
-      },
-      {
-        "value": "1074",
-        "label": "Intercompany-"
-      },
-      {
-        "value": "1172",
-        "label": "230-Fitzpatrick, Paula"
-      },
-      {
-        "value": "1173",
-        "label": "231-Fitzpatrick, Paula"
-      },
-      {
-        "value": "1161",
-        "label": "111-Gray, Kimberly"
-      },
-      {
-        "value": "1162",
-        "label": "112-Gray, Kimberly"
-      },
-      {
-        "value": "1163",
-        "label": "113-Fenn, Keiona"
-      },
-      {
-        "value": "1164",
-        "label": "121-Thomas, Mauretta"
-      },
-      {
-        "value": "1165",
-        "label": "122-Blake-Thomas, Mauretta"
-      },
-      {
-        "value": "1166",
-        "label": "211-Fitzpatrick, Paula"
-      },
-      {
-        "value": "1167",
-        "label": "212-Bondman, Kelle"
-      },
-      {
-        "value": "1168",
-        "label": "221-Bondman, Kelle"
-      },
-      {
-        "value": "1169",
-        "label": "222-Bondman, Kelle"
-      },
-      {
-        "value": "1170",
-        "label": "131-Smith, Elizabeth"
-      },
-      {
-        "value": "1171",
-        "label": "141-Navarro, Jose"
-      },
-      {
-        "value": "1160",
-        "label": "503-Creque, Jayce"
-      },
-      {
-        "value": "2172",
-        "label": "114-Fenn, Keiona"
-      }
-    ],
-    "salesChannels": [
+    ]});
+        }
+    }]
+};
+mocks.push(phonelinetypes);
+
+
+var saleschannels = {
+    name: 'saleschannels',
+    mockRoute: '\/api\/v1\/supportdata\/saleschannels',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"salesChannels": [
       {
         "value": "FI",
         "label": "Foreign/International"
@@ -1158,8 +932,22 @@ var supportdata = {
         "value": "DI",
         "label": "Digital Retail"
       }
-    ],
-    "taxCodes": [
+    ]});
+        }
+    }]
+};
+mocks.push(saleschannels);
+
+
+var taxcodes = {
+    name: 'taxcodes',
+    mockRoute: '\/api\/v1\/supportdata\/taxcodes',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"taxCodes": [
       {
         "value": "CND VAT",
         "label": "Canadian VAT Tax Group"
@@ -1416,8 +1204,22 @@ var supportdata = {
         "value": "Location",
         "label": "Location Based Sales Tax"
       }
-    ],
-    "facilities": [
+    ]});
+        }
+    }]
+};
+mocks.push(taxcodes);
+
+
+var warehouses = {
+    name: 'warehouses',
+    mockRoute: '\/api\/v1\/supportdata\/warehouses',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"facilities": [
       {
         "operatingUnit": "CA",
         "warehouseId": 8,
@@ -1803,8 +1605,22 @@ var supportdata = {
         "warehouseId": 7257,
         "name": "OCEANSIDE"
       }
-    ],
-    "websites": [
+    ]});
+        }
+    }]
+};
+mocks.push(warehouses);
+
+
+var websitetypes = {
+    name: 'websitetypes',
+    mockRoute: '\/api\/v1\/supportdata\/websitetypes',
+    testScope: 'notfound', 
+    testScenario: 'nodata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"websites": [
       {
         "value": "HOMEPAGE",
         "label": "Home Page"
@@ -1829,15 +1645,42 @@ var supportdata = {
         "value": "PORTAL-NON-I",
         "label": "Portal - Non-Invoicing"
       }
-    ]
-  },
-  "formatters": [],
-  "contentTypes": [],
-  "declaredType": null,
-  "statusCode": 200
-});
+    ]});
         }
     }]
 };
-mocks.push(supportdata );
+mocks.push(websitetypes);
+
+
+var customerfullcreate = {
+    name: 'customerfullcreate',
+    mockRoute: '\/api\/v1\/customerfull',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"foo":"bar"});
+        }
+    }]
+};
+mocks.push(customerfullcreate);
+
+
+var customerfullread = {
+    name: 'customerfullread',
+    mockRoute: '\/api\/v1\/customerfull\/\\d+$',
+    testScope: 'success', 
+    testScenario: 'alldata', 
+    latency: '500-3000', 
+    jsonTemplate: [{
+        alldata: function() {
+            return JSON.stringify({"foo":"bar"});
+        }
+    }]
+};
+mocks.push(customerfullread);
+
+
+
 exports.mocks = mocks;
