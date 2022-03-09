@@ -456,7 +456,56 @@ var contactpointpurposes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"foo":"bar"});
+            return JSON.stringify({"ContactPointPurpose": [
+    {
+        "code": "ASSISTANT",
+        "name": "Assistant",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "BUSINESS",
+        "name": "Business",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "HOME-BUSINESS",
+        "name": "Home-Business",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "PERSONAL",
+        "name": "Personal",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "EMERGENCY",
+        "name": "Emergency",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "COLLECTIONS",
+        "name": "Collections",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "DUNNING",
+        "name": "Dunning",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "INVOICE-EMAIL",
+        "name": "Invoice Email",
+        "oracleCode": "",
+        "description": ""
+    }
+]});
         }
     }]
 };
@@ -470,7 +519,74 @@ var contacttypes = {
     latency: '500-3000', 
     jsonTemplate: [{
         alldata: function() {
-            return JSON.stringify({"foo":"bar"});
+            return JSON.stringify({"ContactTypes": [
+    {
+        "code": "PRIV_PREF",
+        "name": "Privacy Preference",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "EMAIL",
+        "name": "E-mail",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "FAX",
+        "name": "Fax",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "MAIL",
+        "name": "Mail",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "TLX",
+        "name": "Telex",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "ALL",
+        "name": "All",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "CALL",
+        "name": "Call",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "EDI",
+        "name": "EDI",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "SMS",
+        "name": "SMS",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "VISIT",
+        "name": "Visit",
+        "oracleCode": "",
+        "description": ""
+    },
+    {
+        "code": "WEB",
+        "name": "WEB",
+        "oracleCode": "",
+        "description": ""
+    }
+]});
         }
     }]
 };
@@ -775,21 +891,22 @@ var freightterms = {
 };
 mocks.push(freightterms);
 
-
 var istaxregistrationnumberduplicated = {
     name: 'istaxregistrationnumberduplicated',
     mockRoute: '\/api\/v1\/supportdata\/taxregistrationnumduplicated\/\\d+$',
     testScope: 'success', 
-    testScenario: 'alldata', 
+    testScenario: 'istrue', 
     latency: '500-3000', 
     jsonTemplate: [{
-        alldata: function() {
-            return JSON.stringify({"foo":"bar"});
+        istrue: function() {
+            return JSON.stringify({"TaxRegistrationNumberDuplicateCheck": {"isDuplicated": true}});
+        },
+        isfalse: function() {
+            return JSON.stringify({"TaxRegistrationNumberDuplicateCheck": {"isDuplicated": false}});
         }
     }]
 };
 mocks.push(istaxregistrationnumberduplicated);
-
 
 var operatingunits = {
     name: 'operatingunits',
